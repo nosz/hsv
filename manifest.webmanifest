@@ -1,0 +1,38 @@
+{
+  "name": "HSV-Fanquiz – Fan-Projekt von Nathalie und Norbert",
+  "short_name": "HSV-Fanquiz",
+  "description": "Inoffizielles Fan-Projekt der HSV-Fans Nathalie und Norbert: HSV-Wissen in 7 Spieltagen mit Quiz, Humor, Dino und Zertifikaten. Deutsch, English, Plattdüütsch. Läuft auch offline.",
+  "id": "/hsv/",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#0b5cad",
+  "lang": "de",
+  "dir": "ltr",
+  "categories": ["sports", "entertainment"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "purpose": "any", "type": "image/png", "sizes": "192x192", "src": "icon-192.png" },
+    { "purpose": "any", "type": "image/png", "sizes": "512x512", "src": "icon-512.png" },
+    { "purpose": "maskable", "type": "image/png", "sizes": "512x512", "src": "icon-maskable-512.png" }
+  ],
+  "shortcuts": [
+    {
+      "url": "./#lesson-boss",
+      "description": "Direkt in die Bossrunde",
+      "name": "Bossrunde",
+      "short_name": "Boss",
+      "icons": [{ "type": "image/png", "sizes": "192x192", "src": "icon-192.png" }]
+    },
+    {
+      "url": "./#home",
+      "description": "Zur Übersicht mit deinen Zertifikaten",
+      "name": "Zertifikate",
+      "short_name": "Zertifikate",
+      "icons": [{ "type": "image/png", "sizes": "192x192", "src": "icon-192.png" }]
+    }
+  ]
+}

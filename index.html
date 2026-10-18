@@ -1,0 +1,1774 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="application-name" content="HSV-Fanquiz">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HSV-Fanquiz">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>HSV-Fanquiz</title>
+<meta name="description" content="DE: 7 Spieltage rund um den Hamburger SV, Zertifikate, Humor. EN: 7 matchdays about Hamburger SV, certificates, fun. NDS: 7 Speeldaag rund um den HSV, Zertifikaten, Spaaß.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0b5cad">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 17' shape-rendering='crispEdges'%3E%3Crect width='16' height='17' rx='3' fill='%230b5cad'/%3E%3Crect x='8.5' y='0.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='0.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='0.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='0.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='1.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='1.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='1.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='1.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='1.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='12.5' y='1.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='2.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='2.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='2.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='2.5' width='1' height='1' fill='%23ffffff'/%3E%3Crect x='11.5' y='2.5' width='1' height='1' fill='%2312202b'/%3E%3Crect x='12.5' y='2.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='3.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='3.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='3.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='3.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='3.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='12.5' y='3.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='13.5' y='3.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='4.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='4.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='4.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='4.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='4.5' width='1' height='1' fill='%23b3261e'/%3E%3Crect x='12.5' y='4.5' width='1' height='1' fill='%23b3261e'/%3E%3Crect x='13.5' y='4.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='1.5' y='5.5' width='1' height='1' fill='%232f8a46'/%3E%3Crect x='7.5' y='5.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='5.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='5.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='5.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='5.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='12.5' y='5.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='1.5' y='6.5' width='1' height='1' fill='%232f8a46'/%3E%3Crect x='2.5' y='6.5' width='1' height='1' fill='%232f8a46'/%3E%3Crect x='6.5' y='6.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='6.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='6.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='6.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='10.5' y='6.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='11.5' y='6.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='12.5' y='6.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='2.5' y='7.5' width='1' height='1' fill='%232f8a46'/%3E%3Crect x='3.5' y='7.5' width='1' height='1' fill='%232f8a46'/%3E%3Crect x='4.5' y='7.5' width='1' height='1' fill='%232f8a46'/%3E%3Crect x='6.5' y='7.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='7.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='7.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='9.5' y='7.5' width='1' height='1' fill='%23ffffff'/%3E%3Crect x='10.5' y='7.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='11.5' y='7.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='12.5' y='7.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='3.5' y='8.5' width='1' height='1' fill='%232f8a46'/%3E%3Crect x='4.5' y='8.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='5.5' y='8.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='6.5' y='8.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='8.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='8.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='8.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='8.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='8.5' width='1' height='1' fill='%23cdeeb4'/%3E%3Crect x='12.5' y='8.5' width='1' height='1' fill='%23cdeeb4'/%3E%3Crect x='4.5' y='9.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='5.5' y='9.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='6.5' y='9.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='9.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='9.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='9.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='9.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='9.5' width='1' height='1' fill='%23cdeeb4'/%3E%3Crect x='12.5' y='9.5' width='1' height='1' fill='%23cdeeb4'/%3E%3Crect x='4.5' y='10.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='5.5' y='10.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='6.5' y='10.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='10.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='10.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='10.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='10.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='10.5' width='1' height='1' fill='%23cdeeb4'/%3E%3Crect x='12.5' y='10.5' width='1' height='1' fill='%23cdeeb4'/%3E%3Crect x='5.5' y='11.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='6.5' y='11.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='11.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='11.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='11.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='11.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='11.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='12.5' y='11.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='5.5' y='12.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='6.5' y='12.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='7.5' y='12.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='8.5' y='12.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='9.5' y='12.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='12.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='12.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='5.5' y='13.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='6.5' y='13.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='13.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='13.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='5.5' y='14.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='6.5' y='14.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='10.5' y='14.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='11.5' y='14.5' width='1' height='1' fill='%2345a85a'/%3E%3Crect x='4.5' y='15.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='5.5' y='15.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='6.5' y='15.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='9.5' y='15.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='10.5' y='15.5' width='1' height='1' fill='%230b5cad'/%3E%3Crect x='11.5' y='15.5' width='1' height='1' fill='%230b5cad'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="canonical" href="https://nosz.github.io/hsv/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HSV-Fanquiz">
+<meta property="og:title" content="HSV-Fanquiz von Nathalie und Norbert">
+<meta property="og:description" content="DE: 7 Spieltage rund um den Hamburger SV, Zertifikate, Humor. EN: 7 matchdays about Hamburger SV, certificates, fun. NDS: 7 Speeldaag rund um den HSV, Zertifikaten, Spaaß.">
+<meta property="og:url" content="https://nosz.github.io/hsv/">
+<meta property="og:image" content="https://nosz.github.io/hsv/hsv_vorschau.jpg?v=1">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="HSV-Fanquiz: ein kleiner Dino mit blau-weißem Schal, Fußball und Sterne. Was weißt du über den HSV? What do you know about HSV? Wat weetst du över den HSV?">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HSV-Fanquiz von Nathalie und Norbert">
+<meta name="twitter:description" content="DE: 7 Spieltage rund um den Hamburger SV, Zertifikate, Humor. EN: 7 matchdays about Hamburger SV, certificates, fun. NDS: 7 Speeldaag rund um den HSV, Zertifikaten, Spaaß.">
+<meta name="twitter:image" content="https://nosz.github.io/hsv/hsv_vorschau.jpg?v=1">
+<style>
+:root{
+  --pri:#0b5cad;--pri-d:#0a4a8c;--pri-l:#e4eefa;--herobg:linear-gradient(135deg,#d6e6f8,#e8eaf3);
+  --bg:#f4f4f4;--card:#ffffff;--ink:#1f2026;--mute:#565860;--line:#e1e2e5;
+  --blue:#0d2d6b;--green:#1b7a3d;--gold:#ffc800;--gold-ink:#5a4500;--purple:#3f4b66;
+  --ok:#157a3a;--okbg:#e6f6ec;--bad:#b3261e;--badbg:#fdecea;
+  --shadow:0 4px 0 rgba(0,0,0,.08),0 8px 22px rgba(0,0,0,.08);
+  --r:20px;
+  --font:"Trebuchet MS","Segoe UI","Hiragino Maru Gothic ProN","Yu Gothic UI","Meiryo",system-ui,-apple-system,sans-serif;
+}
+:root[data-theme="dark"]{
+  --pri:#5aa9ef;--pri-d:#0b5cad;--pri-l:#14263f;--herobg:linear-gradient(135deg,#12294a,#1b1f2b);
+  --bg:#15161a;--card:#202228;--ink:#f1f2f4;--mute:#b4b6bd;--line:#34363e;
+  --blue:#7db7f5;--green:#5ccf86;--gold:#ffc800;--gold-ink:#ffe28a;--purple:#9fb0d6;
+  --ok:#5ccf86;--okbg:#17301f;--bad:#ff8a80;--badbg:#3a1d1b;
+  --shadow:0 4px 0 rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.35);
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --pri:#5aa9ef;--pri-d:#0b5cad;--pri-l:#14263f;--herobg:linear-gradient(135deg,#12294a,#1b1f2b);
+    --bg:#15161a;--card:#202228;--ink:#f1f2f4;--mute:#b4b6bd;--line:#34363e;
+    --blue:#7db7f5;--green:#5ccf86;--gold:#ffc800;--gold-ink:#ffe28a;--purple:#9fb0d6;
+    --ok:#5ccf86;--okbg:#17301f;--bad:#ff8a80;--badbg:#3a1d1b;
+    --shadow:0 4px 0 rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.6 var(--font);-webkit-text-size-adjust:100%}
+a{color:var(--blue)}
+button{font:inherit;cursor:pointer}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:10px;z-index:100}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+/* Kopf */
+.top{background:var(--pri);color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 3px 0 rgba(0,0,0,.18)}
+:root[data-theme="dark"] .top{background:#0a4a8c}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .top{background:#0a4a8c}}
+.topin{max-width:1060px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.15rem;letter-spacing:.2px;min-height:44px;background:none;border:0;padding:0}
+.brand .dot svg{width:24px;height:auto;display:block}.brand .dot{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--pri-d);display:grid;place-items:center;font-size:1.2rem;box-shadow:0 2px 0 rgba(0,0,0,.2)}
+.brand{text-align:left;line-height:1.2}.brand small{display:block;font-weight:800;font-size:.98rem;opacity:1;letter-spacing:.1px;margin-top:2px;line-height:1.25}
+.spacer{flex:1}
+.pill{background:rgba(0,0,0,.2);border-radius:999px;padding:6px 12px;font-weight:700;font-size:.9rem;white-space:nowrap}
+.lang{display:flex;gap:6px}
+.lang button,.theme{min-height:44px;min-width:44px;padding:6px 12px;border-radius:999px;border:2px solid rgba(255,255,255,.7);background:transparent;color:#fff;font-weight:700}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--pri-d)}
+.theme{font-size:1.1rem;padding:0;display:inline-flex;align-items:center;justify-content:center;line-height:1}.theme svg{display:block;flex:none}
+/* Layout */
+main{max-width:1060px;margin:0 auto;padding:20px 16px 24px;outline:none}
+.hero{background:var(--card);border-radius:28px;box-shadow:var(--shadow);padding:22px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;position:relative;overflow:hidden;border:2px solid var(--line)}
+.hero::before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:var(--herobg)}
+.hero>*{position:relative}
+.hero h1{margin:0 0 6px;font-size:clamp(1.5rem,4.5vw,2.2rem);line-height:1.2}
+.hero p{margin:0 0 12px;color:var(--mute)}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--bg);border:2px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:700}
+.chip.coin b{color:#3b2d00;background:var(--gold);border-radius:50%;width:22px;height:22px;display:grid;place-items:center;font-size:.8rem}
+.ring{--p:0;width:112px;height:112px;border-radius:50%;background:conic-gradient(var(--pri) calc(var(--p)*1%),var(--line) 0);display:grid;place-items:center;transition:background .6s}
+.ring span{width:84px;height:84px;border-radius:50%;background:var(--card);display:grid;place-items:center;font-weight:800;font-size:1.3rem}
+h2.sec{margin:28px 0 12px;font-size:1.3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.lcard{--c:var(--pri);text-align:left;background:var(--card);border:2px solid var(--line);border-top:8px solid var(--c);border-radius:var(--r);padding:16px;box-shadow:var(--shadow);color:var(--ink);display:flex;flex-direction:column;gap:6px;min-height:170px;transition:transform .18s,box-shadow .18s;animation:pop .5s both}
+.lcard:hover{transform:translateY(-4px) rotate(-.4deg)}
+.lcard:active{transform:translateY(1px)}
+.lcard .ico{font-size:2rem;line-height:1}
+.lcard h3{margin:0;font-size:1.08rem;line-height:1.3}
+.lcard p{margin:0;color:var(--mute);font-size:.92rem}
+.lcard .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:.9rem;color:var(--mute);font-weight:700}
+.stars{letter-spacing:2px;font-size:1.15rem}
+.stars .off{opacity:.3;filter:grayscale(1)}
+.nr{font-weight:800;color:var(--c)}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:10px 22px;border-radius:999px;border:0;background:var(--pri-d);color:#fff;font-weight:800;box-shadow:0 4px 0 rgba(0,0,0,.25);transition:transform .12s,box-shadow .12s;text-decoration:none}
+:root[data-theme="dark"] .btn{background:#d0101f}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{background:#d0101f}}
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.25)}
+.btn.ghost{background:var(--card)!important;color:var(--ink);border:2px solid var(--line);box-shadow:0 3px 0 rgba(0,0,0,.08)}
+.crumb{display:flex;gap:12px;flex-wrap:nowrap;align-items:center;margin:0 0 16px;min-width:0}
+.ctx{flex:1;min-width:0;color:var(--mute);font-weight:700;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.back{display:inline-flex;align-items:center;gap:4px;flex:none;min-height:44px;padding:8px 16px 8px 8px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);font-weight:800;box-shadow:0 3px 0 rgba(0,0,0,.08);transition:transform .12s}
+.back svg{color:var(--pri);flex:none}
+.back:hover{transform:translateX(-2px)}.back:active{transform:translateY(2px);box-shadow:none}
+/* Lektion */
+.lhead{display:flex;gap:14px;align-items:center;margin-bottom:14px}
+.lhead .big{font-size:3rem;animation:wob 2.4s ease-in-out infinite}
+@keyframes wob{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg) translateY(-4px)}}
+.lhead h1{margin:0;font-size:clamp(1.4rem,4.5vw,2rem);line-height:1.25}
+.lhead p{margin:0;color:var(--mute)}
+.card{background:var(--card);border:2px solid var(--line);border-radius:var(--r);padding:16px 18px;margin:0 0 14px;box-shadow:var(--shadow);animation:pop .5s both}
+.card h2{margin:0 0 6px;font-size:1.1rem}
+.card p{margin:0}
+.card .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--pri-d);color:#fff;font-weight:800;margin-right:8px;font-size:.9rem}
+.bubble{background:var(--gold);color:#3b2d00;border-radius:22px;padding:14px 18px;margin:18px 0 22px;font-weight:700;box-shadow:0 3px 10px rgba(0,0,0,.14);animation:pop .5s .25s both}
+:root[data-theme="dark"] .bubble{color:#2a2000}
+.bubble small{display:block;font-weight:800;letter-spacing:.5px;text-transform:uppercase;font-size:.75rem;margin-bottom:2px}
+details.pro{background:var(--card);border:2px dashed var(--c,var(--pri));border-radius:var(--r);padding:0;margin:0 0 14px}
+details.pro summary{min-height:48px;padding:12px 18px;font-weight:800;cursor:pointer;list-style:none;display:flex;gap:8px;align-items:center}
+details.pro summary::-webkit-details-marker{display:none}
+details.pro summary::before{content:"\1F3C6";font-size:1.2rem}
+details.pro[open] summary::before{content:"\2B50"}
+details.pro p{margin:0;padding:0 18px 16px}
+.src{font-size:.9rem;color:var(--mute);margin:16px 0}
+.src ul{margin:6px 0 0;padding-left:20px}
+.src li{margin:4px 0}
+.sticky{position:sticky;bottom:0;display:flex;justify-content:center;margin:28px -16px 0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line);box-shadow:0 -8px 18px rgba(0,0,0,.07);z-index:10}.next{margin:16px 0 0}.next .btn{width:100%;min-height:52px;font-size:1.05rem}.sticky .btn{width:100%;max-width:420px;min-height:52px;font-size:1.05rem}
+/* Quiz */
+.dots{display:flex;gap:6px;margin:0 0 16px}
+.dots i{flex:1;height:10px;border-radius:99px;background:var(--line);transition:background .3s}
+.dots i.on{background:var(--ok)}
+.dots i.no{background:var(--bad)}
+.dots i.cur{background:var(--blue)}
+.qq{font-size:clamp(1.15rem,3.8vw,1.5rem);line-height:1.35;margin:0 0 16px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;gap:12px;align-items:center;text-align:left;width:100%;min-height:56px;padding:12px 16px;border-radius:16px;border:2px solid var(--line);background:var(--card);color:var(--ink);box-shadow:0 3px 0 rgba(0,0,0,.08);transition:transform .12s,border-color .12s}
+.opt:hover:not(:disabled){border-color:var(--blue);transform:translateX(3px)}
+.opt .k{flex:none;width:32px;height:32px;border-radius:50%;background:var(--bg);border:2px solid var(--line);display:grid;place-items:center;font-weight:800;font-size:.9rem}
+.opt.right{background:var(--okbg);border-color:var(--ok);animation:hop .45s}
+.opt.wrong{background:var(--badbg);border-color:var(--bad);animation:shake .4s}
+.opt:disabled{cursor:default;color:var(--ink)}
+.opt.dim{opacity:.7}
+@keyframes hop{30%{transform:scale(1.03) translateY(-4px)}}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.fb{margin:16px 0 0;padding:14px 16px;border-radius:16px;font-weight:600}
+.fb.ok{background:var(--okbg);border:2px solid var(--ok)}
+.fb.bad{background:var(--badbg);border:2px solid var(--bad)}
+.fb b{display:block;margin-bottom:2px}
+.res{text-align:center;padding:10px 0}
+.res .bigstars{display:inline-block;font-size:2.6rem;line-height:1.3;letter-spacing:6px;color:#ffc800;background:#26272e;border-radius:999px;padding:2px 22px 0 28px;box-shadow:0 4px 0 rgba(0,0,0,.25)}
+.res .bigstars span{display:inline-block;animation:star .6s both}
+.res .bigstars span:nth-child(2){animation-delay:.2s}.res .bigstars span:nth-child(3){animation-delay:.4s}
+.res .bigstars .off{animation:none;color:#8a8c92}
+@keyframes star{from{transform:scale(0) rotate(-180deg)}to{transform:none}}
+.res h1{margin:6px 0}
+.row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+footer{max-width:1060px;margin:34px auto 0;padding:0 16px 40px;color:var(--mute);font-size:.88rem}
+footer p{margin:6px 0}
+.srccard{background:var(--card);border:2px solid var(--line);border-radius:var(--r);padding:14px 18px;margin:0 0 14px;box-shadow:var(--shadow)}
+.srch{display:flex;align-items:center;gap:10px;margin-bottom:10px}.srch .si{font-size:1.4rem;line-height:1}.srch b{font-size:1rem;color:var(--ink)}
+.srclist{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.srclist a{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:6px 14px;border-radius:999px;border:2px solid var(--line);background:var(--bg);color:var(--blue);font-weight:700;font-size:.9rem;text-decoration:none}
+.srclist a::after{content:"↗";font-weight:800}
+.srclist a:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.srclist a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.fcard{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:2px solid var(--line);border-radius:var(--r);padding:16px 20px;box-shadow:var(--shadow)}
+.fcard .fic{font-size:1.5rem;line-height:1.3;flex:none}
+.fcard p{margin:0 0 8px;line-height:1.55}.fcard p:last-child{margin-bottom:0}
+.fcard .ftrans{padding-top:8px;border-top:1px dashed var(--line)}
+footer .fver{text-align:center;margin:14px 0 0;font-size:.82rem}
+footer .fver span{display:inline-block;background:var(--card);border:2px solid var(--line);border-radius:999px;padding:4px 16px;font-weight:700}
+.conf{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:50}
+.conf i{position:absolute;top:-20px;width:10px;height:16px;border-radius:2px;animation:fall 2.2s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.9}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media(max-width:560px){
+  .brand{flex:1 1 0;min-width:0}.brand small{white-space:normal}.pill{display:none}.topin .lang{order:3;flex:1 1 100%}.lang button{flex:1;min-width:0}.spacer{display:none}.pill{margin-left:auto}.chip{padding:3px 11px;font-size:.84rem;min-height:40px}button.chip{min-height:40px}.stats{gap:8px}.hero::before{width:130px;height:130px;right:-46px;top:-46px;opacity:.75}.hero{padding:16px;gap:12px}.ring{width:72px;height:72px}.ring span{width:54px;height:54px;font-size:1rem}.hero p{font-size:.95rem}
+  .topin{padding:8px 12px}
+  main{padding:14px 12px 24px}
+}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 4px}
+.choices:has(.choice:only-child){grid-template-columns:1fr}
+.choice{display:flex;gap:14px;align-items:center;text-align:left;min-height:84px;padding:14px 20px;border-radius:22px;border:2px solid var(--line);background:var(--card);color:var(--ink);box-shadow:var(--shadow);transition:transform .15s;animation:pop .5s .1s both}
+.choice:hover{transform:translateY(-3px)}
+.choice .ci{font-size:2.2rem;line-height:1}
+.choice b{display:block;font-size:1.15rem}
+.choice small{display:block;font-size:.92rem;opacity:.92}
+.choice.pri{background:var(--pri-d);color:#fff;border-color:transparent}
+.ach{margin-top:10px;padding:10px 14px;border-radius:14px;background:var(--gold);color:#3b2d00;font-weight:800;animation:pop .5s both}
+.nameq{scroll-margin:90px 0 24px;background:var(--card);border:2px solid var(--line);border-radius:var(--r);padding:16px 18px;margin:14px 0 0;box-shadow:var(--shadow);display:grid;gap:6px;animation:pop .5s both}
+.nameq label{font-weight:800;font-size:1.1rem}
+.nameq small{color:var(--mute)}
+.nameq input{min-height:48px;font:inherit;font-size:1rem;padding:10px 14px;border-radius:14px;border:2px solid var(--line);background:var(--bg);color:var(--ink);margin-top:4px}
+.linkbtn{background:none;border:0;color:var(--blue);font-weight:800;text-decoration:underline;min-height:44px;padding:6px 8px}
+.qp{margin:0 0 6px;font-weight:800;color:var(--blue)}
+button.chip{font:inherit;font-weight:700;color:var(--ink);cursor:pointer;min-height:40px}
+.nlink{display:inline-flex;align-items:center;min-height:44px;font-weight:800;color:var(--blue)}
+.pitch{text-align:center;color:var(--mute);margin:10px 0 0;font-weight:700}
+@media(max-width:560px){.choices{grid-template-columns:1fr}.res .row,.main>.row{flex-direction:column;align-items:stretch}.res~.row{flex-direction:column;align-items:stretch}.res~.row .btn,.certbox~.row .btn{width:100%}}.top{padding-top:env(safe-area-inset-top)}
+.snack{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;max-width:520px;margin:0 auto;background:#26272e;color:#fff;border-radius:16px;padding:12px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35);animation:pop .4s both}
+.snack span{flex:1;font-weight:700}
+.snack button{min-height:44px;padding:8px 16px;border-radius:999px;border:0;background:#ffc800;color:#3b2d00;font-weight:800}
+.instcard{background:var(--card);border:2px solid var(--line);border-radius:var(--r);padding:14px 18px;margin:26px 0 0;box-shadow:var(--shadow);display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.instcard .ii{font-size:1.8rem}.instcard div{flex:1;min-width:200px}.instcard b{display:block}.instcard small{color:var(--mute)}
+@media(max-width:560px){.brand small{font-size:.9rem}}
+.spruch{background:var(--card);border:2px solid var(--line);border-left:8px solid var(--pri);border-radius:var(--r);padding:12px 18px 16px;margin:18px 0 0;box-shadow:var(--shadow)}
+.spruch h2.sec{margin:4px 0 8px;font-size:1.1rem}.spruch .stag{margin:0;font-weight:800;color:var(--pri)}.spruch .stxt{margin:4px 0 12px;font-size:1.05rem;font-weight:600}
+.byline{background:var(--pri-l);color:var(--ink);text-align:center;font-weight:700;font-size:.85rem;padding:7px 12px;border-bottom:2px solid var(--line)}
+.stats{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;margin-top:2px;grid-column:1/-1}
+.stat{background:var(--bg);border:2px solid var(--line);border-radius:14px;padding:8px 10px;min-width:0}
+.stat .sv{display:block;font-weight:800;font-size:.98rem;line-height:1.25;overflow-wrap:anywhere}
+.stat .sl{display:block;font-size:.78rem;color:var(--mute);font-weight:700;margin-top:2px}
+.namebtn{grid-column:1/-1;justify-self:start;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:6px 16px;border-radius:999px;border:2px solid var(--blue);background:var(--card);color:var(--blue);font-weight:800;font-size:.92rem;text-decoration:none;max-width:100%}.namebtn span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.namebtn:hover{background:var(--blue);color:#fff}
+.herobar{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px}
+html{scroll-padding-top:calc(var(--hh,70px) + var(--nh,0px) + 10px)}
+.stickynav{position:sticky;top:var(--hh,70px);z-index:15;background:var(--bg);padding:8px 0 4px;margin:0 0 12px;border-bottom:1px solid transparent;transition:box-shadow .2s,border-color .2s}
+.stickynav.stuck{border-bottom-color:var(--line);box-shadow:0 10px 16px -12px rgba(0,0,0,.35)}
+.stickynav .crumb{margin:0 0 8px}.stickynav .steps{margin:0 0 6px}
+.ctxs{display:none}
+.fhome{display:flex;justify-content:center;margin:0 0 14px}.fhome .btn{gap:10px;min-width:min(100%,320px)}
+.qrow{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.qcount{margin:0;color:var(--mute);font-weight:700;font-size:.92rem}
+.stickynav .dots{margin:0;flex:1 1 90px;min-width:90px}.stickynav .qrow{flex-wrap:nowrap}.stickynav .qcount{flex:none}
+.mobonly{display:none}
+@media (max-width:560px){
+  .mobonly{display:inline}
+  .stickynav:has(.steps){display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 8px}
+  .stickynav:has(.steps) .crumb{margin:0;flex:0 1 auto;min-width:0}
+  .stickynav:has(.steps) .crumb .ctxs{display:inline;flex:none;font-weight:700;font-size:.86rem;color:var(--mute)}
+  .stickynav:has(.steps) .crumb{gap:8px}
+  .stickynav:has(.steps) .crumb .ctx,.stickynav .steps li:not(.cur) .sl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .stickynav .steps{margin:0;gap:6px;flex-wrap:nowrap;flex:0 0 auto}
+  .stickynav .steps li{font-size:.84rem}
+  .stickynav .steps .si{padding:3px 10px 3px 4px}
+  .stickynav .steps li:not(.cur) .si{padding:3px 8px 3px 6px;width:auto;min-width:40px;justify-content:center}
+  .stickynav .steps li:not(.cur){min-width:44px;justify-content:center}
+  .stickynav .qrow{flex:1 1 100%}
+}
+@media print{.stickynav{position:static;box-shadow:none}}
+@media (max-width:480px){.herobar{gap:6px}.herobar .namebtn{padding:6px 10px;gap:6px;font-size:.84rem}.herobar .bpre{display:none}}
+.shdlg{border:2px solid var(--line);border-radius:var(--r);padding:18px;background:var(--card);color:var(--ink);box-shadow:0 12px 40px rgba(0,0,0,.35);width:min(92vw,460px);max-width:none}.shdlg::backdrop{background:rgba(0,0,0,.5)}.shdlg .shx{float:right;min-height:44px;min-width:44px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);font-size:1.1rem}.sharecard{margin:0}
+.sharecard .sh{display:flex;gap:14px;align-items:center}.sharecard .si{font-size:1.8rem}.sharecard b{display:block}.sharecard small{color:var(--mute)}
+.sharerow{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.sharerow .btn{min-height:44px;padding:8px 16px;font-size:.92rem}.sharerow .btn.ghost{box-shadow:none}
+h2.secrow{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+h2.secrow .cnt{font-size:.9rem;color:var(--mute);font-weight:700}
+.lcard.nextup{box-shadow:0 0 0 3px var(--pri),var(--shadow)}
+.lcard.done .nr::after{content:" ✓";color:var(--ok)}
+@media(max-width:560px){
+ .grid{grid-template-columns:1fr;gap:10px}
+ .lcard{display:grid;grid-template-columns:44px 1fr auto;grid-template-areas:"ico title foot" "ico sub foot";column-gap:12px;row-gap:2px;align-items:center;min-height:78px;padding:12px 14px;border-top:2px solid var(--line);border-left:8px solid var(--c)}
+ .lcard:hover{transform:none}
+ .lcard .ico{grid-area:ico;font-size:1.9rem;text-align:center}
+ .lcard .nr{display:none}
+ .lcard h3{grid-area:title;font-size:1rem}
+ .lcard p{grid-area:sub;font-size:.84rem}
+ .lcard .foot{grid-area:foot;flex-direction:column;align-items:flex-end;gap:2px;margin:0;font-size:.8rem}
+ .stats{grid-template-columns:1.6fr 1fr 1fr;gap:6px}.stat{padding:7px 8px}
+}
+@media print{.byline{display:none}}
+.certbox{background:var(--card);border:2px solid var(--line);border-radius:var(--r);padding:10px;box-shadow:var(--shadow);margin:14px 0;animation:pop .5s both}
+.certbox svg{display:block;width:100%;height:auto;border-radius:12px}
+.field{display:grid;gap:6px;margin:14px 0}
+.field label{font-weight:800}
+.field input{min-height:48px;font:inherit;font-size:1rem;padding:10px 14px;border-radius:14px;border:2px solid var(--line);background:var(--card);color:var(--ink)}
+.certlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.certlist .btn{justify-content:flex-start;text-align:left;border-radius:16px;min-height:52px;width:100%}
+.steps{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 16px}
+.steps li{display:flex;border-radius:999px;background:var(--card);border:2px solid var(--line);font-weight:800;font-size:.9rem;color:var(--mute);overflow:hidden}
+.steps .si{display:flex;align-items:center;gap:8px;padding:5px 14px 5px 6px;min-height:40px;width:100%;background:none;border:0;font:inherit;color:inherit;text-align:left}
+.steps button.si{cursor:pointer;transition:background .15s}.steps button.si:hover:not(:disabled){background:rgba(0,0,0,.06)}
+.steps button.si:focus-visible{outline-offset:-4px;border-radius:999px}
+.steps .sn{display:grid;place-items:center;width:28px;height:28px}.steps .sn svg{width:16px;height:16px;display:block}
+.steps li.lock{border-style:dashed}.steps li.lock button.si{cursor:not-allowed}
+.steps .sn{width:24px;height:24px;border-radius:50%;background:var(--line);color:var(--ink);display:grid;place-items:center;font-size:.8rem}
+.steps li.cur{border-color:var(--pri);color:var(--ink)}
+.steps li.cur .sn{background:var(--pri-d);color:#fff}
+.steps li.done .sn{background:var(--ok);color:#fff}
+.donecard{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;background:var(--card);border:2px solid var(--ok);border-radius:var(--r);padding:14px 18px;margin:0 0 16px;box-shadow:var(--shadow)}
+.donecard .dc-i{font-size:2rem;line-height:1}
+.donecard .dc-t{flex:1 1 220px;min-width:0}.donecard b{display:block;font-size:1.08rem}.donecard small{display:block;color:var(--mute);margin:2px 0 4px}
+.donecard .row{margin:0;justify-content:flex-start}
+.lcell{display:flex;flex-direction:column;gap:8px}.lcell .lcard{flex:1}
+.certbar{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border-radius:14px;border:2px solid var(--ok);background:var(--card);color:var(--ink);font-weight:800;box-shadow:0 3px 0 rgba(0,0,0,.08);transition:background .15s,color .15s}
+.certbar:hover{background:var(--ok);color:#fff}
+.ncard{display:flex;align-items:center;gap:14px;margin:24px 0 0;padding:14px 18px;border-radius:var(--r);border:2px solid var(--line);border-left:8px solid var(--blue);background:var(--card);color:var(--ink);box-shadow:var(--shadow);text-decoration:none;transition:transform .15s,border-color .15s}
+.ncard:hover{transform:translateY(-2px);border-color:var(--blue)}
+.ncard:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.ncard .ci{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--bg);font-size:1.6rem;line-height:1}
+.ncard .nt{flex:1;min-width:0}
+.ncard b{display:block;font-size:1.05rem;line-height:1.3}
+.ncard small{display:block;color:var(--mute);font-weight:600;margin-top:2px}
+.ncard .ar{flex:none;color:var(--blue);font-size:1.5rem;font-weight:800;transition:transform .15s}
+.ncard:hover .ar{transform:translateX(4px)}
+.sticky.two{gap:10px}.sticky.two .btn{width:auto;max-width:none;flex:1;min-width:0}.sticky.two .btn:first-child{flex:2}
+.nlinks{grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}.nlinks .btn{gap:12px;padding:12px 16px;font-size:.95rem;align-items:center}.nlinks .btn>span:first-child{flex:none;font-size:1.4rem}.nlinks .btn>span:last-child{min-width:0;overflow-wrap:anywhere;hyphens:auto}.nlinks .btn small{font-size:.82rem;margin-top:2px}
+.btn.mastercard{background:#ffc800!important;color:#3b2d00;border:0;box-shadow:0 4px 0 rgba(0,0,0,.2)}
+@page{size:A4 landscape;margin:8mm}
+@media print{body{background:#fff}main>*:not(.certbox){display:none!important}.certbox{box-shadow:none;border:0;padding:0;margin:0}footer{display:none}}
+.install-cta{display:flex;align-items:center;gap:12px;width:100%;margin:14px 0 0;padding:12px 14px;text-align:left;border-radius:var(--r);border:2px solid var(--pri);background:var(--pri-l);color:var(--ink);box-shadow:var(--shadow);cursor:pointer;font:inherit;min-height:48px}
+.install-cta:hover{border-color:var(--pri-d)}.install-cta:focus-visible{outline:3px solid var(--pri);outline-offset:2px}
+.install-cta .ic-ico{flex:none;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;background:var(--card)}
+.install-cta .ic-text{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.install-cta .ic-text b{font-size:1rem;line-height:1.3}.install-cta .ic-text small{font-size:.85rem;color:var(--mute);line-height:1.35}.install-cta .ic-go{flex:none;font-weight:800;color:var(--pri-d)}
+.instol{margin:10px 0 0;padding-left:22px}.instol li{margin:8px 0}
+.runner{position:fixed;left:0;top:0;width:39px;height:48px;z-index:40;pointer-events:none;will-change:transform}
+.runner svg{display:block;width:100%;height:100%;animation:runbob .22s steps(2) infinite}
+.runner.stand svg{animation-play-state:paused}
+@keyframes runbob{0%{transform:translateY(0)}100%{transform:translateY(-3px)}}
+.runbub{--zp:50%;position:fixed;z-index:41;pointer-events:none;background:#fff;color:#222;border:2.5px solid var(--pri);border-radius:18px;padding:8px 14px;font-family:inherit;font-weight:800;font-size:.88rem;line-height:1.3;width:max-content;max-width:min(80vw,300px);box-shadow:0 4px 14px rgba(0,0,0,.2),0 1px 0 rgba(0,0,0,.08);animation:pop .3s both}
+.runbub::before{content:"";position:absolute;width:13px;height:13px;background:#fff;border:2.5px solid var(--pri);transform:translate(-50%,-50%) rotate(45deg);border-radius:0 0 4px 0}
+.runbub.zu::before{left:var(--zp);top:100%;border-top:0;border-left:0}
+.runbub.zo::before{left:var(--zp);top:0;border-bottom:0;border-right:0;border-radius:4px 0 0 0}
+.runbub.zl::before{left:0;top:var(--zp);border-top:0;border-right:0;border-radius:0 0 0 4px}
+.runbub.zr::before{left:100%;top:var(--zp);border-bottom:0;border-left:0;border-radius:0 4px 0 0}
+.runprop{position:absolute;left:48px;top:6px;font-size:26px;line-height:1;animation:runbob .22s steps(2) infinite}
+.runner.stern svg{animation:runbob .22s steps(2) infinite,sternfarbe .5s linear infinite}
+@keyframes sternfarbe{from{filter:hue-rotate(0deg) saturate(2) brightness(1.3)}to{filter:hue-rotate(360deg) saturate(2) brightness(1.3)}}
+.runprop.ballon,.runprop.traeger{left:4px;top:-32px}
+.runfass{position:fixed;bottom:0;width:64px;height:62px;z-index:42;pointer-events:none;background:repeating-linear-gradient(90deg,#8a5a2b 0 10px,#6b4220 10px 12px,#a06a35 12px 22px);border:3px solid #4a2c12;border-bottom:0;border-radius:20px 20px 0 0}
+.runfass::before,.runfass::after{content:"";position:absolute;left:-3px;right:-3px;height:7px;background:#4d5258;border-radius:2px}.runfass::before{top:12px}.runfass::after{top:38px}
+.runcoin{position:fixed;left:0;top:0;font-size:26px;line-height:1;z-index:39;pointer-events:none}
+@keyframes nudge{0%,100%{box-shadow:0 0 0 0 rgba(11,92,173,0)}50%{box-shadow:0 0 0 9px rgba(11,92,173,.4)}}
+.nameq.nudge,.namebtn.nudge{animation:nudge .9s ease-in-out 4}
+@media print{.runner,.runbub,.runcoin,.runfass,.install-cta{display:none}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{.top,.sticky,.lang{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" id="skip">Zum Inhalt</a>
+<header class="top"><div class="topin">
+  <button type="button" class="brand" id="brand" aria-label="HSV-Fanquiz"><span class="dot" aria-hidden="true"></span><span><span id="bt">HSV-Fanquiz</span><small id="bs"></small></span></button>
+  <span class="spacer"></span>
+  <span class="pill" id="coins" aria-live="polite"></span>
+  <div class="lang" role="group" id="langs"></div>
+  <button type="button" class="theme" id="share" aria-label="Teilen"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"/></svg></button>
+  <button type="button" class="theme" id="theme" aria-label="Hell/Dunkel">◐</button>
+</div></header>
+<main id="main" tabindex="-1"></main>
+<footer id="foot"></footer>
+<div id="live" class="sr" aria-live="polite"></div>
+<script>
+"use strict";
+const VERSION = "1.0.0", STAND = "18.10.2026";
+const LANGS = [["de","DE","Deutsch"],["en","EN","English"],["nds","PLATT","Plattdüütsch"]];
+const KEY = "hsv_fanquiz_v1";
+let li = 0, prog = {}, nm = "", ach = {}, view = {v:"home"};
+try{ const s = JSON.parse(localStorage.getItem(KEY) || "{}"); prog = s.prog || {}; nm = s.name || ""; ach = s.ach || {}; li = Math.max(0, LANGS.findIndex(l => l[0] === s.lang)); if(!s.lang){ const n = (navigator.language||"de").slice(0,2); li = Math.max(0, LANGS.findIndex(l => l[0] === n)); } }catch(e){}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify({prog, name:nm, ach, lang:LANGS[li][0]})); }catch(e){} }
+
+/* ---------- Oberflächentexte [DE, EN, NDS] ---------- */
+const S = {
+ title:["HSV-Fanquiz","HSV Fan Quiz","HSV-Fanquiz"],
+ sub:["Inoffizielles Fan-Projekt","Unofficial fan project","Inoffizielles Fan-Projekt"],
+ hello:["Moin! Was weißt du über den HSV?","Hey! How much do you know about HSV?","Moin! Wat weetst du över den HSV?"],
+ intro:["In 20 Minuten vom Bankdrücker zum Bundesliga-Dino. Für Neulinge, Dauerkartenbesitzer und alle im Block.","In 20 minutes from benchwarmer to Bundesliga dino. For newcomers, season-ticket holders and everyone in the stand.","In 20 Minuten vun'n Bankdrücker to'n Bundesliga-Dino. För Nieglingen, Dauerkartenhölers un all in'n Block."],
+ newB:["Ich bin neu im Volkspark","I'm new to the Volkspark","Ik bün nie in'n Volkspark"],
+ newS:["Dein erstes Zertifikat in 60 Sekunden","Your first certificate in 60 seconds","Dien eerst Zertifikat in 60 Sekunnen"],
+ oldB:["Ich bin schon ewig Fan","I've been a fan forever","Ik bün al ewig Fan"],
+ oldS:["Teste dich gleich in der Bossrunde","Take on the boss round right away","Prööv di glieks in de Bossrunn"],
+ achFirst:["Erfolg freigeschaltet: Erster Treffer! Das fühlt sich an wie ein Tor in der 90. Minute.","Achievement unlocked: first hit! That feels like a goal in the 90th minute.","Erfolg free: Eerst Treffer! Dat föhlt sik an as een Dör in de 90. Minüt."],
+ certNow:["Dein Zertifikat ist fertig. Name eintragen, speichern, im Fanblock zeigen!","Your certificate is ready. Add your name, save it, show it off in the stand!","Dien Zertifikat is klaar. Naam indragen, spiekern, in'n Fanblock wiesen!"],
+ nSec:["Mehr vom HSV","More from HSV","Mehr vun'n HSV"],
+ nSite:["Offizielle Vereinsseite","Official club website","Offiziell Vereinsssiet"],
+ nHist:["Die Geschichte des HSV (hsv.de)","The history of HSV (hsv.de)","De Geschicht vun'n HSV (hsv.de)"],
+ nCorp:["Das Volksparkstadion (hsv.de)","The Volksparkstadion (hsv.de)","Dat Volksparkstadion (hsv.de)"],
+ nExt:["öffnet im gleichen Tab","opens in the same tab","geiht in'n glieken Tab op"],
+ nameQ:["Wie dürfen wir dich im Fanblock nennen?","What should we call you in the stand?","Woans dröff wi di in'n Fanblock nömen?"],
+ nameSub:["Für Begrüßung, Quiz und Zertifikat. Dein Name bleibt auf diesem Gerät.","For greetings, quiz and certificate. Your name stays on this device.","För Gröten, Quiz un Zertifikat. Dien Naam blifft op dit Gerät."],
+ nameP2:["Dein Name oder Fan-Name","Your name or fan nickname","Dien Naam oder Fan-Naam"],
+ nameOk:["Das bin ich","That's me","Dat bün ik"],
+ nameSkip:["Lieber anonym bleiben","Stay anonymous","Leever anonym blieven"],
+ nameChange:["Name ändern","Change name","Naam ännern"],
+ nameAdd:["Name eintragen","Add your name","Naam indragen"],
+ shT:["App weitergeben","Share this app","App wiedergeven"],
+ shS:["Schick den Link an Freunde, Familie oder dein Team.","Send the link to friends, family or your team.","Schick den Link an Frünnen, Familie oder dien Team."],
+ shX:["Schließen","Close","Dichtmaken"],
+ shWa:["WhatsApp","WhatsApp","WhatsApp"],
+ shMail:["E-Mail","Email","E-Mail"],
+ shCopy:["Link kopieren","Copy link","Link kopeern"],
+ shCopied:["Link kopiert","Link copied","Link kopeert"],
+ shFail:["Kopieren nicht möglich. Link bitte markieren und kopieren.","Could not copy. Please select and copy the link.","Kopeern geiht nich. Link bitte markeern un kopeern."],
+ shMsg:["Probier mal das HSV-Fanquiz: ein kostenloses Quiz-Lernspiel rund um den Hamburger SV. Läuft im Browser, ohne Anmeldung.","Try the HSV Fan Quiz: a free quiz game about Hamburger SV. Runs in your browser, no sign-up.","Prööv mal dat HSV-Fanquiz: een gratis Quiz-Lernspeel rund um den Hamborger SV. Löppt in'n Browser, ahn Anmellen."],
+ shSubj:["HSV-Fanquiz: kostenloses Quiz","HSV Fan Quiz: free quiz","HSV-Fanquiz: gratis Quiz"],
+ helloN:["Moin {n}! Was weißt du über den HSV?","Hey {n}! How much do you know about HSV?","Moin {n}! Wat weetst du över den HSV?"],
+ greetN:["Schön, dich im Fanblock zu sehen, {n}. Das erste Fischbrötchen gibt's nach dem Quiz.","Great to see you in the stand, {n}. The first fish roll comes after the quiz.","Schöön, di in'n Fanblock to sehn, {n}. Dat eerste Fischbrötchen gifft dat na dat Quiz."],
+ qFirst:["Anpfiff, {n}!","Kick-off, {n}!","Anpiff, {n}!"],
+ qLast:["Letzte Frage, {n}: Das ist der Elfmeter.","Last question, {n}: this is the penalty.","Letzt Fraag, {n}: Dat is de Elfmeter."],
+ passN:["Spiel gewonnen, {n}!","Match won, {n}!","Speel wunnen, {n}!"],
+ tryN:["Knapp, {n}! Nochmal in die Verlängerung?","Close, {n}! Another go in extra time?","Knapp, {n}! Noch mal in de Verlängerung?"],
+ gateT:["Kurze Halbzeitpause vor dem Quiz!","Quick half-time break before the quiz!","Kört Halvtietpaus vör dat Quiz!"],
+ gateS:["Wie heißt du eigentlich? Dann wird dein Zertifikat gleich viel persönlicher. Der Name bleibt auf diesem Gerät.","What's your name? It makes your certificate much more personal. Your name stays on this device.","Woans heetst du eentlich? Denn warrt dien Zertifikat glieks veel persöönlicher. De Naam blifft op dit Gerät."],
+ gateGo:["Los geht's","Let's go","Los geiht dat"],
+ gateSkip:["Weiter ohne Namen","Continue without a name","Wieder ahn Naam"],
+ by:["von den HSV-Fans Nathalie und Norbert","by the HSV fans Nathalie and Norbert","vun de HSV-Fans Nathalie un Norbert"],
+ introH:["In 20 Minuten vom Bankdrücker zum Bundesliga-Dino. Für Neue, Dauerkarten-Profis und den ganzen Block.","In 20 minutes from benchwarmer to Bundesliga dino. For newcomers, season-ticket pros and the whole stand.","In 20 Minuten vun'n Bankdrücker to'n Bundesliga-Dino. För Nie, Dauerkarten-Profis un den ganzen Block."],
+ instT:["Als App installieren","Install as an app","As App installeern"],
+ instS:["Startet wie eine App und läuft auch ohne Internet.","Opens like an app and works without internet.","Start as een App un löppt ok ahn Internet."],
+ instB:["Installieren","Install","Installeern"],
+ instIos:["Auf dem iPhone: Teilen-Symbol antippen, dann „Zum Home-Bildschirm“.","On iPhone: tap the Share icon, then “Add to Home Screen”.","Op't iPhone: Delen-Symbol anticken, denn „Toon Home-Bildschirm“."],
+ instHow:["So geht’s","How to","So geiht dat"],
+ instCta:["Mir gefällt die App, ich möchte sie installieren","I like the app, I want to install it","Mi gefallt de App, ik much se installeern"],
+ instCtaS:["Ein Tipp, und sie liegt auf deinem Startbildschirm. Gratis, auch ohne Internet.","One tap and it sits on your home screen. Free, and it works offline too.","Een Tipp, un se liggt op dien Startbildschirm. Gratis, ok ahn Internet."],
+ instIosT:["App auf dem iPhone installieren","Install the app on iPhone","App op't iPhone installeern"],
+ instI1:["Tippe in Safari auf das Teilen-Symbol (Quadrat mit Pfeil nach oben, in der unteren oder oberen Leiste).","In Safari, tap the Share icon (square with an arrow pointing up, in the bottom or top bar).","Tipp in Safari op dat Delen-Symbol (Quadrat mit Pyl na baven, in de ünnere oder bovere Liest)."],
+ instI2:["Scrolle im Menü und wähle „Zum Home-Bildschirm“.","Scroll the menu and choose “Add to Home Screen”.","Scroll in't Menü un wähl „Toon Home-Bildschirm“."],
+ instI3:["Tippe oben rechts auf „Hinzufügen“. Danach startet das HSV-Fanquiz wie eine App.","Tap “Add” at the top right. The HSV Fan Quiz then opens like an app.","Tipp baven rechts op „Hentofögen“. Dorna start dat HSV-Fanquiz as een App."],
+ instINote:["Hinweis: Gemeint ist das Teilen-Symbol von Safari, nicht ein Symbol in der App.","Note: this is Safari’s Share icon, not an icon inside the app.","Henwies: Meent is dat Delen-Symbol vun Safari, nich een Symbol in de App."],
+ instMenuT:["App installieren","Install the app","App installeern"],
+ instMenu:["Öffne das Browser-Menü (⋮) und wähle „App installieren“ oder „Zum Startbildschirm hinzufügen“. Am Computer findest du das Installieren-Symbol auch in der Adressleiste.","Open the browser menu (⋮) and choose “Install app” or “Add to Home screen”. On a computer you also find the install icon in the address bar.","Maak dat Browser-Menü (⋮) op un wähl „App installeern“ oder „Toon Startbildschirm hentofögen“. Op'n Computer finnst du dat Installeern-Symbol ok in de Adressliest."],
+ instCancel:["Installation abgebrochen? Kein Problem, du kannst jederzeit neu starten.","Installation cancelled? No problem, you can start again any time.","Installatschoon afbraken? Keen Problem, du kannst jümmer nee starten."],
+ updT:["Neue Version verfügbar","New version available","Nee Version doar"],
+ updB:["Aktualisieren","Update","Updaten"],
+ offT:["Bereit für den Offline-Betrieb ✓","Ready for offline use ✓","Praat för ahn Internet ✓"],
+ spruchT:["Fanblock-Spruch & Fakt","Fan block saying & fact","Fanblock-Spröök & Fakt"],
+ spruchB:["Noch einer!","Another one!","Noch een!"],
+ spruchG:["😄 Fanblock-Spruch","😄 Fan block saying","😄 Fanblock-Spröök"],
+ spruchF:["🧠 Wusstest du?","🧠 Did you know?","🧠 Hest du dat weten?"],
+ moreN:["Mehr vom HSV entdecken","Discover more about HSV","Mehr vun'n HSV entdecken"],
+ contB:["Weiter geht's","Keep going","Wieder geiht dat"],
+ pitch:["Auch große Vereine fangen klein an: 1887 mit dem Zusammenschluss zweier Hamburger Clubs.","Even big clubs start small: in 1887 with the merger of two Hamburg clubs.","Ok grote Vereene fangt lütt an: 1887 mit den Tohoopsluss vun twee Hamborger Clubs."], lessons:["Deine Spieltage","Your matchdays","Dien Speeldaag"],
+ min:["Min.","min","Min."],
+ done:["gespielt","played","speelt"],
+ rank:["Dein Rang","Your rank","Dien Rang"],
+ coins:["Tore","goals","Dören"],
+ starsOf:["Sterne","stars","Steerns"],
+ start:["Anpfiff","Kick-off","Anpiff"],
+ cont:["Nochmal spielen","Play again","Noch mal speeln"],
+ back:["Startseite","Home","Startsiet"],
+ toHome:["Zur Startseite","Back to start","To de Startsiet"],
+ backL:["Zum Spieltag","Back to matchday","To'n Speeldaag"],
+ intro2:["Kurz & knackig","Short & sweet","Kört & knackig"],
+ pro:["Für Kenner: Fanblock-Wissen","For connoisseurs: fan block knowledge","För Kenners: Fanblock-Weten"],
+ fun:["Halbzeit-Gag","Half-time joke","Halvtiet-Spaaß"],
+ src:["Quellen (Stand 18.10.2026)","Sources (as of 18 Oct 2026)","Quellen (Stand 18.10.2026)"],
+ quiz:["Quiz starten","Start quiz","Quiz starten"],
+ qof:["Frage","Question","Fraag"],
+ of:["von","of","vun"],
+ next:["Weiter","Next","Wieder"],
+ finish:["Ergebnis ansehen","See result","Ergebnis ankieken"],
+ correct:["Richtig!","Correct!","Rieklig!"],
+ wrong:["Knapp daneben!","Not quite!","Knapp vörbi!"],
+ solution:["Richtig wäre:","The right answer is:","Rieklig weer:"],
+ res:["Ergebnis","Result","Ergebnis"],
+ pass:["Spiel gewonnen!","Match won!","Speel wunnen!"],
+ tryAgain:["Fast! Nochmal in die Verlängerung?","Almost! Another go in extra time?","Fast! Noch mal in de Verlängerung?"],
+ retry:["Quiz wiederholen","Retry quiz","Quiz wiederhalen"],
+ nextL:["Nächster Spieltag","Next matchday","Negsten Speeldaag"],
+ over:["Zur Übersicht","To overview","To de Översicht"],
+ reset:["Fortschritt zurücksetzen","Reset progress","Fortgang torüchsetten"],
+ resetQ:["Fortschritt wirklich löschen?","Really delete your progress?","Fortgang würklich wegmaken?"],
+ allDone:["Alle Spieltage gemeistert – du bist offiziell ein HSV-Experte (inoffiziell).","All matchdays mastered – you are officially an HSV expert (unofficially).","All Speeldaag meistert – du büst offiziell een HSV-Expert (inoffiziell)."],
+ disc:["Inoffizielles Fan-Projekt der HSV-Fans Nathalie und Norbert ohne Verbindung zum Hamburger SV. Hamburger SV und alle genannten Namen und Marken gehören ihren jeweiligen Inhabern; es werden kein Vereinswappen, keine Logos und keine Originalbilder verwendet. Alle Fakten stammen von hsv.de (Stand 18.10.2026) und können sich ändern.","Unofficial fan project by the HSV fans Nathalie and Norbert, not affiliated with Hamburger SV. Hamburger SV and all names and trademarks mentioned belong to their respective owners; no club crest, logos or original images are used. All facts come from hsv.de (as of 18 October 2026) and may change.","Inoffizielles Fan-Projekt vun de HSV-Fans Nathalie un Norbert, ahn Verbinnung to'n Hamborger SV. Hamborger SV un all nöömten Nöms un Marken höört ehr Inhabers; dor warrt keen Vereenswappen, keen Logos un keen Originalbiller bruukt. All Fakten kaamt vun hsv.de (Stand 18.10.2026) un köönt sik ännern."],
+ trans:["Hinweis: Die plattdeutschen Texte sind liebevoll gemeint und keine Rechtschreibnorm; Platt-Profis dürfen gern korrigieren.","Note: the Low German texts are meant playfully, not as a spelling standard; Platt pros are welcome to correct them.","Henwies: De plattdüütschen Texten sünd leevlich meent, keen Rechtschriefnorm; Platt-Profis dröfft geern korrigeern."],
+ skip:["Zum Inhalt","Skip to content","To'n Inhalt"],
+ ver:["Version","Version","Version"],
+ themeL:["Farbschema wechseln","Switch colour scheme","Farvschema wesseln"],
+ certBtn:["Zertifikat holen","Get your certificate","Zertifikat halen"],
+ certs:["Deine Zertifikate","Your certificates","Dien Zertifikaten"],
+ certBtnPre:["Meine ","My ","Mien "],
+ certBtnMain:["Zertifikate","certificates","Zertifikaten"],
+ certsHint:["Jedes gewonnene Spiel gibt eine Urkunde für die Fan-Wand. Alle sieben geben das Meister-Zertifikat.","Every match won earns a certificate for the fan wall. All seven earn the Master certificate.","Elk wunnen Speel gifft een Urkunn för de Fan-Wand. All söven geevt dat Meister-Zertifikat."],
+ master:["Meister-Zertifikat","Master certificate","Meister-Zertifikat"],
+ nameL:["Dein Name für die Urkunde","Your name for the certificate","Dien Naam för de Urkunn"],
+ nameP:["Dein Name hier – sei stolz darauf!","Your name here – be proud of it!","Dien Naam hier – wees stolt dorop!"],
+ dl:["Als Bild speichern (PNG)","Save as image (PNG)","As Bild spiekern (PNG)"],
+ prt:["Drucken","Print","Drucken"],
+ certOf:["Zertifikat","Certificate","Zertifikat"],
+ stRead:["Lesen","Read","Lesen"],
+ stQuiz:["Quiz","Quiz","Quiz"],
+ stCert:["Zertifikat","Certificate","Zertifikat"],
+ stLock:["Erst das Quiz bestehen","Pass the quiz first","Eerst dat Quiz bestahn"],
+ lessonN:["Lektion {a} von {b}","Lesson {a} of {b}","Lektschoon {a} vun {b}"],
+ dTitle:["Geschafft! Dein Zertifikat ist fertig.","Cleared! Your certificate is ready.","Schafft! Dien Zertifikat is klaar."],
+ dSub:["Du kannst es ansehen, speichern oder drucken. Mit „Nochmal spielen“ holst du dir mehr Sterne.","View, save or print it. “Play again” lets you earn more stars.","Du kannst dat ankieken, spiekern oder drucken. Mit „Noch mal speeln“ kriegst du mehr Steerns."],
+ certView:["Zertifikat ansehen","View certificate","Zertifikat ankieken"],
+ certAll:["Alle Zertifikate","All certificates","All Zertifikaten"],
+ certMasterBadge:["Alle 7 Spieltage gewonnen!","All 7 matchdays won!","All 7 Speeldaag wunnen!"]
+};
+const RANKS = [
+ [0,["Bankdrücker","Benchwarmer","Bankdrücker"]],
+ [3,["Stammspieler","Regular starter","Stammspeler"]],
+ [8,["Torjäger","Top scorer","Dörenjäger"]],
+ [14,["Kapitän","Captain","Kaptein"]],
+ [20,["Bundesliga-Dino","Bundesliga dino","Bundesliga-Dino"]]
+];
+const OKS = [
+ ["Tooor! Und der Fanblock jubelt.","Goal! And the stand erupts.","Tooor! Un de Fanblock jubelt."],
+ ["Richtig! Das hätte selbst der Schiri gesehen.","Right! Even the referee would have spotted that.","Rieklig! Dat harr sogar de Schiri sehn."],
+ ["Volltreffer! Nathalie nickt anerkennend.","Bullseye! Nathalie nods in approval.","Volltreffer! Nathalie nickt anerkennend."],
+ ["Sauber! Das war so klar wie ein Elfmeter.","Clean! As clear as a penalty.","Suver! Dat weer so klaar as een Elfmeter."]
+];
+const BADS = [
+ ["Autsch! Gelbe Karte für diese Antwort.","Ouch! Yellow card for that answer.","Autsch! Gele Kaart för disse Antwoort."],
+ ["Nicht schlimm: Nachspielzeit gibt's gratis.","No worries: stoppage time is free.","Nich leeg: Nasteeltiet gifft dat gratis."],
+ ["Knapp vorbei ist auch Lattenkracher.","A near miss is still a crossbar rattler.","Knapp vörbi is ok Lattenkracher."],
+ ["Das war die Schiedsrichter-Falle. Nächstes Mal klappt's.","That was the referee trap. You'll get it next time.","Dat weer de Schiedsrichter-Fall. Dat nächste Mal klappt dat."]
+];
+const OKN = [
+ ["Tooor, {n}! Und der Fanblock jubelt.","Goal, {n}! And the stand erupts.","Tooor, {n}! Un de Fanblock jubelt."],
+ ["Richtig, {n}! Das hätte selbst der Schiri gesehen.","Right, {n}! Even the referee would have spotted that.","Rieklig, {n}! Dat harr sogar de Schiri sehn."],
+ ["Volltreffer, {n}! Norbert klatscht Beifall.","Bullseye, {n}! Norbert applauds.","Volltreffer, {n}! Norbert klatscht Biefall."],
+ ["Sauber, {n}! So klar wie ein Elfmeter.","Clean, {n}! As clear as a penalty.","Suver, {n}! So klaar as een Elfmeter."]
+];
+const BADN = [
+ ["Autsch, {n}! Gelbe Karte für diese Antwort.","Ouch, {n}! Yellow card for that answer.","Autsch, {n}! Gele Kaart för disse Antwoort."],
+ ["Nicht schlimm, {n}: Nachspielzeit gibt's gratis.","No worries, {n}: stoppage time is free.","Nich leeg, {n}: Nasteeltiet gifft dat gratis."],
+ ["Knapp daneben, {n}. Selbst Nathalie hat mal die Latte getroffen.","A near miss, {n}. Even Nathalie has hit the crossbar once.","Knapp vörbi, {n}. Sogar Nathalie hett mal de Latt drapen."],
+ ["Das war die Schiedsrichter-Falle, {n}. Nächstes Mal klappt's.","That was the referee trap, {n}. You'll get it next time.","Dat weer de Schiedsrichter-Fall, {n}. Dat nächste Mal klappt dat."]
+];
+const LOGO = ["................","KKKKKKKKKKKKKKKK","KRRRWWWRRRWWWRRK","KRRRWWWRRRWWWRRK","KRRRWWWRRRWWWRRK","KRRRWWWRRRWWWRRK","KKKKKKKKKKKKKKKK","K.K.K.K.K.K.K.K.","R.R.R.R.R.R.R.R.","R.R.R.R.R.R.R.R.","................"], LOGOC = {K:"#2b1b1b", R:"#0b5cad", W:"#ffffff", Y:"#ffc800", B:"#0d2d6b", G:"#1b7a3d"};
+const logoRects = () => LOGO.map((r, y) => [...r].map((c, x) => c === "." ? "" : '<rect x="' + x + '" y="' + y + '" width="1" height="1" fill="' + LOGOC[c] + '"/>').join("")).join("");
+const logoSvg = () => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11" shape-rendering="crispEdges" aria-hidden="true" focusable="false">' + logoRects() + '</svg>';
+const t = k => S[k][li];
+const fname = () => { const f = (nm || "").trim().split(/\s+/)[0] || ""; let w = 0, o = ""; for(const c of f){ w += /[\u3000-\u9fff\uff00-\uffef]/.test(c) ? 2 : 1; if(w > 16) break; o += c; } return o; };
+const fill = s => s.replace(/\{n\}/g, fname());
+const hasName = () => fname() !== "";
+let editName = false, focusName = false;
+const NURL = [["https://www.hsv.de/","hsv.de"],["https://www.hsv.de/","hsv.de"],["https://www.hsv.de/","hsv.de"]];
+
+
+/* ---------- Spieltage (Lektionen) [DE, EN, NDS] ---------- */
+const HSV = "https://www.hsv.de/";
+const HGESCH = "https://www.hsv.de/unser-hsv/historie/die-geschichte-des-hsv";
+const HGRUND = "https://www.hsv.de/news/so-gruendete-sich-der-hsv";
+const HVEREIN = "https://www.hsv.de/unser-hsv/verein/verein";
+const HSTADION = "https://www.hsv.de/volkspark/volksparkstadion";
+const LESSONS = [
+{ id:"gruendung", ico:"⚽", c:"var(--pri)", min:1,
+ t:["Blitzstart: 1887 in 60 Sekunden","Quick start: 1887 in 60 seconds","Blitzstart: 1887 in 60 Sekunnen"],
+ sub:["Drei Karten, zwei Fragen, ein Zertifikat","Three cards, two questions, one certificate","Dree Kaarten, twee Fragen, een Zertifikat"],
+ cards:[
+  [["Zwei Vereine, zwei Daten","Two clubs, two dates","Twee Vereene, twee Daten"],
+   ["Am 29. September 1887 entstand der Sport-Club Germania von 1887 aus dem Wandsbek-Marienthaler SC und dem Hohenfelder SC. Er gilt als einer der drei Stammvereine des HSV. Am 1. Juni 1888 folgte der Hamburger Fußball-Club, Hamburgs erster reiner Fußballverein.","On 29 September 1887 Sport-Club Germania von 1887 emerged from Wandsbek-Marienthaler SC and Hohenfelder SC. It counts as one of the three parent clubs of HSV. On 1 June 1888 the Hamburger Fußball-Club followed, Hamburg's first pure football club.","Op 29. September 1887 keem de Sport-Club Germania vun 1887 ut den Wandsbek-Marienthaler SC un den Hohenfelder SC. He gilt as een vun de dree Stammvereene vun'n HSV. Op 1. Juni 1888 keem de Hamburger Fußball-Club, Hamborgs eerst reen Footballvereen."]],
+  [["Vom HFC zum HSV","From HFC to HSV","Vun'n HFC to'n HSV"],
+   ["1914 wurde der Hamburger Fußball-Club in Hamburger Sport-Verein umbenannt, weil sich auch Leichtathletik etabliert hatte. 1919 nahm der Verein den FC Falke 06 und den SC Germania von 1887 auf. 1932 wurde der 29. September 1887 als offizielles Gründungsdatum übernommen.","In 1914 the Hamburger Fußball-Club was renamed Hamburger Sport-Verein because athletics had become established too. In 1919 the club took in FC Falke 06 and SC Germania von 1887. In 1932 it adopted 29 September 1887 as its official founding date.","1914 wöör de Hamburger Fußball-Club to'n Hamburger Sport-Verein ümbenöömt, wiel nu ok Leichtathletik dorto höör. 1919 nöhm de Vereen den FC Falke 06 un den SC Germania vun 1887 op. 1932 wöör de 29. September 1887 as offiziell Gründungsdag övernahmen."]],
+  [["Farben und Raute","Colours and diamond","Farven un Raut"],
+   ["Als Vereinsfarben wurden Rot und Weiß gewählt, die Farben der Stadt Hamburg. Ab August 1919 erschien auf dem Trikot eine blau-weiß-schwarze Raute.","Red and white were chosen as the club colours, the colours of the city of Hamburg. From August 1919 a blue, white and black diamond appeared on the shirt.","As Vereensfarven wöörn Root un Witt wählt, de Farven vun de Stadt Hamborg. Af August 1919 weer op dat Trikot een blau-witt-swatte Raut to sehn."]]
+ ],
+ pro:["Zwei Geburtstage: hsv.de nennt den 29. September 1887 (Germania) als Geburtstag des Vereins und den 1. Juni 1888 als Gründung des Hamburger Fußball-Clubs. Der HFC gilt als ältester Fußballverein Hamburgs und zweitältester Deutschlands.","Two birthdays: hsv.de gives 29 September 1887 (Germania) as the birthday of the club and 1 June 1888 as the founding of the Hamburger Fußball-Club. The HFC counts as the oldest football club in Hamburg and the second-oldest in Germany.","Twee Gebortsdaag: hsv.de nöömt den 29. September 1887 (Germania) as Gebortsdag vun'n Vereen un den 1. Juni 1888 as Gründung vun'n Hamburger Fußball-Club. De HFC gilt as öllste Footballvereen vun Hamborg un twee-öllste vun Düütschland."],
+ fun:["Ein Verein mit zwei Geburtstagen, das heißt doppelt Kuchen. Dino hat die Kerzen schon gezählt, sagen Nathalie und Norbert.","A club with two birthdays means twice the cake. Dino has already counted the candles, say Nathalie and Norbert.","Een Vereen mit twee Gebortsdaag, dat heet twiemal Koken. Dino hett de Lichter al tellt, seggt Nathalie un Norbert."],
+ src:[["hsv.de: Die Geschichte des HSV",HGESCH],["hsv.de: So gründete sich der HSV",HGRUND]],
+ q:[
+  {q:["Welches Datum gilt beim HSV als offizielles Gründungsdatum?","Which date counts as the official founding date at HSV?","Welk Datum gilt bi'n HSV as offiziell Gründungsdag?"],
+   a:[["29. September 1887","29 September 1887","29. September 1887"],["1. Juni 1888","1 June 1888","1. Juni 1888"],["27. Februar 1900","27 February 1900","27. Februar 1900"],["16. Juli 1945","16 July 1945","16. Juli 1945"]],
+   e:["Der 29. September 1887 (SC Germania) gilt seit 1932 als offizielles Gründungsdatum.","29 September 1887 (SC Germania) has counted as the official founding date since 1932.","De 29. September 1887 (SC Germania) gilt siet 1932 as offiziell Gründungsdag."]},
+  {q:["Seit wann heißt der Verein Hamburger Sport-Verein?","Since when has the club been called Hamburger Sport-Verein?","Siet wann heet de Vereen Hamburger Sport-Verein?"],
+   a:[["Seit 1914","Since 1914","Siet 1914"],["Seit 1887","Since 1887","Siet 1887"],["Seit 1932","Since 1932","Siet 1932"],["Seit 1963","Since 1963","Siet 1963"]],
+   e:["1914 wurde aus dem Hamburger Fußball-Club der Hamburger Sport-Verein.","In 1914 the Hamburger Fußball-Club became the Hamburger Sport-Verein.","1914 wöör ut den Hamburger Fußball-Club de Hamburger Sport-Verein."]}
+ ]},
+{ id:"meister", ico:"🏆", c:"var(--blue)", min:2,
+ t:["Die Meistermaschine","The title machine","De Meistermaschin"],
+ sub:["Meisterschaften, Pokale und eine Serie ohne Niederlage","Championships, cups and an unbeaten run","Meisterschaften, Pokalen un en Serie ahn Nederlaag"],
+ cards:[
+  [["Sechs Meisterschaften","Six championships","Söss Meisterschaften"],
+   ["Der HSV wurde Deutscher Meister in den Jahren 1923, 1928, 1960, 1979, 1982 und 1983. Der Titel 1960 gelang mit einem 3:2 im Finale gegen den 1. FC Köln.","HSV became German champion in 1923, 1928, 1960, 1979, 1982 and 1983. The 1960 title came with a 3-2 win over 1. FC Köln in the final.","De HSV wöör Düütsche Meister in de Johren 1923, 1928, 1960, 1979, 1982 un 1983. De Titel 1960 geluck mit en 3:2 in't Finale gegen den 1. FC Köln."]],
+  [["Der erste Bundesliga-Titel","The first Bundesliga title","De eerste Bundesliga-Titel"],
+   ["Am 9. Juni 1979 gewann der HSV am letzten Spieltag die Meisterschaft: den ersten Titel seit Gründung der Bundesliga und den vierten insgesamt. 1982 folgte der nächste Titel, 1983 wurde er erfolgreich verteidigt.","On 9 June 1979 HSV won the title on the final matchday: the first since the Bundesliga was founded and the fourth overall. The next title followed in 1982, and in 1983 it was successfully defended.","Op 9. Juni 1979 wunn de HSV an'n lesten Speeldag de Meisterschaft: den eersten Titel siet de Bundesliga gründt wöör un den veerten insgesamt. 1982 keem de negste Titel, 1983 wöör he erfolgriek verdeedigt."]],
+  [["Pokale","Cups","Pokalen"],
+   ["Den DFB-Pokal gewann der HSV 1963, 1976 und 1987. 1973 gab es den Ligapokal mit einem 4:0 gegen Borussia Mönchengladbach.","HSV won the DFB-Pokal in 1963, 1976 and 1987. In 1973 came the Ligapokal with a 4-0 win over Borussia Mönchengladbach.","Den DFB-Pokal wunn de HSV 1963, 1976 un 1987. 1973 geev dat den Ligapokal mit en 4:0 gegen Borussia Mönchengladbach."]]
+ ],
+ pro:["Zwischen 1982 und 1983 blieb der HSV 36 Bundesligaspiele in Folge ungeschlagen. Die Serie endete im Januar 1983 und war drei Jahrzehnte lang Ligarekord.","Between 1982 and 1983 HSV went 36 Bundesliga matches unbeaten. The run ended in January 1983 and stood as a league record for three decades.","Twüschen 1982 un 1983 bleev de HSV 36 Bundesligaspeelen na'nanner unslagen. De Serie hööl in'n Januar 1983 op un weer dree Johrteihnten Ligarekord."],
+ fun:["Sechs Meisterschalen und kein Platz im Regal? Dino schlägt vor: einfach mehr Regale bauen.","Six championship trophies and no room on the shelf? Dino suggests: just build more shelves.","Söss Meisterschalen un keen Platz in't Regal? Dino schlöggt vör: eenfach mehr Regalen bu'n."],
+ src:[["hsv.de: Die Geschichte des HSV",HGESCH]],
+ q:[
+  {q:["Wie oft wurde der HSV Deutscher Meister?","How many times did HSV become German champion?","Woveel Mal wöör de HSV Düütsche Meister?"],
+   a:[["Sechs Mal","Six times","Söss Mal"],["Vier Mal","Four times","Veer Mal"],["Acht Mal","Eight times","Acht Mal"],["Zehn Mal","Ten times","Teihn Mal"]],
+   e:["1923, 1928, 1960, 1979, 1982 und 1983: sechs Titel.","1923, 1928, 1960, 1979, 1982 and 1983: six titles.","1923, 1928, 1960, 1979, 1982 un 1983: söss Titeln."]},
+  {q:["Wann gewann der HSV seinen ersten Bundesliga-Titel?","When did HSV win its first Bundesliga title?","Wann wunn de HSV sien eersten Bundesliga-Titel?"],
+   a:[["1979","1979","1979"],["1963","1963","1963"],["1983","1983","1983"],["1960","1960","1960"]],
+   e:["Am 9. Juni 1979, am letzten Spieltag.","On 9 June 1979, on the final matchday.","Op 9. Juni 1979, an'n lesten Speeldag."]}
+ ]},
+{ id:"legenden", ico:"⭐", c:"var(--green)", min:3,
+ t:["Legenden: Uns Uwe & Co.","Legends: Uns Uwe & Co.","Legenden: Uns Uwe & Co."],
+ sub:["Von Uwe Seeler bis Felix Magath","From Uwe Seeler to Felix Magath","Vun Uwe Seeler bit Felix Magath"],
+ cards:[
+  [["Uns Uwe","Uns Uwe","Uns Uwe"],
+   ["Uwe Seeler debütierte im August 1953 mit 16 Jahren, die Fans nannten ihn „Uns Uwe“. 1960 wurde er der erste „Fußballer des Jahres“ in Deutschland, 1995 wurde er Präsident des HSV.","Uwe Seeler made his debut in August 1953 aged 16, and the fans called him “Uns Uwe”. In 1960 he became Germany's first “Footballer of the Year”, and in 1995 he became president of HSV.","Uwe Seeler debütier in'n August 1953 mit 16 Johr, de Fans nöömt em „Uns Uwe“. 1960 wöör he de eerste „Footballer vun't Johr“ in Düütschland, 1995 wöör he Präsident vun'n HSV."]],
+  [["Die Helden von 1982 und 1983","The heroes of 1982 and 1983","De Helden vun 1982 un 1983"],
+   ["Horst Hrubesch war 1982 mit 27 Toren bester Torschütze. Felix Magath schoss 1983 das Tor zum 1:0 im Europapokal-Finale in Athen. Im November 1980 holte der HSV Franz Beckenbauer, im Mai 1977 Kevin Keegan vom FC Liverpool.","Horst Hrubesch was top scorer in 1982 with 27 goals. In 1983 Felix Magath scored the 1-0 in the European Cup final in Athens. In November 1980 HSV signed Franz Beckenbauer, in May 1977 Kevin Keegan from FC Liverpool.","Horst Hrubesch weer 1982 mit 27 Dören de beste Dörenschütt. Felix Magath schööt 1983 de Dör to'n 1:0 in't Europapokal-Finale in Athen. In'n November 1980 hool de HSV Franz Beckenbauer, in'n Mai 1977 Kevin Keegan vun'n FC Liverpool."]],
+  [["Der Trainer und der Masseur","The coach and the masseur","De Trainer un de Masseur"],
+   ["Der Österreicher Ernst Happel wurde am 1. Juli 1981 Trainer und hält mit 240 Pflichtspielen den Vereinsrekord für Trainer. Kult-Masseur Hermann Rieger starb im Februar 2014; am Stadion erinnert eine Bronzestatue an ihn.","The Austrian Ernst Happel became coach on 1 July 1981 and holds the club record for coaches with 240 competitive matches. Cult masseur Hermann Rieger died in February 2014; a bronze statue at the stadium remembers him.","De Öösterriker Ernst Happel wöör an 1. Juli 1981 Trainer un hett mit 240 Pflichtspelen den Vereensrekord för Trainers. Kult-Masseur Hermann Rieger sturv in'n Februar 2014; an't Stadion dröggt en Bronzestatue an em."]]
+ ],
+ pro:["Seeler gewann sieben Mal die Torjägerkanone im Norden. Seinen Abschied feierte er am 1. Mai 1972 vor 72.000 Zuschauern. Auf dem Walk of Fame des HSV stehen 55 Vereinslegenden.","Seeler won the top-scorer award in the North seven times. He said farewell on 1 May 1972 in front of 72,000 spectators. The HSV Walk of Fame lists 55 club legends.","Seeler wunn söven Mal de Dörenjäger-Kanon in'n Noorden. Sien Afscheed fier he an 1. Mai 1972 vör 72.000 Tokiekers. Op den Walk of Fame vun'n HSV staht 55 Vereenslegenden."],
+ fun:["Uwe Seeler sah in seiner ganzen Karriere nur eine Rote Karte (1957 gegen Bremerhaven). Dino schafft das schon beim Brüllen im Fanblock.","In his whole career Uwe Seeler saw only one red card (1957 against Bremerhaven). Dino manages that just by roaring in the stand.","Uwe Seeler seeg in sien ganze Karriere blots een Rode Kaart (1957 gegen Bremerhaven). Dino schafft dat al bi't Brüllen in'n Fanblock."],
+ src:[["hsv.de: Die Geschichte des HSV",HGESCH]],
+ q:[
+  {q:["Wie nannten die Fans Uwe Seeler?","What did the fans call Uwe Seeler?","Woans nöömen de Fans Uwe Seeler?"],
+   a:[["Uns Uwe","Uns Uwe","Uns Uwe"],["Der Kaiser","The Kaiser","De Kaiser"],["Der Bomber","The Bomber","De Bomber"],["Die Katze","The Cat","De Katt"]],
+   e:["„Uns Uwe“ war sein Spitzname.","“Uns Uwe” was his nickname.","„Uns Uwe“ weer sien Spitznaam."]},
+  {q:["Wer wurde 1982 mit 27 Toren bester Torschütze?","Who was top scorer in 1982 with 27 goals?","Wer weer 1982 mit 27 Dören beste Dörenschütt?"],
+   a:[["Horst Hrubesch","Horst Hrubesch","Horst Hrubesch"],["Felix Magath","Felix Magath","Felix Magath"],["Kevin Keegan","Kevin Keegan","Kevin Keegan"],["Thomas Doll","Thomas Doll","Thomas Doll"]],
+   e:["Horst Hrubesch traf 27 Mal.","Horst Hrubesch scored 27 times.","Horst Hrubesch troff 27 Mal."]},
+  {q:["Von welchem Verein kam Kevin Keegan 1977 zum HSV?","Which club did Kevin Keegan join HSV from in 1977?","Vun welk Vereen keem Kevin Keegan 1977 to'n HSV?"],
+   a:[["FC Liverpool","FC Liverpool","FC Liverpool"],["FC Barcelona","FC Barcelona","FC Barcelona"],["Juventus Turin","Juventus Turin","Juventus Turin"],["Real Madrid","Real Madrid","Real Madrid"]],
+   e:["Kevin Keegan kam im Mai 1977 vom FC Liverpool.","Kevin Keegan came from FC Liverpool in May 1977.","Kevin Keegan keem in'n Mai 1977 vun'n FC Liverpool."]},
+  {q:["Welcher Trainer hält mit 240 Pflichtspielen den Vereinsrekord?","Which coach holds the club record with 240 competitive matches?","Welk Trainer hett mit 240 Pflichtspelen den Vereensrekord?"],
+   a:[["Ernst Happel","Ernst Happel","Ernst Happel"],["Günter Netzer","Günter Netzer","Günter Netzer"],["Huub Stevens","Huub Stevens","Huub Stevens"],["Uwe Seeler","Uwe Seeler","Uwe Seeler"]],
+   e:["Ernst Happel, Trainer seit dem 1. Juli 1981.","Ernst Happel, coach since 1 July 1981.","Ernst Happel, Trainer siet den 1. Juli 1981."]}
+ ]},
+{ id:"europa", ico:"🌍", c:"var(--purple)", min:3,
+ t:["Europa: Athen 1983 und andere Abende","Europe: Athens 1983 and other nights","Europa: Athen 1983 un anner Avenden"],
+ sub:["Zwei Europapokale und ein paar bittere Finals","Two European trophies and a few bitter finals","Twee Europapokalen un en poor bitter Finals"],
+ cards:[
+  [["Zwei Europapokale","Two European trophies","Twee Europapokalen"],
+   ["1977 gewann der HSV den Europapokal der Pokalsieger mit 2:0 gegen RSC Anderlecht in Amsterdam, mit späten Toren von Georg Volkert und Felix Magath. 1983 folgte der Europapokal der Landesmeister.","In 1977 HSV won the European Cup Winners' Cup with a 2-0 against RSC Anderlecht in Amsterdam, with late goals from Georg Volkert and Felix Magath. In 1983 the European Cup followed.","1977 wunn de HSV den Europapokal vun de Pokalsegers mit 2:0 gegen RSC Anderlecht in Amsterdam, mit lat Dören vun Georg Volkert un Felix Magath. 1983 keem de Europapokal vun de Landsmeisters."]],
+  [["Athen 1983","Athens 1983","Athen 1983"],
+   ["Am 25. Mai 1983 besiegte der HSV in Athen Juventus Turin mit 1:0. Das Tor schoss Felix Magath. hsv.de nennt es den größten Triumph der Vereinsgeschichte.","On 25 May 1983 HSV beat Juventus 1-0 in Athens. Felix Magath scored the goal. hsv.de calls it the biggest triumph in the club's history.","An 25. Mai 1983 slööch de HSV in Athen Juventus Turin mit 1:0. De Dör schööt Felix Magath. hsv.de nömt dat den gröttsten Triumph in de Vereensgeschicht."]],
+  [["Bittere Finals","Bitter finals","Bitter Finals"],
+   ["Final-Niederlagen gab es 1968 (0:2 gegen AC Mailand im Pokalsieger-Wettbewerb), 1980 (0:1 gegen Nottingham Forest im Landesmeister-Pokal) und 1982 (UEFA-Cup gegen IFK Göteborg). Im Dezember 1983 verlor der HSV das Weltpokal-Finale in Tokio gegen Grêmio Porto Alegre.","Final defeats came in 1968 (0-2 against AC Milan in the Cup Winners' Cup), 1980 (0-1 against Nottingham Forest in the European Cup) and 1982 (UEFA Cup against IFK Göteborg). In December 1983 HSV lost the Intercontinental Cup final in Tokyo to Grêmio Porto Alegre.","Finalnederlagen geev dat 1968 (0:2 gegen AC Mailand in'n Pokalsegers-Wettbewarb), 1980 (0:1 gegen Nottingham Forest in'n Landsmeister-Pokal) un 1982 (UEFA-Cup gegen IFK Göteborg). In'n Dezember 1983 verleer de HSV dat Weltpokal-Finale in Tokio gegen Grêmio Porto Alegre."]]
+ ],
+ pro:["Im April 1961 sahen 77.600 Zuschauer das Halbfinal-Rückspiel gegen den FC Barcelona im alten Volksparkstadion, bis heute Vereinsrekord. Der HSV verlor nach einem Entscheidungsspiel.","In April 1961, 77,600 spectators watched the semi-final second leg against FC Barcelona at the old Volksparkstadion, a club record that still stands. HSV lost after a play-off.","In'n April 1961 sehgen 77.600 Tokiekers dat Halvfinal-Rückspeel gegen den FC Barcelona in't ole Volksparkstadion, bit hüüt Vereensrekord. De HSV verleer na en Entscheidungsspeel."],
+ fun:["Im Jahr 2000 spielte der HSV 4:4 gegen Juventus. Es heißt „Jahrhundert-Unentschieden“, und Dino hat es sich als Poster aufgehängt.","In 2000 HSV drew 4-4 with Juventus. It is known as the “draw of the century”, and Dino has hung it up as a poster.","Im Johr 2000 speel de HSV 4:4 gegen Juventus. Dat heet „Johrhunnert-Unentschieden“, un Dino hett sik dat as Poster ophungen."],
+ src:[["hsv.de: Die Geschichte des HSV",HGESCH]],
+ q:[
+  {q:["Gegen wen gewann der HSV 1983 das Finale im Europapokal der Landesmeister?","Whom did HSV beat in the 1983 European Cup final?","Gegen wen wunn de HSV 1983 dat Finale in'n Europapokal vun de Landsmeisters?"],
+   a:[["Juventus Turin","Juventus","Juventus Turin"],["FC Liverpool","Liverpool FC","FC Liverpool"],["RSC Anderlecht","RSC Anderlecht","RSC Anderlecht"],["Nottingham Forest","Nottingham Forest","Nottingham Forest"]],
+   e:["Mit 1:0 gegen Juventus Turin in Athen.","1-0 against Juventus in Athens.","Mit 1:0 gegen Juventus Turin in Athen."]},
+  {q:["Wer erzielte in Athen das 1:0?","Who scored the 1-0 in Athens?","Wer schööt in Athen den 1:0?"],
+   a:[["Felix Magath","Felix Magath","Felix Magath"],["Horst Hrubesch","Horst Hrubesch","Horst Hrubesch"],["Uwe Seeler","Uwe Seeler","Uwe Seeler"],["Manfred Kaltz","Manfred Kaltz","Manfred Kaltz"]],
+   e:["Felix Magath traf zum 1:0.","Felix Magath scored the 1-0.","Felix Magath troff to'n 1:0."]},
+  {q:["In welchem Jahr gewann der HSV den Europapokal der Pokalsieger?","In which year did HSV win the European Cup Winners' Cup?","In welk Johr wunn de HSV den Europapokal vun de Pokalsegers?"],
+   a:[["1977","1977","1977"],["1983","1983","1983"],["1968","1968","1968"],["1980","1980","1980"]],
+   e:["1977, mit 2:0 gegen RSC Anderlecht.","1977, 2-0 against RSC Anderlecht.","1977, mit 2:0 gegen RSC Anderlecht."]},
+  {q:["Gegen wen verlor der HSV 1980 das Finale im Europapokal der Landesmeister?","Whom did HSV lose to in the 1980 European Cup final?","Gegen wen verleer de HSV 1980 dat Finale in'n Europapokal vun de Landsmeisters?"],
+   a:[["Nottingham Forest","Nottingham Forest","Nottingham Forest"],["Juventus Turin","Juventus","Juventus Turin"],["AC Mailand","AC Milan","AC Mailand"],["IFK Göteborg","IFK Göteborg","IFK Göteborg"]],
+   e:["0:1 gegen Nottingham Forest.","0-1 against Nottingham Forest.","0:1 gegen Nottingham Forest."]}
+ ]},
+{ id:"arena", ico:"🏟️", c:"var(--pri)", min:3,
+ t:["Volkspark & Mitglieder: Zahlen zum Staunen","Volkspark & members: numbers to marvel at","Volkspark & Mitgleder: Tahlen to Stunen"],
+ sub:["Stadion, Mitglieder und eine große Familie","Stadium, members and a big family","Stadion, Mitgleder un en grote Familie"],
+ cards:[
+  [["Zuhause im Volkspark","At home in the Volkspark","Toheuse in'n Volkspark"],
+   ["Seit 1963 spielt der HSV dauerhaft im Volksparkstadion, davor war der Rothenbaum die Heimat. Das Stadion wurde 1972 bis 1974 für die WM 1974 umgebaut und ab 1998 zu einer modernen Arena. Seit Juli 2015 trägt es wieder den Namen Volksparkstadion.","Since 1963 HSV has played permanently at the Volksparkstadion; before that, Rothenbaum was home. The stadium was rebuilt from 1972 to 1974 for the 1974 World Cup and turned into a modern arena from 1998. Since July 2015 it has had the name Volksparkstadion again.","Siet 1963 speel de HSV dörwiel in't Volksparkstadion, dorvör weer de Rothenbaum de Heimat. 1972 bit 1974 wöör dat Stadion för de WM 1974 ümbut un af 1998 to en moderne Arena. Siet Juli 2015 hett dat wedder den Naam Volksparkstadion."]],
+  [["Zahlen im Stadion","Numbers in the stadium","Tahlen in't Stadion"],
+   ["Bei Veranstaltungen finden bis zu 57.000 Menschen Platz, hsv.de nennt es ein „UEFA 5-Sterne-Stadion“. Laut hsv.de gibt es die Genehmigung für den Ausbau auf mehr als 60.000 Plätze (Meldung vom 8. September 2026). In der Saison nach dem Aufstieg kamen im Schnitt 56.912 Zuschauer, bei 17 ausverkauften Heimspielen.","Up to 57,000 people fit in at events, and hsv.de calls it a “UEFA 5-star stadium”. According to hsv.de there is approval to expand to more than 60,000 seats (news from 8 September 2026). In the season after promotion the average crowd was 56,912, with 17 sold-out home matches.","Bi Veranstalten finnt bit to 57.000 Lüüd Platz, hsv.de nömt dat en „UEFA 5-Steern-Stadion“. Na hsv.de gifft dat de Genehmigung för den Utbu op mehr as 60.000 Plätz (Meldung vun 8. September 2026). In de Saison na den Opstieg keem in'n Snitt 56.912 Tokiekers, bi 17 utverköfft Heimspelen."]],
+  [["Die HSV-Familie","The HSV family","De HSV-Familie"],
+   ["Laut hsv.de zählt die HSV-Familie 150.000 Mitglieder, im Sommer 2026 wurde die Marke überschritten. Über 30 Abteilungen mit rund 8.500 aktiven Sportlerinnen und Sportlern machen den HSV zum Universalsportverein. Das HSV-Museum zeigt auf über 700 Quadratmetern mehr als 140 Jahre Vereinsgeschichte.","According to hsv.de the HSV family counts 150,000 members; the mark was passed in summer 2026. More than 30 departments with about 8,500 active athletes make HSV a multi-sport club. The HSV Museum shows more than 140 years of club history on over 700 square metres.","Na hsv.de tellt de HSV-Familie 150.000 Mitgleder, in'n Sommer 2026 wöör de Mark överschreden. Över 30 Afdelen mit rund 8.500 aktive Sportlers maakt den HSV to'n Universalsportvereen. Dat HSV-Museum wiest op över 700 Quadratmeter mehr as 140 Johr Vereensgeschicht."]]
+ ],
+ pro:["Zahlen ändern sich: Alle Angaben stammen von hsv.de (Stand 18.10.2026). Ende der 2010er-Jahre hatte der Verein über 81.000 Mitglieder, damals ein Rekord.","Figures change: all details come from hsv.de (as of 18 October 2026). At the end of the 2010s the club had over 81,000 members, a record at the time.","Tahlen ännert sik: All Angaven kaamt vun hsv.de (Stand 18.10.2026). An't Enn vun de 2010er harr de Vereen över 81.000 Mitgleder, dunn en Rekord."],
+ fun:["57.000 Plätze, und Dino hat natürlich den Platz am Gang. Wegen dem Schwanz.","57,000 seats, and Dino of course has the aisle seat. Because of the tail.","57.000 Plätz, un Dino hett natürlich den Platz an'n Gang. Wegen den Steert."],
+ src:[["hsv.de: Volksparkstadion",HSTADION],["hsv.de: Die Geschichte des HSV",HGESCH],["hsv.de: Verein",HVEREIN]],
+ q:[
+  {q:["Seit welchem Jahr spielt der HSV dauerhaft im Volksparkstadion?","Since which year has HSV played permanently at the Volksparkstadion?","Siet welk Johr speel de HSV dörwiel in't Volksparkstadion?"],
+   a:[["Seit 1963","Since 1963","Siet 1963"],["Seit 1887","Since 1887","Siet 1887"],["Seit 1998","Since 1998","Siet 1998"],["Seit 2015","Since 2015","Siet 2015"]],
+   e:["1963 zog der HSV vom Rothenbaum um. Den heutigen Namen trägt es seit Juli 2015 wieder.","In 1963 HSV moved from Rothenbaum. It has had its present name again since July 2015.","1963 trock de HSV vun'n Rothenbaum üm. Den hüütigen Naam hett dat siet Juli 2015 wedder."]},
+  {q:["Wie viele Mitglieder hat der HSV laut hsv.de (Stand Sommer 2026)?","How many members does HSV have according to hsv.de (as of summer 2026)?","Woveel Mitgleder hett de HSV na hsv.de (Stand Sommer 2026)?"],
+   a:[["Rund 150.000","About 150,000","Rund 150.000"],["Rund 15.000","About 15,000","Rund 15.000"],["Rund 1,5 Millionen","About 1.5 million","Rund 1,5 Millionen"],["Genau 1.887","Exactly 1,887","Gans genau 1.887"]],
+   e:["Die Marke von 150.000 wurde laut hsv.de überschritten.","According to hsv.de the 150,000 mark was passed.","De Mark vun 150.000 wöör na hsv.de överschreden."]},
+  {q:["Wie viele Abteilungen hat der HSV laut hsv.de?","How many departments does HSV have according to hsv.de?","Woveel Afdelen hett de HSV na hsv.de?"],
+   a:[["Mehr als 30","More than 30","Mehr as 30"],["Genau 3","Exactly 3","Gans genau 3"],["Mehr als 300","More than 300","Mehr as 300"],["Nur eine","Just one","Blots een"]],
+   e:["Mehr als 30 Abteilungen: ein Universalsportverein.","More than 30 departments: a multi-sport club.","Mehr as 30 Afdelen: een Universalsportvereen."]},
+  {q:["Wie viele Zuschauer kamen 1961 zum Halbfinale gegen Barcelona (Vereinsrekord)?","How many spectators came to the 1961 semi-final against Barcelona (club record)?","Woveel Tokiekers keemen 1961 to't Halvfinale gegen Barcelona (Vereensrekord)?"],
+   a:[["77.600","77,600","77.600"],["57.000","57,000","57.000"],["12.000","12,000","12.000"],["150.000","150,000","150.000"]],
+   e:["77.600 Zuschauer, bis heute Vereinsrekord.","77,600 spectators, a club record that still stands.","77.600 Tokiekers, bit hüüt Vereensrekord."]}
+ ]},
+{ id:"spitznamen", ico:"🦖", c:"var(--blue)", min:3,
+ t:["Spitznamen & Dino-Zeit","Nicknames & dino time","Spitznaams & Dino-Tiet"],
+ sub:["Vom Bundesliga-Dino bis zum Aufstieg 2025","From the Bundesliga dino to promotion in 2025","Vun'n Bundesliga-Dino bit to'n Opstieg 2025"],
+ cards:[
+  [["Der Bundesliga-Dino","The Bundesliga dino","De Bundesliga-Dino"],
+   ["Weil der HSV so lange in der Bundesliga spielte, nennt man ihn „Bundesliga-Dino“. Er war 55 Jahre erstklassig und das letzte Gründungsmitglied der Bundesliga, das nie abgestiegen war.","Because HSV played in the Bundesliga for so long, it is called the “Bundesliga dino”. It spent 55 years in the top flight and was the last founding member of the Bundesliga never to have been relegated.","Wiel de HSV so lang in de Bundesliga speel, nömt man em „Bundesliga-Dino“. He weer 55 Johr eerstklassig un dat lette Gründungsmitglied vun de Bundesliga, dat nie afstegen weer."]],
+  [["Rothosen und Uns Uwe","Rothosen and Uns Uwe","Rothosen un Uns Uwe"],
+   ["hsv.de erwähnt weitere Spitznamen: „Rothosen“ für den Verein und „Uns Uwe“ für die Legende Uwe Seeler. Der Dino-Name ist aber der berühmteste.","hsv.de mentions further nicknames: “Rothosen” for the club and “Uns Uwe” for the legend Uwe Seeler. The dino name is the most famous, though.","hsv.de nömt noch mehr Spitznaams: „Rothosen“ för den Vereen un „Uns Uwe“ för de Legende Uwe Seeler. De Dino-Naam is awer de bekannteste."]],
+  [["Abstieg und Rückkehr","Relegation and return","Afstieg un Torüchkehr"],
+   ["Am 12. Mai 2018 stieg der HSV erstmals ab. Am 10. Mai 2025 sicherte ein 6:1 gegen den SSV Ulm den Aufstieg nach sieben Jahren in der 2. Liga. Am 19. Mai 2025 feierten rund 80.000 Fans in den Straßen und am Rathausmarkt.","On 12 May 2018 HSV were relegated for the first time. On 10 May 2025 a 6-1 against SSV Ulm secured promotion after seven years in the 2. Liga. On 19 May 2025 about 80,000 fans celebrated in the streets and at Rathausmarkt.","Op 12. Mai 2018 steeg de HSV toeerst af. Op 10. Mai 2025 sekert en 6:1 gegen den SSV Ulm den Opstieg na söven Johr in de 2. Liga. Op 19. Mai 2025 fiern rund 80.000 Fans op de Straten un an'n Rathausmarkt."]]
+ ],
+ pro:["Auch die Frauen schafften den Aufstieg: Rund 15 Stunden nach den Männern gewann das Team 3:0 gegen den SC Freiburg II und kehrte nach 13 Jahren in die erste Liga zurück.","The women made it too: about 15 hours after the men, the team beat SC Freiburg II 3-0 and returned to the top flight after 13 years.","Ok de Froons schaffen den Opstieg: Rund 15 Stünnen na de Mannslüüd wunn dat Team 3:0 gegen den SC Freiburg II un keem na 13 Johr torüch in de eerste Liga."],
+ fun:["Ein Dino stirbt aus, der HSV nicht. Er hat nur sieben Jahre Urlaub in der 2. Liga gemacht, sagt Dino.","A dino goes extinct, HSV did not. It just took seven years of holiday in the 2. Liga, says Dino.","En Dino sterft ut, de HSV nich. He hett blots söven Johr Verlööv in de 2. Liga maakt, seggt Dino."],
+ src:[["hsv.de: Die Geschichte des HSV",HGESCH]],
+ q:[
+  {q:["Welcher Spitzname beschreibt die lange Bundesliga-Zugehörigkeit des HSV?","Which nickname describes HSV's long Bundesliga membership?","Welk Spitznaam beschrifft de lange Bundesliga-Tohörigkeit vun'n HSV?"],
+   a:[["Bundesliga-Dino","Bundesliga dino","Bundesliga-Dino"],["Stern des Südens","Star of the South","Steern vun'n Süden"],["Die Fohlen","The Foals","De Fohlen"],["Die Knappen","The Miners","De Knappen"]],
+   e:["Der „Bundesliga-Dino“ spielte 55 Jahre in der ersten Liga.","The “Bundesliga dino” spent 55 years in the first division.","De „Bundesliga-Dino“ speel 55 Johr in de eerste Liga."]},
+  {q:["In welchem Jahr stieg der HSV zum ersten Mal ab?","In which year was HSV relegated for the first time?","In welk Johr steeg de HSV to'n eersten Mal af?"],
+   a:[["2018","2018","2018"],["2025","2025","2025"],["1963","1963","1963"],["1983","1983","1983"]],
+   e:["Am 12. Mai 2018, nach 55 Jahren in der Bundesliga.","On 12 May 2018, after 55 years in the Bundesliga.","Op 12. Mai 2018, na 55 Johr in de Bundesliga."]},
+  {q:["Gegen wen gewann der HSV am 10. Mai 2025 mit 6:1 und stieg auf?","Whom did HSV beat 6-1 on 10 May 2025 to win promotion?","Gegen wen wunn de HSV an 10. Mai 2025 mit 6:1 un steeg op?"],
+   a:[["SSV Ulm","SSV Ulm","SSV Ulm"],["SC Freiburg","SC Freiburg","SC Freiburg"],["FC St. Pauli","FC St. Pauli","FC St. Pauli"],["Preußen Münster","Preußen Münster","Preußen Münster"]],
+   e:["Das 6:1 gegen den SSV Ulm brachte den Aufstieg.","The 6-1 against SSV Ulm brought promotion.","De 6:1 gegen den SSV Ulm bröch den Opstieg."]},
+  {q:["Wie viele Jahre spielte der HSV vor 2018 ununterbrochen in der Bundesliga?","For how many years did HSV play in the Bundesliga without a break before 2018?","Woveel Johr speel de HSV vör 2018 ahn Paus in de Bundesliga?"],
+   a:[["55 Jahre","55 years","55 Johr"],["25 Jahre","25 years","25 Johr"],["85 Jahre","85 years","85 Johr"],["5 Jahre","5 years","5 Johr"]],
+   e:["55 Jahre, bis zum Abstieg am 12. Mai 2018.","55 years, until relegation on 12 May 2018.","55 Johr, bit to'n Afstieg an 12. Mai 2018."]}
+ ]},
+{ id:"boss", ico:"👑", c:"var(--purple)", min:4,
+ t:["Bossrunde: Elfmeterschießen","Boss round: penalty shoot-out","Bossrunn: Elfmeterschetten"],
+ sub:["Dein Zeitstrahl und das große Finale","Your timeline and the grand finale","Dien Tietstrahl un dat grote Finale"],
+ cards:[
+  [["Der Zeitstrahl","The timeline","De Tietstrahl"],
+   ["1887 Germania · 1888 Hamburger Fußball-Club · 1914 Hamburger Sport-Verein · 1919 Zusammenschluss · 1963 erstes Bundesligaspiel (24. August, 1:1 in Münster) · 1983 Europapokal der Landesmeister · 2018 erster Abstieg · 2025 Aufstieg.","1887 Germania · 1888 Hamburger Fußball-Club · 1914 Hamburger Sport-Verein · 1919 merger · 1963 first Bundesliga match (24 August, 1-1 in Münster) · 1983 European Cup · 2018 first relegation · 2025 promotion.","1887 Germania · 1888 Hamburger Fußball-Club · 1914 Hamburger Sport-Verein · 1919 Tohoopsluss · 1963 eerst Bundesligaspeel (24. August, 1:1 in Münster) · 1983 Europapokal vun de Landsmeisters · 2018 eerst Afstieg · 2025 Opstieg."]],
+  [["Menschen hinter dem Verein","People behind the club","Lüüd achter den Vereen"],
+   ["Uwe Seeler war Spieler und später Präsident, Ernst Happel Rekordtrainer, Felix Magath der Held von Athen, Hermann Rieger der Kult-Masseur. Gerd Dörfel traf im ersten Bundesligaspiel am 24. August 1963.","Uwe Seeler was a player and later president, Ernst Happel the record coach, Felix Magath the hero of Athens, Hermann Rieger the cult masseur. Gerd Dörfel scored in the first Bundesliga match on 24 August 1963.","Uwe Seeler weer Speler un later Präsident, Ernst Happel Rekordtrainer, Felix Magath de Held vun Athen, Hermann Rieger de Kult-Masseur. Gerd Dörfel troff in't eerste Bundesligaspeel an 24. August 1963."]],
+  [["Bereit für den Elfmeter?","Ready for the penalty?","Praat för den Elfmeter?"],
+   ["Fünf Fragen quer durch alle Spieltage. Tipp: Wer die Karten gelesen hat, schießt sicher ein. Dino drückt dir die Daumen, so gut das mit seinen kleinen Armen geht.","Five questions across all matchdays. Tip: if you have read the cards, you will score for sure. Dino keeps his fingers crossed for you, as well as his tiny arms allow.","Fief Fragen dwars dör all Speeldaag. Tipp: Wer de Kaarten lesen hett, schütt seker in. Dino drückt di de Dumen, so good dat mit sien lütten Arms geiht."]]
+ ],
+ pro:["Zum Schluss ein ehrlicher Hinweis: Alle Fakten stammen von hsv.de, Stand 18.10.2026. Wo sich Seiten unterscheiden, etwa beim Gründungsdatum (1887 und 1888), nennt dieses Quiz beide. Aktuelle Zahlen bitte beim Verein prüfen.","One honest note at the end: all facts come from hsv.de, as of 18 October 2026. Where pages differ, for example on the founding date (1887 and 1888), this quiz gives both. Please check current figures with the club.","Tolest en ehrlichen Henwies: All Fakten kaamt vun hsv.de, Stand 18.10.2026. Wo Sieden sik ünnerscheedt, to'n Bispeel bi'n Gründungsdag (1887 un 1888), nömt dit Quiz beid. Aktuelle Tahlen bitte bi'n Vereen prööv'n."],
+ fun:["Boss besiegt? Dann gilt: Der wahre Endgegner ist die Schlange am Fischbrötchen-Stand in der Halbzeit.","Boss beaten? Then remember: the real final boss is the queue at the fish-roll stand at half-time.","Boss slagen? Denn gilt: De wohre Endgegner is de Slang an'n Fischbrötchen-Stand in de Halvtiet."],
+ src:[["hsv.de: Die Geschichte des HSV",HGESCH],["hsv.de: So gründete sich der HSV",HGRUND],["hsv.de: Volksparkstadion",HSTADION]],
+ q:[
+  {q:["Was kam zuerst?","Which came first?","Wat keem toeerst?"],
+   a:[["Gründung des SC Germania (1887)","Founding of SC Germania (1887)","Gründung vun'n SC Germania (1887)"],["Erstes Bundesligaspiel (1963)","First Bundesliga match (1963)","Eerst Bundesligaspeel (1963)"],["Europapokal-Sieg in Athen (1983)","European Cup win in Athens (1983)","Europapokal-Sieg in Athen (1983)"],["Erster Abstieg (2018)","First relegation (2018)","Eerst Afstieg (2018)"]],
+   e:["1887, 1963, 1983, 2018: so die Reihenfolge.","1887, 1963, 1983, 2018: that is the order.","1887, 1963, 1983, 2018: so is de Reeg."]},
+  {q:["Wer traf im ersten Bundesligaspiel des HSV am 24. August 1963 in Münster?","Who scored in HSV's first Bundesliga match on 24 August 1963 in Münster?","Wer troff in't eerste Bundesligaspeel vun'n HSV an 24. August 1963 in Münster?"],
+   a:[["Gerd Dörfel","Gerd Dörfel","Gerd Dörfel"],["Uwe Seeler","Uwe Seeler","Uwe Seeler"],["Felix Magath","Felix Magath","Felix Magath"],["Horst Hrubesch","Horst Hrubesch","Horst Hrubesch"]],
+   e:["Gerd Dörfel traf beim 1:1 bei Preußen Münster.","Gerd Dörfel scored in the 1-1 at Preußen Münster.","Gerd Dörfel troff bi't 1:1 bi Preußen Münster."]},
+  {q:["Welche Farben hat die Raute, die ab August 1919 auf dem Trikot erschien?","Which colours did the diamond have that appeared on the shirt from August 1919?","Welk Farven harr de Raut, de af August 1919 op dat Trikot to sehn weer?"],
+   a:[["Blau, Weiß und Schwarz","Blue, white and black","Blau, Witt un Swatt"],["Rot und Gelb","Red and yellow","Root un Geel"],["Grün und Weiß","Green and white","Gröön un Witt"],["Lila und Orange","Purple and orange","Lila un Orange"]],
+   e:["Eine blau-weiß-schwarze Raute.","A blue, white and black diamond.","En blau-witt-swatte Raut."]},
+  {q:["Wer wurde 1995 Präsident des HSV?","Who became president of HSV in 1995?","Wer wöör 1995 Präsident vun'n HSV?"],
+   a:[["Uwe Seeler","Uwe Seeler","Uwe Seeler"],["Felix Magath","Felix Magath","Felix Magath"],["Ernst Happel","Ernst Happel","Ernst Happel"],["Günter Netzer","Günter Netzer","Günter Netzer"]],
+   e:["Uwe Seeler, der „Uns Uwe“.","Uwe Seeler, the “Uns Uwe”.","Uwe Seeler, de „Uns Uwe“."]},
+  {q:["Wer hat dieses Quiz gebaut?","Who built this quiz?","Wer hett dit Quiz boot?"],
+   a:[["Nathalie und Norbert","Nathalie and Norbert","Nathalie un Norbert"],["Der HSV-Vorstand","The HSV board","De HSV-Vörstand"],["Dino ganz allein","Dino all alone","Dino gans alleen"],["Die Bundesliga","The Bundesliga","De Bundesliga"]],
+   e:["Die HSV-Fans Nathalie und Norbert, mit Dino als Maskottchen.","The HSV fans Nathalie and Norbert, with Dino as mascot.","De HSV-Fans Nathalie un Norbert, mit Dino as Maskottchen."]}
+ ]}
+];
+
+/* ---------- Hilfen ---------- */
+const $ = s => document.querySelector(s);
+function h(tag, o, ...kids){
+  const e = document.createElement(tag);
+  if(o) for(const k in o){ if(o[k] == null) continue; if(k === "class") e.className = o[k]; else if(k === "text") e.textContent = o[k]; else if(k.startsWith("on")) e[k] = o[k]; else e.setAttribute(k, o[k]); }
+  kids.flat().forEach(c => { if(c == null) return; e.append(c.nodeType ? c : document.createTextNode(c)); });
+  return e;
+}
+const starsOf = (p, n) => !p ? 0 : p.best === n ? 3 : p.best / n >= .75 ? 2 : p.best / n >= .5 ? 1 : 0;
+function totals(){
+  let st = 0, co = 0, dn = 0;
+  LESSONS.forEach(l => { const p = prog[l.id]; const s = starsOf(p, l.q.length); st += s; co += p ? p.best * 10 : 0; if(s >= 1) dn++; });
+  return {st, co, dn};
+}
+const rankName = st => { let r = RANKS[0]; RANKS.forEach(x => { if(st >= x[0]) r = x; }); return r[1][li]; };
+const starRow = n => h("span", {class:"stars", "aria-label": n + " / 3 " + t("starsOf")}, [0,1,2].map(i => h("span", {class: i < n ? "" : "off", "aria-hidden":"true"}, "★")));
+const announce = m => { $("#live").textContent = ""; setTimeout(() => { $("#live").textContent = m; }, 30); };
+function focusMain(){ const m = $("#main"); m.focus({preventScroll:true}); window.scrollTo({top:0, behavior:"auto"}); }
+function confetti(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const w = h("div", {class:"conf", "aria-hidden":"true"}); const cols = ["#0b5cad","#0d2d6b","#ffc800","#1b7a3d","#3f4b66"];
+  for(let i = 0; i < 36; i++){ const s = h("i"); s.style.left = Math.random()*100 + "%"; s.style.background = cols[i % cols.length]; s.style.animationDelay = Math.random()*.6 + "s"; s.style.animationDuration = 1.6 + Math.random()*1.2 + "s"; w.append(s); }
+  document.body.append(w); setTimeout(() => w.remove(), 3400);
+}
+const idxOf = id => LESSONS.findIndex(l => l.id === id);
+
+/* ---------- Ansichten ---------- */
+function renderHome(){
+  const T = totals(), pct = Math.round(T.dn / LESSONS.length * 100); const m = $("#main"); m.replaceChildren();
+  const nextL = LESSONS.find(l => !earned(l)), boss = LESSONS[LESSONS.length-1], started = T.dn > 0;
+  m.append(h("section", {class:"hero", "aria-labelledby":"h1"},
+    h("div", null,
+      h("h1", {id:"h1", text:hasName() ? fill(t("helloN")) : t("hello")}),
+      h("p", {text:t("introH")}),
+      null),
+    h("div", {class:"ring", style:"--p:" + pct, role:"img", "aria-label": T.dn + " / " + LESSONS.length + " " + t("done")}, h("span", {text:T.dn + "/" + LESSONS.length})),
+h("div", {class:"stats", role:"list"},
+        h("div", {class:"stat", role:"listitem"}, h("span", {class:"sv", text:"🏅 " + rankName(T.st)}), h("span", {class:"sl", text:t("rank")})),
+        h("div", {class:"stat", role:"listitem"}, h("span", {class:"sv", text:"⚽ " + T.co}), h("span", {class:"sl", text:t("coins")})),
+        h("div", {class:"stat", role:"listitem"}, h("span", {class:"sv", text:"★ " + T.st + "/" + LESSONS.length*3}), h("span", {class:"sl", text:t("starsOf")}))),
+    h("div", {class:"herobar"},
+      hasName() ? h("button", {type:"button", class:"namebtn", "aria-label":t("nameChange") + ": " + fname(), onclick:() => { editName = true; focusName = true; render(true); }}, h("span", {"aria-hidden":"true"}, "✎"), h("span", {text:fname() + " · " + t("nameChange")}))
+        : (!editName ? h("button", {type:"button", class:"namebtn", onclick:() => { editName = true; focusName = true; render(true); }}, h("span", {"aria-hidden":"true"}, "✎"), h("span", {text:t("nameAdd")})) : null),
+      LESSONS.some(earned) ? h("button", {type:"button", class:"namebtn", onclick:() => { const c = $("#ch"); if(c){ const rm = matchMedia("(prefers-reduced-motion: reduce)").matches; c.scrollIntoView({behavior: rm ? "auto" : "smooth", block:"start"}); } }}, h("span", {"aria-hidden":"true"}, "🏅"), h("span", null, h("span", {class:"bpre"}, t("certBtnPre")), t("certBtnMain"))) : null)));
+  if((!hasName() && !ach.skip) || editName){
+    const inp = h("input", {id:"nmq", type:"text", maxlength:"40", autocomplete:"given-name", placeholder:t("nameP2"), value:nm});
+    const done = v => { nm = v.trim().slice(0, 40); editName = false; ach.skip = !nm; save(); render(true); };
+    const form = h("form", {class:"nameq", "aria-labelledby":"nq"},
+      h("label", {for:"nmq", id:"nq", text:"👋 " + t("nameQ")}), h("small", {text:t("nameSub")}), inp,
+      h("div", {class:"row", style:"justify-content:flex-start;align-items:center;margin-top:8px;gap:6px 14px"},
+        h("button", {type:"submit", class:"btn"}, t("nameOk")),
+        h("button", {type:"button", class:"btn ghost", onclick:() => { editName = false; ach.skip = true; if(!hasName()) nm = ""; save(); render(true); }}, t("nameSkip"))));
+    form.onsubmit = e => { e.preventDefault(); done(inp.value); };
+    m.append(form);
+    if(focusName){   // nur nach Klick auf Name aendern: Formular in den sichtbaren Bereich holen und Eingabefeld aktivieren
+      focusName = false;
+      const rm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      requestAnimationFrame(() => { form.scrollIntoView({behavior: rm ? "auto" : "smooth", block:"center"}); inp.focus({preventScroll:true}); inp.select(); });
+    }
+  }
+  m.append(installCta());
+  if(nextL){
+    const first = started ? h("button", {type:"button", class:"choice pri", onclick:() => go("lesson", nextL.id)}, h("span", {class:"ci", "aria-hidden":"true"}, nextL.ico), h("span", null, h("b", {text:t("contB")}), h("small", {text:nextL.t[li]})))
+                          : h("button", {type:"button", class:"choice pri", onclick:() => go("lesson", LESSONS[0].id)}, h("span", {class:"ci", "aria-hidden":"true"}, "🌱"), h("span", null, h("b", {text:t("newB")}), h("small", {text:t("newS")})));
+    const vet = nextL === boss ? null : h("button", {type:"button", class:"choice", onclick:() => go("lesson", boss.id)}, h("span", {class:"ci", "aria-hidden":"true"}, "🏆"), h("span", null, h("b", {text:t("oldB")}), h("small", {text:t("oldS")})));
+    m.append(h("div", {class:"choices"}, first, vet));
+    m.append(h("p", {class:"pitch", text:"✨ " + (hasName() ? fill(t("greetN")) : t("pitch"))}));
+  }  if(T.dn === LESSONS.length) m.append(h("div", {class:"bubble", role:"status"}, h("small", {text:"🎉"}), t("allDone")));
+  m.append(spruchCard());
+  m.append(certList());
+  m.append(h("h2", {class:"sec secrow"}, h("span", {text:t("lessons")}), h("span", {class:"cnt", text:T.dn + " / " + LESSONS.length + " " + t("done")})));
+  const g = h("div", {class:"grid"});
+  LESSONS.forEach((l, i) => {
+    const p = prog[l.id], s = starsOf(p, l.q.length);
+    const b = h("button", {type:"button", class:"lcard" + (s >= 1 ? " done" : "") + (nextL === l ? " nextup" : ""), style:"--c:" + l.c + ";animation-delay:" + i*60 + "ms", onclick:() => go("lesson", l.id)},
+      h("span", {class:"ico", "aria-hidden":"true"}, l.ico),
+      h("span", {class:"nr", text:(i+1) + " / " + LESSONS.length}),
+      h("h3", {text:l.t[li]}), h("p", {text:l.sub[li]}),
+      h("span", {class:"foot"}, h("span", {text:"⏱ " + l.min + " " + t("min")}), p ? starRow(s) : h("span", {text:t("start") + " →"})));
+    const cell = h("div", {class:"lcell"}, b);
+    if(s >= 1) cell.append(h("button", {type:"button", class:"certbar", "aria-label":t("certView") + ": " + l.t[li], onclick:() => go("cert", l.id)}, "🏅 " + t("certView")));
+    g.append(cell);
+  });
+  m.append(g);
+  m.append(hsvLinks());
+  m.append(h("p", {style:"margin-top:26px;text-align:center"}, h("button", {type:"button", class:"btn ghost", onclick:() => { if(confirm(t("resetQ"))){ prog = {}; save(); render(); } }}, "↺ " + t("reset"))));
+}
+const SPR = [
+ ["g",["Warum nimmt Norbert immer zwei Fischbrötchen mit zum Spiel? Falls die Verlängerung kommt.","Why does Norbert always take two fish rolls to the match? In case of extra time.","Worüm nimmt Norbert jümmer twee Fischbrötchen to'n Speel mit? Falls de Verlängerung kummt."]],
+ ["g",["Nathalie sagt: Abseits ist, wenn der Schiedsrichter so tut, als hätte er es gesehen.","Nathalie says: offside is when the referee pretends he saw it.","Nathalie seggt: Abseits is, wenn de Schiedsrichter so deit, as harr he dat sehn."]],
+ ["g",["Norberts Taktik-Tipp: „Einfach mehr Tore schießen als die anderen.“ Genial, aber schwer umzusetzen.","Norbert's tactical tip: “Just score more goals than the others.” Brilliant, but hard to implement.","Norbert sien Taktik-Tipp: „Eenfach mehr Dören schetten as de annern.“ Genial, awer swoor ümtosetten."]],
+ ["g",["Unterschied zwischen Fanblock und Trainerbank: Im Fanblock weiß man alles besser und es zahlt trotzdem keiner.","Difference between the stand and the dugout: in the stand everyone knows better and still nobody pays.","Ünnerscheed twüschen Fanblock un Trainerbank: In'n Fanblock weet elkeen allens beter un betahlen deit doch keen."]],
+ ["g",["Im Fanblock gibt es drei Wahrheiten: Nathalies, Norberts und Dinos. Die vierte ist die Tabelle.","In the stand there are three truths: Nathalie's, Norbert's and Dino's. The fourth is the league table.","In'n Fanblock gifft dat dree Wohrheiten: vun Nathalie, vun Norbert un vun Dino. De veerte is de Tabell."]],
+ ["g",["Jeder Fan ist Bundestrainer. Nur im Fanblock sind alle Weltmeister.","Every fan is a national coach. Only in the stand is everyone a world champion.","Elkeen Fan is Bundestrainer. Blots in'n Fanblock sünd all Weltmeisters."]],
+ ["g",["Norbert hat seine Glücksschal-Regel: gewaschen wird erst nach dem nächsten Titel.","Norbert has his lucky-scarf rule: it only gets washed after the next title.","Norbert hett sien Glückschal-Regel: wuschen warrt eerst na den negsten Titel."]],
+ ["f",["Der SC Germania entstand am 29. September 1887 aus zwei Hamburger Clubs. Dieses Datum gilt heute als Geburtstag des HSV.","SC Germania emerged on 29 September 1887 from two Hamburg clubs. That date now counts as the birthday of HSV.","De SC Germania keem an 29. September 1887 ut twee Hamborger Clubs. Dat Datum gilt hüüt as Gebortsdag vun'n HSV."]],
+ ["f",["Sechs Deutsche Meisterschaften: 1923, 1928, 1960, 1979, 1982 und 1983. Der Dino hat sie alle auswendig gelernt.","Six German championships: 1923, 1928, 1960, 1979, 1982 and 1983. The dino has learned them all by heart.","Söss Düütsche Meisterschaften: 1923, 1928, 1960, 1979, 1982 un 1983. De Dino hett se all utwennig lehrt."]],
+ ["f",["25. Mai 1983: Der HSV gewinnt in Athen mit 1:0 gegen Juventus Turin den Europapokal der Landesmeister.","25 May 1983: HSV win the European Cup 1-0 against Juventus in Athens.","25. Mai 1983: De HSV winnt in Athen mit 1:0 gegen Juventus Turin den Europapokal vun de Landsmeisters."]],
+ ["f",["77.600 Zuschauer sahen 1961 das Halbfinale gegen den FC Barcelona. Bis heute ist das Vereinsrekord.","77,600 spectators watched the 1961 semi-final against FC Barcelona. It is still the club record.","77.600 Tokiekers sehgen 1961 dat Halvfinale gegen den FC Barcelona. Bit hüüt is dat Vereensrekord."]],
+ ["f",["55 Jahre lang war der HSV erstklassig. Deshalb heißt er „Bundesliga-Dino“, und deshalb heißt unser Maskottchen Dino.","HSV spent 55 years in the top flight. That is why it is called the “Bundesliga dino”, and why our mascot is called Dino.","55 Johr lang weer de HSV eerstklassig. Dorüm heet he „Bundesliga-Dino“, un dorüm heet use Maskottchen Dino."]],
+ ["f",["Am 10. Mai 2025 sicherte ein 6:1 gegen den SSV Ulm den Aufstieg in die Bundesliga.","On 10 May 2025 a 6-1 against SSV Ulm secured promotion to the Bundesliga.","Op 10. Mai 2025 sekert en 6:1 gegen den SSV Ulm den Opstieg in de Bundesliga."]],
+ ["f",["Rund 80.000 Fans feierten am 19. Mai 2025 den Aufstieg in den Straßen und am Rathausmarkt.","About 80,000 fans celebrated promotion on 19 May 2025 in the streets and at Rathausmarkt.","Rund 80.000 Fans fier'n an 19. Mai 2025 den Opstieg op de Straten un an'n Rathausmarkt."]],
+ ["f",["Das Volksparkstadion ist ein „UEFA 5-Sterne-Stadion“. Bei Veranstaltungen passen bis zu 57.000 Menschen hinein.","The Volksparkstadion is a “UEFA 5-star stadium”. Up to 57,000 people fit in at events.","Dat Volksparkstadion is en „UEFA 5-Steern-Stadion“. Bi Veranstalten passt bit to 57.000 Lüüd rin."]],
+ ["f",["Das HSV-Museum zeigt auf über 700 Quadratmetern mehr als 140 Jahre Vereinsgeschichte. Dino wohnt dort inoffiziell im Keller.","The HSV Museum shows more than 140 years of club history on over 700 square metres. Dino unofficially lives in the basement.","Dat HSV-Museum wiest op över 700 Quadratmeter mehr as 140 Johr Vereensgeschicht. Dino wohnt dor inoffiziell in'n Keller."]]
+];
+let sprI = Math.floor(Math.random() * SPR.length);
+function spruchCard(){
+  const x = SPR[sprI];
+  const c = h("section", {class:"spruch", "aria-labelledby":"spt"}, h("h2", {class:"sec", id:"spt", text:t("spruchT")}), h("p", {class:"stag", text:t(x[0] === "g" ? "spruchG" : "spruchF")}), h("p", {class:"stxt", text:x[1][li]}));
+  c.append(h("button", {type:"button", class:"btn ghost", onclick:() => { let n = sprI; while(n === sprI) n = Math.floor(Math.random() * SPR.length); sprI = n; render(true); }}, "🔁 " + t("spruchB")));
+  return c;
+}
+function crumbBar(label, fn, ctx){
+  const b = h("button", {type:"button", class:"back", "aria-label":label + (ctx ? ": " + ctx : ""), onclick:fn});
+  b.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  b.append(h("span", {text:label}));
+  const bar = h("div", {class:"crumb"}, b); if(ctx){ const mm = /(\d+)\D+(\d+)/.exec(ctx); bar.append(h("span", {class:"ctx", "aria-hidden":"true", text:ctx})); if(mm) bar.append(h("span", {class:"ctxs", "aria-hidden":"true", text:mm[1] + "/" + mm[2]})); } return bar;
+}
+function stickynav(...kids){ return h("div", {class:"stickynav"}, kids.flat().filter(Boolean)); }
+const STEPPATH = {
+  book:'<path d="M2 5.5C2 4.7 2.7 4 3.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H3.5A1.5 1.5 0 0 1 2 16.5z"/><path d="M22 5.5c0-.8-.7-1.5-1.5-1.5H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6.5a1.5 1.5 0 0 0 1.5-1.5z"/>',
+  quiz:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.6a2.6 2.6 0 1 1 3.7 2.3c-.8.4-1.2 1-1.2 1.8"/><path d="M12 17.2h.01"/>',
+  award:'<circle cx="12" cy="9" r="6"/><path d="M8.5 14.5 7 22l5-3 5 3-1.5-7.5"/>',
+  trophy:'<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/>',
+  lock:'<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+  check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>'
+};
+/* Symbol im Schritt: Haken = erledigt, Schloss = gesperrt, sonst Buch (Lesen), Fragezeichen (Quiz), Pokal/Auszeichnung (Nachweis) */
+function stepIcon(i, erledigt, gesperrt){
+  const name = erledigt ? "check" : gesperrt ? "lock" : ["book", "quiz", "award"][i], s = h("span", {class:"sn", "aria-hidden":"true"});
+  s.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false">' + STEPPATH[name] + '</svg>';
+  return s;
+}
+function stepper(n){
+  const S = [t("stRead"), t("stQuiz"), t("stCert")], l = view.id ? LESSONS[idxOf(view.id)] : null;
+  const ziel = l ? [() => go("lesson", l.id), () => startQuiz(l), () => go("cert", l.id)] : [];
+  const frei = [true, true, !!l && earned(l)];
+  return h("ol", {class:"steps", "aria-label":S.join(" · ")}, S.map((x, i) => {
+    const cur = i + 1 === n, at = {class:(cur ? "cur" : (i + 1 < n ? "done" : "")) + (!cur && !frei[i] ? " lock" : "")}; if(cur) at["aria-current"] = "step";
+    const inner = [stepIcon(i, i + 1 < n, !cur && !frei[i]), h("span", {class:"sl", text:x})];
+    if(cur || !l) return h("li", at, h("span", {class:"si"}, inner));
+    return h("li", at, h("button", {type:"button", class:"si", disabled: frei[i] ? null : "", title: frei[i] ? x : t("stLock"), "aria-label": frei[i] ? x : x + " (" + t("stLock") + ")", onclick: ziel[i]}, inner));
+  }));
+}
+const lessonNo = l => t("lessonN").replace("{a}", idxOf(l.id) + 1).replace("{b}", LESSONS.length);
+function toCerts(){ go("home"); setTimeout(() => { const c = $("#ch"); if(c){ const rm = matchMedia("(prefers-reduced-motion: reduce)").matches; c.scrollIntoView({behavior: rm ? "auto" : "smooth", block:"start"}); } }, 80); }
+function renderLesson(l){
+  const m = $("#main"); m.replaceChildren(); const i = idxOf(l.id);
+  m.style.setProperty("--c", l.c);
+  m.append(stickynav(crumbBar(t("back"), () => go("home"), lessonNo(l)), stepper(1)));
+  m.append(h("div", {class:"lhead"}, h("span", {class:"big", "aria-hidden":"true"}, l.ico), h("div", null, h("h1", {id:"h1", text:l.t[li]}), h("p", null, h("span", {class:"mobonly", text:lessonNo(l) + " · "}), l.sub[li]))));
+  if(earned(l)){
+    const sN = starsOf(prog[l.id], l.q.length);
+    m.append(h("section", {class:"donecard", "aria-labelledby":"dcT"},
+      h("span", {class:"dc-i", "aria-hidden":"true"}, "🏅"),
+      h("div", {class:"dc-t"}, h("b", {id:"dcT", text:t("dTitle")}), h("small", {text:t("dSub")}), starRow(sN)),
+      h("div", {class:"row"},
+        h("button", {type:"button", class:"btn", onclick:() => go("cert", l.id)}, "🏅 " + t("certView")),
+        h("button", {type:"button", class:"btn ghost", onclick:() => startQuiz(l)}, "↺ " + t("cont")))));
+  }
+  l.cards.forEach((c, k) => { const d = h("section", {class:"card", style:"animation-delay:" + k*120 + "ms"}, h("h2", null, h("span", {class:"n", "aria-hidden":"true"}, k+1), c[0][li]), h("p", {text:c[1][li]})); m.append(d); });
+  m.append(h("details", {class:"pro", style:"--c:" + l.c}, h("summary", {text:t("pro")}), h("p", {text:l.pro[li]})));
+  m.append(h("div", {class:"bubble"}, h("small", {text:"😄 " + t("fun")}), l.fun[li]));
+  if(!earned(l)) m.append(h("div", {class:"sticky"}, h("button", {type:"button", class:"btn", id:"go", onclick:() => startQuiz(l)}, (prog[l.id] ? t("cont") : t("quiz")) + " →")));
+}
+function shuffle(n){ const a = [...Array(n).keys()]; for(let i = n-1; i > 0; i--){ const j = Math.floor(Math.random()*(i+1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function startQuiz(l){
+  if(!hasName() && !ach.askedQuiz){ view = {v:"namegate", id:l.id}; render(); return; }
+  beginQuiz(l);
+}
+function renderGate(l){
+  const m = $("#main"); m.replaceChildren(); m.style.setProperty("--c", l.c);
+  m.append(stickynav(crumbBar(t("back"), () => go("home"), lessonNo(l)), stepper(2)));
+  const inp = h("input", {id:"nmg", type:"text", maxlength:"40", autocomplete:"given-name", placeholder:t("nameP2"), value:nm});
+  const go2 = skip => { if(!skip) nm = inp.value.trim().slice(0, 40); ach.askedQuiz = true; if(nm) ach.skip = false; save(); beginQuiz(l); };
+  const form = h("form", {class:"nameq", "aria-labelledby":"h1"},
+    h("h1", {id:"h1", style:"margin:0;font-size:1.35rem", text:"🏁 " + t("gateT")}), h("small", {text:t("gateS")}),
+    h("label", {for:"nmg", class:"sr", text:t("nameQ")}), inp,
+    h("div", {class:"row", style:"justify-content:flex-start;align-items:center;margin-top:8px;gap:6px 14px"},
+      h("button", {type:"submit", class:"btn"}, t("gateGo") + " →"),
+      h("button", {type:"button", class:"linkbtn", onclick:() => go2(true)}, t("gateSkip"))));
+  form.onsubmit = e => { e.preventDefault(); go2(false); };
+  m.append(form);
+}
+function beginQuiz(l){ view = {v:"quiz", id:l.id, n:0, right:0, qs:l.q.map(q => ({order:shuffle(q.a.length), picked:null}))}; location.hash = "quiz-" + l.id; render(); }
+function renderQuiz(l){
+  const m = $("#main"); m.replaceChildren(); m.style.setProperty("--c", l.c);
+  const Q = l.q[view.n], st = view.qs[view.n], total = l.q.length; const done = st.picked !== null;
+  m.append(stickynav(crumbBar(t("back"), () => go("home"), lessonNo(l)), stepper(2),
+    h("div", {class:"qrow"}, h("p", {class:"qcount", text:t("qof") + " " + (view.n+1) + " " + t("of") + " " + total}), h("div", {class:"dots", role:"img", "aria-label": t("qof") + " " + (view.n+1) + " " + t("of") + " " + total}, view.qs.map((s, i) => h("i", {class: s.picked !== null ? (s.order[s.picked] === 0 ? "on" : "no") : i === view.n ? "cur" : ""}))))));
+  if(hasName() && (view.n === 0 || view.n === total - 1)) m.append(h("p", {class:"qp", text:"🎯 " + fill(t(view.n === 0 && total > 1 ? "qFirst" : view.n === 0 ? "qFirst" : "qLast"))}));
+  m.append(h("h1", {class:"qq", id:"h1", text:Q.q[li]}));
+  const box = h("div", {class:"opts", role:"group", "aria-labelledby":"h1"});
+  st.order.forEach((ai, pos) => {
+    const cls = ["opt"]; if(done){ if(ai === 0) cls.push("right"); else if(pos === st.picked) cls.push("wrong"); else cls.push("dim"); }
+    const b = h("button", {type:"button", class:cls.join(" "), disabled: done ? "" : null, "data-pos":pos, onclick:() => answer(l, pos)}, h("span", {class:"k", "aria-hidden":"true"}, "ABCD"[pos]), h("span", {text:Q.a[ai][li]}));
+    if(done) b.disabled = true;
+    box.append(b);
+  });
+  m.append(box);
+  if(done){
+    const ok = st.order[st.picked] === 0; const f = h("div", {class:"fb " + (ok ? "ok" : "bad"), role:"status"}, h("b", {text:(ok ? "✅ " + t("correct") : "❌ " + t("wrong")) + " " + fill(st.msgSet[li])}));
+    if(!ok) f.append(h("div", null, t("solution") + " " + Q.a[0][li]));
+    f.append(h("div", {style:"margin-top:6px;font-weight:500", text:Q.e[li]}));
+    if(st.firstHit) f.append(h("div", {class:"ach", text:"🏆 " + t("achFirst")}));
+    m.append(f);
+    const last = view.n === total - 1;
+    m.append(h("div", {class:"next"}, h("button", {type:"button", class:"btn", id:"nx", onclick:() => { if(last){ finishQuiz(l); } else { view.n++; render(); } }}, (last ? t("finish") : t("next")) + " →")));
+  }
+}
+function answer(l, pos){
+  const st = view.qs[view.n]; if(st.picked !== null) return; st.picked = pos; const ok = st.order[pos] === 0; if(ok) view.right++; if(ok && !ach.first){ ach.first = true; save(); st.firstHit = true; }
+  st.msgSet = (ok ? (hasName() ? OKN : OKS) : (hasName() ? BADN : BADS))[Math.floor(Math.random()*4)];
+  render(true);
+}
+function finishQuiz(l){
+  const n = l.q.length, p = prog[l.id]; if(view.right > (p ? p.best : 0)) prog[l.id] = {best:view.right}; save();
+  view = {v:"result", id:l.id, right:view.right}; render();
+}
+function renderResult(l){
+  const m = $("#main"); m.replaceChildren(); const n = l.q.length, s = view.right === n ? 3 : view.right/n >= .75 ? 2 : view.right/n >= .5 ? 1 : 0;
+  const i = idxOf(l.id), nxt = LESSONS[i+1]; const pass = s >= 1;
+  m.append(stickynav(crumbBar(t("back"), () => go("home"), lessonNo(l)), stepper(pass ? 3 : 2)));
+  m.append(h("section", {class:"res"},
+    h("div", {class:"bigstars", role:"img", "aria-label": s + " / 3 " + t("starsOf")}, [0,1,2].map(k => h("span", {class:k < s ? "" : "off"}, "★"))),
+    h("h1", {id:"h1", text:hasName() ? fill(t(pass ? "passN" : "tryN")) : (pass ? t("pass") : t("tryAgain"))}),
+    h("p", {text:t("res") + ": " + view.right + " " + t("of") + " " + n + " · " + view.right*10 + " " + t("coins")})));
+  if(pass){ m.append(h("p", {class:"pitch", style:"margin:0 0 6px", text:"🏅 " + t("certNow")})); certBlock(m, l); }
+  const save1 = () => savePng(certSVG(l), "hsv_fanquiz_" + l.id + "_" + (nm.trim() || "name").replace(/[^\p{L}\p{N}]+/gu, "_") + ".png");
+  const bNext = nxt && pass ? h("button", {type:"button", class:"btn", onclick:() => go("lesson", nxt.id)}, t("nextL") + " →") : null;
+  const bSave = pass ? h("button", {type:"button", class:"btn" + (bNext ? " ghost" : ""), onclick:save1}, "⬇ " + t("dl")) : null;
+  const bRetry = h("button", {type:"button", class:"btn" + (pass ? " ghost" : ""), onclick:() => startQuiz(l)}, "↺ " + t("retry"));
+  const bHome = h("button", {type:"button", class:"btn ghost", onclick:() => go("home")}, t("over"));
+  m.append(h("div", {class:"row"}, bNext, bSave, bRetry, bHome));  m.append(nLink());
+  if(pass) confetti();
+}
+const NHIST = "https://www.hsv.de/unser-hsv/historie/die-geschichte-des-hsv", NCORP = "https://www.hsv.de/volkspark/volksparkstadion";
+function hsvLinks(){
+  const w = h("section", {"aria-labelledby":"nh"}); const g = h("div", {class:"certlist nlinks"});
+  [["⚽", t("nSite"), NURL[li][0], NURL[li][1]], ["📜", t("nHist"), NHIST, "hsv.de"], ["🏟️", t("nCorp"), NCORP, "hsv.de"]].forEach(x => g.append(h("a", {class:"btn ghost", href:x[2], rel:"noopener"}, h("span", {"aria-hidden":"true"}, x[0]), h("span", null, x[1], h("small", {style:"display:block;font-weight:600;color:var(--mute)", text:x[3]})))));
+  w.append(h("h2", {class:"sec", id:"nh", text:"⚽ " + t("nSec")}), g); return w;
+}
+function nLink(){ return h("a", {href:NURL[li][0], rel:"noopener", class:"ncard"}, h("span", {class:"ci", "aria-hidden":"true"}, "⚽"), h("span", {class:"nt"}, h("b", {text:t("moreN")}), h("small", {text:NURL[li][1]})), h("span", {class:"ar", "aria-hidden":"true"}, "→")); }
+function certBlock(m, l){
+  const fld = h("div", {class:"field"}, h("label", {for:"nm", text:t("nameL")}), h("input", {id:"nm", type:"text", maxlength:"40", autocomplete:"name", placeholder:t("nameP"), value:nm}));
+  const box = h("div", {class:"certbox"}); box.innerHTML = certSVG(l);
+  fld.querySelector("input").oninput = e => { nm = e.target.value; save(); box.innerHTML = certSVG(l); };
+  m.append(fld, box);
+}
+/* ---------- Zertifikate ---------- */
+const CT = {
+ head:["FANBLOCK-ZERTIFIKAT","FAN BLOCK CERTIFICATE","FANBLOCK-ZERTIFIKAT"],
+ headM:["DINO-MEISTER-ZERTIFIKAT","DINO MASTER CERTIFICATE","DINO-MEISTER-ZERTIFIKAT"],
+ conf:["Hiermit wird feierlich und mit Fischbrötchen-Stempel bestätigt, dass","It is hereby solemnly and with a fish-roll stamp confirmed that","Hiermit warrt fierlich un mit Fischbrötchen-Stempel bestätigt, dat"],
+ did:["den Spieltag gewonnen hat:","has won the matchday:","den Speeldag wunnen hett:"],
+ didM:["alle sieben Spieltage gewonnen hat und damit HSV-Wissen auf Dino-Niveau besitzt.","has won all seven matchdays and now holds HSV knowledge at dino level.","all söven Speeldaag wunnen hett un dormit HSV-Weten op Dino-Niveau hett."],
+ score:["richtig","correct","rieklig"],
+ lines:[["Geschafft! Jede Vereinslegende hat mal auf der Bank angefangen.","Done! Every club legend started out on the bench.","Schafft! Jede Vereenslegende hett mal op de Bank anfungen."],
+        ["Stark! Der nächste Spieltag wartet schon auf dich.","Strong! The next matchday is already waiting for you.","Stark! De negste Speeldag töövt al op di."],
+        ["Perfekt! Ein Tor wie in der 90. Minute.","Perfect! A goal like in the 90th minute.","Perfekt! En Dör as in de 90. Minüt."]],
+ linesN:[["Geschafft, {n}! Jede Vereinslegende hat mal auf der Bank angefangen.","Done, {n}! Every club legend started out on the bench.","Schafft, {n}! Jede Vereenslegende hett mal op de Bank anfungen."],
+        ["Stark, {n}! Der nächste Spieltag wartet schon auf dich.","Strong, {n}! The next matchday is already waiting for you.","Stark, {n}! De negste Speeldag töövt al op di."],
+        ["Perfekt, {n}! Ein Tor wie in der 90. Minute.","Perfect, {n}! A goal like in the 90th minute.","Perfekt, {n}! En Dör as in de 90. Minüt."]],
+ lineMN:["{n}, du bist offiziell ein HSV-Experte (inoffiziell). Das erste Fischbrötchen geht auf Dino!","{n}, you are officially an HSV expert (unofficially). The first fish roll is on Dino!","{n}, du büst offiziell een HSV-Expert (inoffiziell). Dat eerste Fischbrötchen geiht op Dino!"],
+ lineM:["Du bist offiziell ein HSV-Experte (inoffiziell). Das erste Fischbrötchen geht auf Dino!","You are officially an HSV expert (unofficially). The first fish roll is on Dino!","Du büst offiziell een HSV-Expert (inoffiziell). Dat eerste Fischbrötchen geiht op Dino!"],
+ rankL:["Rang","Rank","Rang"],
+ date:["Datum","Date","Datum"],
+ sign:["Nathalie & Norbert (inoffiziell)","Nathalie & Norbert (unofficial)","Nathalie & Norbert (inoffiziell)"],
+ foot:["Inoffizielles Fan-Projekt der HSV-Fans Nathalie und Norbert · kein Produkt des Hamburger SV","Unofficial fan project by the HSV fans Nathalie and Norbert · not a product of Hamburger SV","Inoffizielles Fan-Projekt vun de HSV-Fans Nathalie un Norbert · keen Produkt vun'n Hamborger SV"]
+};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function wrap(s, n){
+  if(s.length <= n) return [s];
+  if(/\s/.test(s)){ const w = s.split(/\s+/), out = []; let cur = ""; w.forEach(x => { if((cur + " " + x).trim().length > n && cur){ out.push(cur); cur = x; } else cur = (cur + " " + x).trim(); }); if(cur) out.push(cur); return out.slice(0, 3); }
+  const out = []; for(let i = 0; i < s.length; i += n) out.push(s.slice(i, i + n)); return out.slice(0, 3);
+}
+const earned = l => starsOf(prog[l.id], l.q.length) >= 1;
+const allEarned = () => LESSONS.every(earned);
+function certSVG(l){
+  const M = !l, g = k => CT[k][li], n = nm.trim();
+  const T = totals(), st = M ? T.st : starsOf(prog[l.id], l.q.length), right = M ? 0 : prog[l.id].best;
+  const d = new Date().toLocaleDateString(({de:"de-DE", en:"en-GB", nds:"de-DE"})[LANGS[li][0]], {day:"2-digit", month:"long", year:"numeric"});
+  const F = 'font-family="Trebuchet MS, Segoe UI, Hiragino Maru Gothic ProN, Yu Gothic UI, Meiryo, sans-serif"';
+  const ew = [...n].reduce((s, c) => s + (/[WMm@]/.test(c) ? 1.05 : /\s/.test(c) ? .3 : /[\u3000-\u9fff\uff00-\uffef]/.test(c) ? 1.25 : /[A-ZÄÖÜ]/.test(c) ? .74 : /[ilj.,'!|]/.test(c) ? .3 : .58), 0);
+  const nsz = n ? Math.max(16, Math.min(64, Math.floor(860 / Math.max(6, ew)))) : 34;
+  const ja = LANGS[li][0] === "ja", tl = M ? wrap(g("didM"), ja ? 30 : 52) : wrap(l.t[li], ja ? 22 : 38);
+  const stars = [0,1,2].map(k => '<text x="' + (561.5 + (k-1)*70) + '" y="' + (M ? 575 : 585) + '" font-size="58" text-anchor="middle" fill="' + (M || k < st ? "#ffc800" : "#d9d9de") + '" stroke="' + (M || k < st ? "#b58900" : "#b8b9bd") + '" stroke-width="2">★</text>').join("");
+  const band = ["#0b5cad","#0d2d6b","#ffc800","#1b7a3d","#3f4b66"].map((c, i) => '<rect x="' + (60 + i*200.6) + '" y="36" width="200.6" height="16" fill="' + c + '"/>').join("");
+  const conf = [[110,150,"#0d2d6b"],[1010,170,"#ffc800"],[130,640,"#1b7a3d"],[1000,650,"#3f4b66"],[90,330,"#ffc800"],[1030,360,"#0b5cad"],[160,230,"#0b5cad"],[960,250,"#1b7a3d"]].map(a => '<rect x="' + a[0] + '" y="' + a[1] + '" width="16" height="16" rx="3" transform="rotate(' + (a[0]%40-20) + ' ' + a[0] + ' ' + a[1] + ')" fill="' + a[2] + '"/>').join("");
+  const head = M ? g("headM") : g("head");
+  const hs = Math.min(72, Math.floor(860 / (head.length * 0.78)));
+  const line = hasName() ? fill(M ? CT.lineMN[li] : CT.linesN[Math.max(0, st-1)][li]) : (M ? g("lineM") : CT.lines[Math.max(0, st-1)][li]);
+  const rank = rankName(T.st);
+  const lw = [...line].reduce((s, c) => s + (/[WMm@]/.test(c) ? 1.05 : /\s/.test(c) ? .3 : /[A-ZÄÖÜ]/.test(c) ? .74 : /[ilj.,'!|]/.test(c) ? .3 : .56), 0), lsz = Math.max(13, Math.min(22, Math.floor(960 / lw)));
+  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1123 794" width="1123" height="794" role="img" aria-label="' + esc(head + (n ? " – " + n : "") + (M ? "" : " – " + l.t[li])) + '">'
+   + '<rect width="1123" height="794" rx="28" fill="#ffffff"/>'
+   + '<rect x="14" y="14" width="1095" height="766" rx="22" fill="none" stroke="#0b5cad" stroke-width="10"/>'
+   + '<rect x="34" y="34" width="1055" height="726" rx="14" fill="none" stroke="#e1e2e5" stroke-width="2" stroke-dasharray="10 8"/>'
+   + band + conf
+   + '<text x="561.5" y="140" text-anchor="middle" font-size="' + hs + '" font-weight="800" letter-spacing="4" fill="#0b5cad" ' + F + '>' + esc(head) + '</text>'
+   + '<text x="561.5" y="172" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="4" fill="#0d2d6b" ' + F + '>HSV-FANQUIZ</text>'
+   + '<text x="561.5" y="203" text-anchor="middle" font-size="22" fill="#4d4f54" ' + F + '>' + esc(g("conf")) + '</text>'
+   + '<text x="561.5" y="270" text-anchor="middle" font-size="' + nsz + '" font-weight="800" fill="' + (n ? "#1f2026" : "#b8b9bd") + '" ' + F + '>' + esc(n || t("nameP")) + '</text>'
+   + '<line x1="250" y1="290" x2="873" y2="290" stroke="#0b5cad" stroke-width="4" stroke-linecap="round"/>'
+   + (M ? '' : '<text x="561.5" y="338" text-anchor="middle" font-size="22" fill="#4d4f54" ' + F + '>' + esc(g("did")) + '</text>')
+   + tl.map((x, i) => '<text x="561.5" y="' + ((M ? 350 : 392) + i*40) + '" text-anchor="middle" font-size="' + (M ? 26 : 34) + '" font-weight="700" fill="#0d2d6b" ' + F + '>' + esc(x) + '</text>').join("")
+   + (M ? '<text x="561.5" y="440" text-anchor="middle" font-size="26" font-weight="800" fill="#1b7a3d" ' + F + '>' + esc(t("certMasterBadge")) + '</text>' : '<text x="561.5" y="' + (392 + (tl.length-1)*40 + 50) + '" text-anchor="middle" font-size="24" font-weight="700" fill="#1f2026" ' + F + '>' + esc(right + " / " + l.q.length + " " + g("score")) + '</text>')
+   + stars
+   + '<text x="561.5" y="640" text-anchor="middle" font-size="' + lsz + '" font-style="italic" fill="#4d4f54" ' + F + '>' + esc(line) + '</text>'
+   + '<text x="110" y="712" font-size="15" fill="#565860" ' + F + '>' + esc(g("date") + ": " + d) + '</text>'
+   + '<text x="110" y="736" font-size="15" fill="#565860" ' + F + '>' + esc(g("rankL") + ": " + rank) + '</text>'
+   + '<circle cx="561.5" cy="695" r="38" fill="#ffffff" stroke="#0b5cad" stroke-width="5"/><g transform="translate(535.5 677) scale(3.25)">' + logoRects() + '</g>'
+   + '<text x="1013" y="712" text-anchor="end" font-size="16" font-style="italic" fill="#1f2026" ' + F + '>' + esc(g("sign")) + '</text>'
+   + '<line x1="760" y1="720" x2="1013" y2="720" stroke="#1f2026" stroke-width="1.5"/>'
+   + '<text x="561.5" y="759" text-anchor="middle" font-size="16" font-weight="700" fill="#0d2d6b" ' + F + '>' + esc(NURL[li][1]) + '</text>'
+   + '<text x="561.5" y="778" text-anchor="middle" font-size="12" fill="#6b6d73" ' + F + '>' + esc(g("foot") + " · v" + VERSION) + '</text>'
+   + '</svg>';
+}
+function renderCert(l){
+  const m = $("#main"); m.replaceChildren(); const M = !l;
+  if(M) m.append(stickynav(crumbBar(t("back"), () => go("home"), t("master"))));
+  else m.append(stickynav(crumbBar(t("back"), () => go("home"), lessonNo(l)), stepper(3)));
+  m.append(h("h1", {id:"h1", text:"🏅 " + (M ? t("master") : t("certOf") + ": " + l.t[li])}));
+  const box = null; certBlock(m, l);
+  const nameSafe = (nm.trim() || "name").replace(/[^\p{L}\p{N}]+/gu, "_");
+  m.append(h("div", {class:"row"},
+    h("button", {type:"button", class:"btn", onclick:() => savePng(certSVG(l), "hsv_fanquiz_" + (M ? "master" : l.id) + "_" + nameSafe + ".png")}, "⬇ " + t("dl")),
+    h("button", {type:"button", class:"btn ghost", onclick:() => window.print()}, "🖨 " + t("prt")),
+    (!M && LESSONS[idxOf(l.id) + 1]) ? h("button", {type:"button", class:"btn ghost", onclick:() => go("lesson", LESSONS[idxOf(l.id) + 1].id)}, t("nextL") + " →") : null,
+    h("button", {type:"button", class:"btn ghost", onclick:toCerts}, "🏅 " + t("certAll")),
+    h("button", {type:"button", class:"btn ghost", onclick:() => go("home")}, t("over"))));
+  m.append(nLink());
+  if(!matchMedia("(prefers-reduced-motion: reduce)").matches) confetti();
+}
+function savePng(svg, name){
+  const url = URL.createObjectURL(new Blob([svg], {type:"image/svg+xml;charset=utf-8"})), img = new Image();
+  img.onload = () => { const c = document.createElement("canvas"); c.width = 1123; c.height = 794; const x = c.getContext("2d"); x.fillStyle = "#fff"; x.fillRect(0, 0, 1123, 794); x.drawImage(img, 0, 0); URL.revokeObjectURL(url); c.toBlob(b => { const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = name; document.body.append(a); a.click(); a.remove(); }); };
+  img.src = url;
+}
+function certList(){
+  const got = LESSONS.filter(earned); const w = h("section", {"aria-labelledby":"ch"}); 
+  w.append(h("h2", {class:"sec", id:"ch", text:"🏅 " + t("certs")}), h("p", {style:"margin:0 0 12px;color:var(--mute)", text:t("certsHint")}));
+  const g = h("div", {class:"certlist"});
+  if(allEarned()) g.append(h("button", {type:"button", class:"btn mastercard", onclick:() => go("cert", "master")}, "👑 " + t("master")));
+  got.forEach(l => g.append(h("button", {type:"button", class:"btn ghost", onclick:() => go("cert", l.id)}, l.ico + " " + l.t[li])));
+  w.append(g); return got.length ? w : h("section");
+}/* ---------- Routing ---------- */
+function go(v, id){ view = {v, id}; location.hash = v === "home" ? "home" : v + "-" + id; render(); }
+function fromHash(){
+  const x = (location.hash || "").slice(1); const m = x.match(/^(lesson|quiz|cert)-(.+)$/); const known = m && LESSONS.some(l => l.id === m[2]);
+  if(m && m[1] === "cert" && (m[2] === "master" ? allEarned() : known && earned(LESSONS[idxOf(m[2])]))) view = {v:"cert", id:m[2]};
+  else if(known && m[1] === "quiz"){ if(view.v !== "quiz" && view.v !== "result") view = {v:"lesson", id:m[2]}; }
+  else if(known && m[1] === "lesson") view = {v:"lesson", id:m[2]};
+  else view = {v:"home"};
+}let lastKey = "";
+function render(keepScroll){
+  const l = view.id ? LESSONS[idxOf(view.id)] : null;
+  if(view.v === "lesson") renderLesson(l); else if(view.v === "quiz") renderQuiz(l); else if(view.v === "result") renderResult(l); else if(view.v === "cert") renderCert(l); else if(view.v === "namegate") renderGate(l); else renderHome();
+  chrome();
+  const key = view.v + (view.id || "") + (view.n || 0);
+  if(keepScroll === true){ const nb = $("#nx"); if(nb) nb.scrollIntoView({block:"nearest"}); const fb = $(".fb"); if(fb) announce(fb.textContent); }
+  else if(key !== lastKey){ focusMain(); }
+  lastKey = key;
+}
+function chrome(){
+  document.documentElement.lang = LANGS[li][0];
+  document.title = t("title");
+  $(".brand .dot").innerHTML = logoSvg(); $("#bt").textContent = t("title"); $("#bs").textContent = t("by"); $("#brand").setAttribute("aria-label", t("title") + " – " + t("over"));
+  $("#skip").textContent = t("skip"); $("#theme").setAttribute("aria-label", t("themeL")); $("#theme").setAttribute("title", t("themeL")); $("#share").setAttribute("aria-label", t("shT")); $("#share").setAttribute("title", t("shT"));
+  const T = totals(); $("#coins").textContent = "⚽ " + T.co;
+  const lg = $("#langs"); lg.replaceChildren(); LANGS.forEach((x, i) => lg.append(h("button", {type:"button", lang:x[0], "aria-pressed": String(i === li), "aria-label":x[2], onclick:() => { li = i; save(); render(true); }}, x[1])));
+  const sl = view.id ? LESSONS[idxOf(view.id)] : null;
+  const f = $("#foot"); f.replaceChildren(...[
+    (sl && view.v !== "home" && view.v !== "quiz") ? h("section", {class:"srccard", "aria-labelledby":"srcT"},
+      h("div", {class:"srch"}, h("span", {class:"si", "aria-hidden":"true"}, "📚"), h("b", {id:"srcT", text:t("src")})),
+      h("ul", {class:"srclist"}, sl.src.map(s => h("li", null, h("a", {href:s[1], rel:"noopener"}, s[0]))))) : null,
+    view.v !== "home" ? h("div", {class:"fhome"}, h("button", {type:"button", class:"btn ghost", onclick:() => go("home")}, (() => { const s = h("span", {"aria-hidden":"true"}); s.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M10 20v-6h4v6"/></svg>'; return s; })(), h("span", {text:t("toHome")}))) : null,
+    view.v === "home" ? h("div", {class:"fcard"}, h("span", {class:"fic", "aria-hidden":"true"}, "ℹ️"), h("div", null, h("p", {class:"fdisc", text:t("disc")}), h("p", {class:"ftrans", text:t("trans")}))) : null,
+    view.v === "home" ? h("p", {class:"fver"}, h("span", {text:t("ver") + " " + VERSION + " · " + STAND})) : null].filter(Boolean));   // Info und Version nur auf der ersten Seite
+}
+$("#brand").onclick = () => {
+  if(view.v === "home"){ const rm = matchMedia("(prefers-reduced-motion: reduce)").matches; window.scrollTo({top:0, behavior: rm ? "auto" : "smooth"}); $("#main").focus({preventScroll:true}); }
+  else go("home");
+};
+$("#share").onclick = openShare;
+$("#theme").onclick = () => { const r = document.documentElement; const dark = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; r.dataset.theme = dark ? "light" : "dark"; };
+window.addEventListener("hashchange", () => { fromHash(); render(); });
+/* ---------- PWA: Installieren, Offline, Updates ---------- */
+let deferredInstall = null, installState = "";   // installState: "" | "cancelled" | "done"
+const isStandalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const isIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+function hilfeDialog(titel, kids){
+  document.querySelectorAll(".shdlg").forEach(d => d.remove());
+  const d = h("dialog", {class:"shdlg", "aria-labelledby":"iht"}, h("button", {type:"button", class:"shx", "aria-label":t("shX"), onclick:() => d.close()}, "✕"), h("p", {class:"shh"}, h("b", {id:"iht", text:titel})), ...kids);
+  d.addEventListener("click", ev => { if(ev.target === d) d.close(); }); d.addEventListener("close", () => d.remove());
+  document.body.append(d); d.showModal();
+}
+const iosHelp = () => hilfeDialog(t("instIosT"), [h("ol", {class:"instol"}, h("li", {text:t("instI1")}), h("li", {text:t("instI2")}), h("li", {text:t("instI3")})), h("p", {class:"shh"}, h("small", {text:t("instINote")}))]);
+const menuHelp = () => hilfeDialog(t("instMenuT"), [h("p", {text:installState === "cancelled" ? t("instCancel") + " " + t("instMenu") : t("instMenu")})]);
+async function doInstall(){
+  const e = deferredInstall; if(!e) return; let res = null;
+  try{ await e.prompt(); res = await e.userChoice; }catch(x){}
+  deferredInstall = null; installState = res && res.outcome === "accepted" ? "done" : "cancelled"; render(true);
+}
+/* Knopf auf der Startseite: nur solange die App nicht installiert ist, damit niemand in Einstellungen suchen muss */
+const installAction = () => { if(deferredInstall) doInstall(); else if(isIOS()) iosHelp(); else menuHelp(); };
+function installCta(){
+  if(isStandalone() || installState === "done") return h("span");
+  return h("button", {type:"button", class:"install-cta", id:"installCta", "aria-haspopup":"dialog", onclick:installAction},
+    h("span", {class:"ic-ico", "aria-hidden":"true"}, "📲"), h("span", {class:"ic-text"}, h("b", {text:t("instCta")}), h("small", {text:t("instCtaS")})), h("span", {class:"ic-go", "aria-hidden":"true"}, "→"));
+}const SHARE_URL = "https://nosz.github.io/hsv/";
+function openShare(){
+  if(navigator.share){ navigator.share({title:t("shSubj"), text:t("shMsg"), url:SHARE_URL}).catch(() => {}); return; }
+  document.querySelectorAll(".shdlg").forEach(d => d.remove());
+  const d = h("dialog", {class:"shdlg", "aria-labelledby":"sht"}), x = h("button", {type:"button", class:"shx", "aria-label":t("shX"), onclick:() => d.close()}, "✕");
+  d.append(x, shareCard()); d.addEventListener("close", () => d.remove()); d.addEventListener("click", e => { if(e.target === d) d.close(); });
+  document.body.append(d); d.showModal();
+}
+function shareCard(){
+  const txt = t("shMsg"), enc = encodeURIComponent;
+  const c = h("section", {class:"sharecard", "aria-labelledby":"sht"}, h("div", {class:"sh"}, h("span", {class:"si", "aria-hidden":"true"}, "🔗"), h("div", null, h("b", {id:"sht", text:t("shT")}), h("small", {text:t("shS")}))));
+  const row = h("div", {class:"sharerow"});
+  row.append(h("a", {class:"btn", href:"https://wa.me/?text=" + enc(txt + " " + SHARE_URL), target:"_blank", rel:"noopener noreferrer"}, "💬 " + t("shWa")));
+  row.append(h("a", {class:"btn ghost", href:"mailto:?subject=" + enc(t("shSubj")) + "&body=" + enc(txt + "\r\n\r\n" + SHARE_URL)}, "✉️ " + t("shMail")));
+  row.append(h("button", {type:"button", class:"btn ghost", onclick:async () => {
+    let ok = false;
+    try{ await navigator.clipboard.writeText(SHARE_URL); ok = true; }catch(x){
+      try{ const ta = h("textarea", {readonly:"", style:"position:fixed;left:-9999px"}); ta.value = SHARE_URL; document.body.append(ta); ta.select(); ok = document.execCommand("copy"); ta.remove(); }catch(y){}
+    }
+    snack(ok ? t("shCopied") : t("shFail") + " " + SHARE_URL, null, null, ok ? 2500 : 6000);
+  }}, "📋 " + t("shCopy")));
+  c.append(row); return c;
+}
+function snack(text, btn, fn, ms){
+  const old = document.querySelector(".snack"); if(old) old.remove();
+  const s = h("div", {class:"snack", role:"status"}, h("span", {text}));
+  if(btn) s.append(h("button", {type:"button", onclick:() => { fn(); s.remove(); }}, btn));
+  document.body.append(s); if(ms) setTimeout(() => s.remove(), ms);
+}
+window.addEventListener("beforeinstallprompt", e => { e.preventDefault(); deferredInstall = e; if(view.v === "home" && !editName) render(true); });
+window.addEventListener("appinstalled", () => { deferredInstall = null; installState = "done"; if(view.v === "home") render(true); });
+if("serviceWorker" in navigator && /^https?:$/.test(location.protocol)){
+  let reloading = false, hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener("controllerchange", () => { if(!hadController){ hadController = true; return; } if(reloading) return; reloading = true; location.reload(); });
+  window.addEventListener("load", () => {
+    const first = !navigator.serviceWorker.controller;
+    navigator.serviceWorker.register("sw.js").then(reg => {
+      const upd = w => snack(t("updT"), t("updB"), () => w.postMessage("SKIP_WAITING"));
+      if(reg.waiting && navigator.serviceWorker.controller) upd(reg.waiting);
+      reg.addEventListener("updatefound", () => { const w = reg.installing; if(w) w.addEventListener("statechange", () => { if(w.state === "installed"){ if(navigator.serviceWorker.controller) upd(w); else snack(t("offT"), null, null, 4500); } }); });
+    }).catch(() => {});
+  });
+}
+fromHash(); render();
+/* Ab und zu schaut der kleine Dino mit dem blau-weißen Schal vorbei: Zufallssystem mit vielen verschiedenen Auftritten (rein dekorativ, nicht klickbar). Er heißt Dino (wie der „Bundesliga-Dino“), spricht nur Plattdeutsch, macht Witze über andere Vereine (immer mit Respekt) und fragt am Anfang nach dem Namen. Test: Adresse mit ?lauf=gruss|name|quer|umkehr|wand|rundherum|gucken|huepfer|stolpern|schlafen|moonwalk|turbo|schleichen|stammtisch|brezn|pokaljagd|hutziehen|tor|hallo|karriere|stern|ballon|fass|groesse|dieb|witz|name */
+(function(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const MAP = [".......GGGG..",  "......GGGGGG.", "......GGGWDG.", "......GGGGGGG", "......GGGGMMG", "T.....GGGGGG.", "TT...GGGBBBG.", ".TTT.GGBWBGG.", "..TGGGGGGGYY.", "...GGGGGGGYY.", "...GGGGGGGYY.", "....GGGGGGGG.", "....GGGGGGG..", "....GG...GG..", "....GG...GG..", "...BBB..BBB.."];
+  const COL = {G:"#45a85a", T:"#2f8a46", W:"#ffffff", D:"#12202b", B:"#0b5cad", Y:"#cdeeb4", M:"#b3261e"};
+  const NS = "http://www.w3.org/2000/svg";
+  const R = Math.random, pick = a => a[Math.floor(R() * a.length)], rnd = (a, b) => a + R() * (b - a);
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  /* Alle Sprüche sind Plattdeutsch. Die ersten neun sind allgemeine Reaktionen (werden von einzelnen Auftritten gezielt gewählt), danach Witze und Fanblock-Weisheiten. */
+  const SAG = ["Hoppla!","Moin moin!","Verkehrte Richt!","Wo is de Meisterschal? Ach, jümmer noch bi uns.","Dor is jo wat los!","Kört Paus, dat Fischbrötchen töövt.","Ik nehm de Afkörtung.","En Pilsener weer nu goot.","Ik weer dat nich.",
+    "Moin mitenanner!","Moin, ji Lüüd!","Ik heff mien Steert extra poleert.","Fischbrötchen, Franzbrötchen, Pilsener: dat is mien Taktik.","Fischbrötchen na de Halvtiet? Dat is Pflicht.","Ahn Franzbrötchen keen Training.","En Dino maakt noch keen Meister. Bi uns doch.",
+    "Dat Quiz is goot. Eerst lehrn, denn Fischbrötchen.","Fief Minuten lehrn, denn en Pilsener. Fast.","Weten is as de Meisterschal: schöön un swoor to heven.","Wi wüllt gewinnen. Awer wi gönnt ok wat.",
+    "Dortmund hett de Gele Wand. Respekt, de is luut!","Bremen is nich wiet weg. Dat Nordderby is Familientreffen.","St. Pauli hett den Dodenkopp. Wi hebbt de Raut.","Köln hett den Geißbock. Wi hebbt den Dino. Elkeen as he mag.","Union Berlin singt Eisern. Wi singt Nur der HSV.","Frankfurt hett den Adler. Good flegen köönt de.","Stuttgart seggt, man kann allens, blots keen Hochdüütsch.","Leipzig drinkt ut de Dos. Wi ut dat Glas. Prost!","Mainz hett Fastnacht. Wi hebbt Hafengeburtstag.","Wolfsburg boot Autos. Hamborg boot Scheep.","Bayern hett vele Titeln. Wi hebbt Humor.","Barcelona? 1961 keken 77.600 Lüüd to. Dat is Rekord.","Juventus? 4:4 in't Johr 2000. Dat nömt wi Johrhunnert-Unentschieden.","Athen 1983: Magath, 1:0, Juventus. Mehr mutt man nich weten.","Uns Uwe harr blots een Rode Kaart. Ik heff al twee.","Söss Meisterschaften: ik heff se all utwennig lehrt.","55 Johr eerstklassig: dorüm heet ik Dino.","Dat Volksparkstadion is en UEFA 5-Steern-Stadion. Mien Wohnstuuv.","Nur der HSV: dat is keen Spröök, dat is en Levensinstellung.","Hüüt föhrt de Meister. Ik weet ok nich wohen.","Moin! Ik heff dat Quiz nich boot, awer ik passe dorop op.","Steert hooch, ok wenn de Tabell mal wackelt!","Pilsener is keen Taktik, awer ik prööv dat jümmer wedder.","Dat Leven is een Halvtiet. Nu keem de tweete Hälft.","Wenn de Wind in'n Volkspark weiht, hett de Dino Spaaß.","Ik bün lütt, awer mien Hart is groot as de Elbe."];
+  const AUA = "Autsch! Dat deit weh!", ZZZ = "Zzz … Franzbrötchen …", WACH = "Ik bün wach! Ik heff blots de Ogen dicht hatt!", MOON = "Moonwalk, mit Dino-Steert!", PSST = "Psst … ik bün gor nich dor.", TANZ = "♪ Hamborger Veermaster! ♫", TURBO = ["Gauer!","Turbo, as de Dino in'n Volkspark!"];
+  const PEEK = ["Blots kört kieken …","Huhu! De lütte Dino!","Is dor wer to Huus?","Allens goot bi jo?"];
+  const NAMEN = ["%N, du schafst dat!","Wieder so, %N!","%N, du büst en Wunner!","Nur der HSV, un du büst dorbi, %N!","Moin %N, hüüt geiht dat wieder.","%N, wi sünd stolt op di.","Goot maakt, %N. En Fischbrötchen hest du verdeent!","%N klingt al as en Meistertitel.","%N, du büst en Gewinner-Typ!","Kopp hooch, %N. Na Regen kummt Pilsener."];
+  /* Vorstellung beim allerersten Auftritt: Dino sagt, wer er ist (zwei Sprechblasen, eine der drei Fassungen) */
+  const VORSTELLUNG = [["Moin! Ik bün Dino, de lütte Dino vun'n HSV. Offiziell Chef vun dat Quiz.","Mien Job: Fischbrötchen bewaken. Mien Hobby: Fischbrötchen bewaken. Mien Swäche: ok."],
+    ["Moin moin! Dino is mien Naam, Dino blifft dat ok. Mien Steert kann mehr as ik!","Mien Grött? Gans genau richtig: nich to groot, nich to lütt, just as en Franzbrötchen."],
+    ["Tschüss, Langewiel! Ik bün Dino, dat lütte Wunner ut'n Volkspark.","Ik heet Dino, ik heff en Steert un ik weet allens över den HSV. Fast allens."]];
+  async function vorstellen(g){
+    if(ach.dino) return; ach.dino = true; save();
+    const v = pick(VORSTELLUNG);
+    await stehen(g, 200); sag(g, v[0], 3400, true); await sprung(g, 30); await stehen(g, 3400);
+    sag(g, v[1], 3600, true); await salto(g); await stehen(g, 3000);
+  }
+  /* Namensfrage: wird mit jeder Wiederholung etwas drängender (und lustiger) */
+  const NAMEQ = [["Moin! Mi kennst du jo nu. Woans dröff ik di nömen?","Schriev dien Naam in, denn segg ik Moin mit Naam!"],["Moin moin! Nur der HSV, awer wer büst du?","Schriev dien Naam rin, dat maakt dat glieks persöönlicher."],["Hoi! De lütte Dino fraagt: Woans heetst du?","Dien Naam kummt op dat Zertifikat. Dat warrt schöön!"],
+    ["Hallo? Töv mal! Ik fraag al wedder: Woans heetst du?","Ahn Naam kenn ik di nich, un ik mag di doch al!"],["Hein? Fietje? Anke? Segg mi, woans du heetst!","Schriev dien Naam in, dat duert twee Sekunnen. Verspraken!"],["Letzte Chance, denn fraag ik den Kellner: Woans heetst du?","Dien Naam maakt de App persöönlich un mi glücklich!"]];
+  /* Begrüßung, wenn der Name schon da ist: kurzer Witz und Abschied mit Namen */
+  const GRUSS = ["Moin %N! Kört en Witz för di:","Moin, %N! Pass op, nu kummt een:","Hoi %N! Ehr ik dat vergeet, en körten Witz:"];
+  const TSCHUESS = ["Ik kaam wedder, %N!"];
+  const KURZWITZE = ["Twee Dortmunder an de Gele Wand. Seggt de een: Wi sünd luut. Seggt de anner: Wi ok!","St. Pauli hett den Dodenkopp, wi hebbt de Raut. Elkeen mit sien Kopfschmuck, awer wi hebbt den Dino.","Bremen un Hamborg: dat Nordderby is de Tiet, wo sogar de Fischers still warrt.","Köln hett den Geißbock, wi hebbt den Dino. De Geißbock frett Gras, de Dino ok, wenn dat mutt.","Leipzig drinkt ut de Dos, wi ut dat Glas. Prost, ji Roden Bullen!","Union Berlin singt Eisern Union, wi singt Nur der HSV. Beides is luut!","Frankfurt hett den Adler im Wappen. Ik heff den Steert. Mien Steert is körter, awer mien Humor is grötter.","Juventus un wi: 4:4 in't Johr 2000. Dat nömt wi Johrhunnert-Unentschieden. Beid Sieden hebbt wunnen: de Tokiekers.","Barcelona? 1961 keken 77.600 Lüüd in'n Volkspark to. Dat is bit hüüt Rekord, un ik weer dorbi. Fast.","Mainz fiert Fastnacht, wi fiert Hafengeburtstag. Gliek Idee: Verkleeden un goode Luun.","Wolfsburg boot Autos, Hamborg boot Scheep. Beides bringt di an't Ziel.","Bayern hett Titeln, wi hebbt Dino. Titeln staht in de Vitrin, Dino löppt dörch'n Volkspark."];  const JAGD = ["Blievt stahn, Meisterschal!","Aha, de löppt freewillig na Hamborg torüch."];
+  const LEVEL = ["Fischbrötchen! Nu heff ik Kraft!","Blots bit to de Halvtiet … denn is wedder goot."];
+  const MUENZE = ["Dör!","Noch en Dör!","Hattrick! Nur der HSV!"];
+  const BOW = ["Dankschön!","Pardon, ik bün blots kört in't Bild.","Mien Hoogachtung!"];
+  const BOWEND = "Ik gah al wedder. Tschüss, ji Lüüd!";
+  const KOPF = "Op'n Kopp sehn is de HSV doch baven.", HATSCHI = "Hatschi! Prost!";
+  /* Fanblock-Solo: vier Sätze, die Figur spielt beide Rollen und dreht sich dabei um */
+  const SZENEN = [
+    ["Wi hebbt hüüt wedder 34 Speeln wunnen!","Dat sünd 34 Speeln, keen 34 Siege!","Awer in mien Kopp wull.","Dien Kopp speelt nich in de Bundesliga!"],
+    ["Ik kiek blots Dortmund-Speeln, wegen de Stimmung.","Du büst doch HSV-Fan!","Awer de Gele Wand is en Wunner.","Respekt geiht in beide Richten. Stimmt."],
+    ["Ik heff hüüt noch keen Fischbrötchen eten.","Dat is en Notfall!","Ahn Fischbrötchen keen Taktik.","Denn gah endlich to'n Fischstand!"],
+    ["De Schiri hett mi ankeken!","Dat is sien Job!","He hett awer seltsam keken.","Du hest jo en Steert!"]];
+  /* Witze über andere Vereine: Frage und Pointe, immer respektvoll und mit Augenzwinkern */
+  const WITZE = [
+    ["Dortmund hett de Gele Wand.","Wi hebbt dat Volksparkstadion. Awer de Wand is luuder, dat geev ik to."],
+    ["Wat is de Ünnerscheed twüschen mi un en Fossil?","Dat Fossil liggt in't Museum, ik bün in'n Volkspark."],
+    ["Bremen un dat Nordderby.","Dat is nich blots en Speel, dat is Familientreffen mit Fischbrötchen."],
+    ["St. Pauli hett den Dodenkopp un en Hart.","Wi hebbt de Raut un en Hart. Passt, elkeen mit sien Wappen."],
+    ["Köln hett den Geißbock im Wappen.","Ik heff en Steert. Dat is sotoseggen de Geißbock vun Hamborg."],
+    ["Union Berlin singt: Eisern Union.","Wi singt: Nur der HSV. Klingt weker, smeckt beter."],
+    ["Frankfurt hett den Adler im Wappen.","Ik heff en Steert. De Adler is grötter, mien Steert is schöner."],
+    ["Stuttgart seggt: Wi köönt allens, blots keen Hochdüütsch.","Wi köönt dat ok nich. Dor sünd wi uns eens, ji Swoben."],
+    ["Leipzig drinkt ut de Dos.","Wi ut dat Glas. Beides is flüssig, awer blots een maakt Spaaß."],
+    ["Mainz fiert Fastnacht.","Wi fiert Hafengeburtstag. Gliek Idee: Kostüm, Hafen un goode Luun."],
+    ["Wolfsburg boot Autos.","Hamborg boot Scheep. Wi sünd also gliek: beides bringt di an't Ziel."],
+    ["Bayern hett vele Titeln.","Wi hebbt söss Meisterschaften un en Dino. Elkeen mit sien Vitrin."],
+    ["Barcelona? 1961 keken 77.600 Lüüd to.","Dat is bit hüüt Vereensrekord. Bi Barcelona weer dat Halvfinale, bi uns de Rekord."],
+    ["Juventus weer 1983 in Athen de Gegner.","Magath schööt, de HSV wunn mit 1:0. Mehr mutt man nich weten. Doch, Pilsener."],
+    ["Woans lang weer de HSV eerstklassig?","55 Johr. Dorüm bün ik de Dino. Dat is keen Spitznaam, dat is en Arbeitsvertrag."],
+    ["Wann warrt de HSV wedder Meister?","Wi hebbt dat söss Mal schafft. Dat negste Mal kummt vun alleen."],
+    ["Wat seggt de HSV-Fan na en Nederlaag?","Dat weer en Test för de Meisterschaft. Un en Test för de Fischbrötchen."],
+    ["Uns Uwe harr in sien ganz Leven blots een Rode Kaart.","Ik heff al twee, un dat blots bi'n Warmlopen."],
+    ["Mien Steert un de Raut: wat is wichtiger?","De Raut is dat Wappen, de Steert is de Balans. Beides bruukt een Dino."],
+    ["Dat Volksparkstadion is en UEFA 5-Steern-Stadion.","Ik heff dat nich bestellt, awer ik wohn dor geern."]];
+  const aktiv = []; let redet = true;
+  /* Profi-Zufallsmix: Mischbeutel statt reinem Zufall. Jedes Muster kommt pro Runde gemaess Gewicht vor und nie zweimal direkt hintereinander; genau einer von fuenf Auftritten redet; die Startrichtung wechselt meistens. */
+  let lastDir = 1, beutel = [], letzte = null, redeBeutel = [], redeLetzte = false;
+  const mische = a => { for(let i = a.length - 1; i > 0; i--){ const j = Math.floor(R() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const rd = () => { lastDir = R() < .7 ? -lastDir : lastDir; return lastDir; };
+  function naechstes(){
+    if(!beutel.length){ for(const k in MUSTER) for(let i = 0; i < MUSTER[k][1]; i++) beutel.push(k); mische(beutel); }
+    const erlaubt = (view && view.v === "quiz") ? ["gucken", "wand"] : null, ok = k => k !== letzte && (!erlaubt || erlaubt.includes(k));
+    if(erlaubt && !beutel.some(ok)){ letzte = pick(erlaubt.filter(k => k !== letzte)); return letzte; }
+    let i = beutel.findIndex(ok);
+    if(i < 0){ const mehr = []; for(const k in MUSTER) for(let n = 0; n < MUSTER[k][1]; n++) mehr.push(k); beutel.push(...mische(mehr)); i = beutel.findIndex(k => k !== letzte); }
+    letzte = beutel.splice(i, 1)[0]; return letzte;
+  }
+  function redetDiesmal(){
+    if(!redeBeutel.length){ redeBeutel = mische([true, true, true, false, false]); if(redeLetzte && redeBeutel[0]) redeBeutel.reverse(); }
+    redeLetzte = redeBeutel.shift(); return redeLetzte;
+  }
+  function figur(){
+    const s = document.createElementNS(NS, "svg");
+    s.setAttribute("viewBox", "0 0 13 16"); s.setAttribute("shape-rendering", "crispEdges"); s.setAttribute("aria-hidden", "true");
+    MAP.forEach((row, y) => [...row].forEach((c, x) => { if(COL[c]){ const r = document.createElementNS(NS, "rect"); r.setAttribute("x", x); r.setAttribute("y", y); r.setAttribute("width", 1); r.setAttribute("height", 1); r.setAttribute("fill", COL[c]); s.appendChild(r); } }));
+    return s;
+  }
+  function dim(){ const t = document.querySelector(".top"); return {W: document.documentElement.clientWidth, H: innerHeight, hb: t ? t.getBoundingClientRect().bottom : 0}; }
+  /* Zustand der Figur: Mittelpunkt x/y, Drehung r (0 Boden, 180 Decke, 90 linke Wand, -90 rechte Wand), Blickrichtung f (1 rechts, -1 links) */
+  function T(s){ return "translate(" + (s.x - 19.5) + "px," + (s.y - 24) + "px) rotate(" + s.r + "deg) scale(" + (s.f * (s.z || 1)) + "," + (s.z || 1) + ")"; }
+  let stopBeiName = false;   // während der Namensfrage: sobald ein Name da ist, sofort aufhören
+  function abbruch(){ return document.hidden || (stopBeiName && typeof hasName === "function" && hasName()); }
+  function neu(s){
+    const el = document.createElement("div"); el.className = "runner"; el.setAttribute("aria-hidden", "true"); el.appendChild(figur());
+    el.style.transform = T(s); document.body.appendChild(el); aktiv.push(el);
+    return {el, s: Object.assign({}, s)};
+  }
+  function setze(g, p){ g.s = Object.assign({}, g.s, p); g.el.style.transform = T(g.s); }
+  async function anim(g, kf, ms, ende){
+    if(abbruch()) throw new Error("stop");
+    const a = g.el.animate(kf, {duration: ms, easing: "linear", fill: "forwards"});
+    g.s = ende;
+    /* Alle 300 ms pruefen, ob abgebrochen werden muss (Quiz gestartet, Tab im Hintergrund); der Pruefer beendet sich selbst */
+    const pruef = new Promise((_, nein) => { const iv = setInterval(() => { if(abbruch()){ clearInterval(iv); nein(new Error("stop")); } }, 300); a.finished.then(() => clearInterval(iv), () => clearInterval(iv)); });
+    try{ await Promise.race([a.finished, pruef]); } catch(e){ a.cancel(); throw e; }
+    g.el.style.transform = T(g.s); a.cancel();
+  }
+  function blick(g, dx, dy){
+    const r = g.s.r; let f = g.s.f;
+    if(r === 0 || r === 180){ if(Math.abs(dx) > 1){ const d = Math.sign(dx); f = r === 180 ? -d : d; } }
+    else if(Math.abs(dy) > 1){ const d = Math.sign(dy); f = r === 90 ? d : -d; }
+    return f;
+  }
+  async function gehe(g, x, y, v){
+    const s0 = g.s, e = {x: x === undefined ? s0.x : x, y: y === undefined ? s0.y : y, r: s0.r, z: s0.z};
+    e.f = blick(g, e.x - s0.x, e.y - s0.y); setze(g, {f: e.f});
+    const ms = Math.max(250, Math.hypot(e.x - s0.x, e.y - s0.y) / (v || rnd(.13, .3)));
+    await anim(g, [{transform: T(g.s)}, {transform: T(e)}], ms, e);
+  }
+  async function bogen(g, tx, ty, h, ms){
+    const f = blick(g, tx - g.s.x, ty - g.s.y); setze(g, {f});
+    const s0 = g.s, rr = s0.r * Math.PI / 180, ux = Math.sin(rr), uy = -Math.cos(rr), kf = [];
+    for(let i = 0; i <= 12; i++){ const u = i / 12, k = 4 * h * u * (1 - u); kf.push({transform: T({x: s0.x + (tx - s0.x) * u + ux * k, y: s0.y + (ty - s0.y) * u + uy * k, r: s0.r, f, z: s0.z})}); }
+    await anim(g, kf, ms, {x: tx, y: ty, r: s0.r, f, z: s0.z});
+  }
+  const sprung = (g, h) => bogen(g, g.s.x, g.s.y, h || 26, 460);
+  async function stehen(g, ms){ g.el.classList.add("stand"); for(let t0 = Date.now(); Date.now() - t0 < ms && !abbruch();) await wait(Math.min(200, ms)); g.el.classList.remove("stand"); if(abbruch()) throw new Error("stop"); }
+  const drehen = g => setze(g, {f: -g.s.f});
+  /* Sprechblase mit Zipfel: der Zipfel sitzt an der Kante, die der Figur am nächsten ist (unten, oben, links oder rechts), und zeigt auf sie */
+  function zipfel(b, g, bl, bt, w, h){
+    const fx = g.s.x - bl, fy = g.s.y - bt, dx = fx - w / 2, dy = fy - h / 2, waag = Math.abs(dx) * h > Math.abs(dy) * w;
+    const seite = waag ? (dx > 0 ? "r" : "l") : (dy > 0 ? "u" : "o");
+    b.classList.add("z" + seite);
+    b.style.setProperty("--zp", Math.round(waag ? Math.max(14, Math.min(h - 14, fy)) : Math.max(16, Math.min(w - 16, fx))) + "px");
+  }
+  function sag(g, txt, ms, muss){
+    if(!muss && !redet) return;
+    document.querySelectorAll(".runbub").forEach(x => x.remove());
+    const vn = (typeof fname === "function" ? fname() : ""), nn = vn.slice(0, 12) + (vn.length > 12 ? "…" : "");
+    txt = txt.replace(/%N/g, nn || "Spezi");
+    const b = document.createElement("div"); b.className = "runbub"; b.textContent = txt; b.setAttribute("aria-hidden", "true"); document.body.appendChild(b);
+    const d = dim(), rr = g.s.r * Math.PI / 180, cx = g.s.x + Math.sin(rr) * 44 * (g.s.z || 1), cy = g.s.y - Math.cos(rr) * 44 * (g.s.z || 1), w = b.offsetWidth, h = b.offsetHeight;
+    const bl = Math.max(4, Math.min(d.W - w - 4, cx - w / 2)), bt = Math.max(4, Math.min(d.H - h - 4, cy - h / 2));
+    b.style.left = bl + "px"; b.style.top = bt + "px"; zipfel(b, g, bl, bt, w, h);
+    setTimeout(() => b.remove(), ms || 1600);
+  }
+  const spruch = (g, arr) => { if(R() < .65) sag(g, (arr || (R() < .35 ? pick(NAMEN) : pick(SAG)))); };
+  function bahn(d, name, dir){
+    if(name === "boden") return {y: d.H - 30, r: 0, f: dir};
+    if(name === "decke") return {y: (R() < .5 || d.hb < 20) ? 24 : d.hb + 26, r: 180, f: -dir};
+    return {y: rnd(d.hb + 70, Math.max(d.hb + 90, d.H - 90)), r: 0, f: dir};
+  }
+  async function aktion(g){
+    const l = [() => sprung(g, rnd(24, 44)), async () => { spruch(g); await stehen(g, 1500); }, () => salto(g), () => tanzen(g), async () => { await stehen(g, rnd(400, 1000)); await sprung(g); }];
+    if(g.s.r === 0) l.push(() => liegen(g, rnd(900, 1500), AUA), () => niesen(g), () => kopfstand(g), () => verbeugen(g, 2, pick(BOW)));
+    await pick(l)();
+  }
+  /* Auftritt 1: quer ueber den Bildschirm (Boden, Decke kopfueber oder mittendrin), mit 0 bis 2 Stopps */
+  async function quer(d){
+    const dir = rd(), b = bahn(d, pick(["boden","boden","decke","mitte"]), dir);
+    const g = neu({x: dir > 0 ? -40 : d.W + 40, y: b.y, r: b.r, f: b.f});
+    const n = pick([0, 0, 1, 2]);
+    for(let i = 0; i < n; i++){ const x = (i + 1 + rnd(-.3, .3)) / (n + 1) * d.W; await gehe(g, dir > 0 ? x : d.W - x); await aktion(g); }
+    await gehe(g, dir > 0 ? d.W + 40 : -40);
+  }
+  /* Auftritt 2: dreht nach einer Strecke um, manchmal mehrfach */
+  async function umkehr(d){
+    const dir = rd(), b = bahn(d, pick(["boden","decke","mitte"]), dir);
+    const g = neu({x: dir > 0 ? -40 : d.W + 40, y: b.y, r: b.r, f: b.f});
+    let richtung = dir;
+    for(let i = 0, n = pick([1, 1, 2, 3]); i < n; i++){
+      const cur = Math.max(0, Math.min(d.W, g.s.x)); let x;
+      if(richtung > 0){ const lo = cur + d.W * .15, hi = d.W * .9; x = lo < hi ? rnd(lo, hi) : hi; }
+      else { const lo = d.W * .1, hi = cur - d.W * .15; x = lo < hi ? rnd(lo, hi) : lo; }
+      await gehe(g, x);
+      await stehen(g, rnd(300, 700)); spruch(g, pick([SAG[0], SAG[2], SAG[3]])); await stehen(g, rnd(600, 1100));
+      drehen(g); richtung = -richtung; await stehen(g, 350);
+      if(R() < .3) await sprung(g);
+    }
+    await gehe(g, richtung > 0 ? d.W + 40 : -40);
+  }
+  /* Auftritt 3: klettert oder rutscht am linken oder rechten Rand, manchmal mit Umkehr */
+  async function wand(d){
+    const links = R() < .5, r = links ? 90 : -90, x = links ? 24 : d.W - 24, hoch = R() < .5;
+    const start = hoch ? d.H + 40 : -40, ende = hoch ? -40 : d.H + 40;
+    const g = neu({x, y: start, r, f: 1});
+    if(R() < .45){
+      await gehe(g, x, rnd(.3, .7) * d.H, rnd(.1, .2));
+      await stehen(g, 500); spruch(g, pick([SAG[0], SAG[2], SAG[4]])); await stehen(g, 1100);
+      drehen(g); await stehen(g, 400);
+      await gehe(g, x, start, rnd(.12, .25));
+    } else {
+      if(R() < .5){ await gehe(g, x, rnd(.3, .7) * d.H, rnd(.1, .2)); await aktion(g); }
+      await gehe(g, x, ende, rnd(.1, .22));
+    }
+  }
+  /* Auftritt 4: einmal rund um den Bildschirm (Boden, Wand, Decke kopfueber, Wand), rechts oder links herum */
+  async function rundherum(d){
+    const sp = R() < .5, W = d.W, H = d.H, yB = H - 30, yT = 24, xL = 24, xR = W - 24;
+    const X = x => sp ? W - x : x, Rr = r => sp ? (r === 90 ? -90 : r === -90 ? 90 : r) : r;
+    const pts = [{x: xR, y: yB, r: 0}, {x: xR, y: yT, r: -90}, {x: xL, y: yT, r: 180}, {x: xL, y: yB, r: 90}, {x: W + 40, y: yB, r: 0}];
+    const lauf = pts.slice(0, pick([2, 3, 4, 5])).map(p => Object.assign({}, p)), l = lauf[lauf.length - 1];
+    if(l.r === -90) l.y = -40; else if(l.r === 180) l.x = -40; else if(l.r === 90) l.y = H + 40;
+    const g = neu({x: X(-40), y: yB, r: Rr(0), f: 1});
+    for(const p of lauf){
+      if(R() < .35 && g.s.x > 0 && g.s.x < W) await sprung(g);
+      setze(g, {r: Rr(p.r)});
+      await gehe(g, X(p.x), p.y, rnd(.2, .35));
+    }
+  }
+  /* Auftritt 5: schaut nur kurz von einem Rand herein, manchmal springt er danach heraus und rennt los */
+  async function gucken(d){
+    const k = pick(["unten","unten","oben","links","rechts"]), W = d.W, H = d.H, yy = rnd(Math.min(H * .5, d.hb + 60), H * .8), xx = rnd(.1, .9) * W;
+    let s, p;
+    if(k === "unten"){ s = {x: xx, y: H + 50, r: 0, f: pick([1, -1])}; p = {x: xx, y: H + rnd(-6, 14)}; }
+    else if(k === "oben"){ s = {x: xx, y: -50, r: 180, f: pick([1, -1])}; p = {x: xx, y: rnd(-14, 6)}; }
+    else if(k === "links"){ s = {x: -50, y: yy, r: 0, f: 1}; p = {x: rnd(-6, 10), y: yy}; }
+    else { s = {x: W + 50, y: yy, r: 0, f: -1}; p = {x: W + rnd(-10, 6), y: yy}; }
+    const g = neu(s);
+    await gehe(g, p.x, p.y, .1);
+    const a = R();
+    if(a < .35){ await stehen(g, 500); drehen(g); await stehen(g, 600); drehen(g); await stehen(g, 500); }
+    else if(a < .7){ spruch(g, pick(PEEK)); await stehen(g, 1700); }
+    else await sprung(g, 30);
+    if(k === "unten" && R() < .3){
+      const dir = rd();
+      await gehe(g, g.s.x, H - 30, .15);
+      await gehe(g, dir > 0 ? W + 40 : -40, H - 30, rnd(.2, .3));
+    } else await gehe(g, s.x, s.y, .22);
+  }
+  /* Auftritt 6: huepft in Bogen ueber den Bildschirm, am Boden oder mittendrin */
+  async function huepfer(d){
+    const dir = rd(), mitte = R() < .5, b = bahn(d, mitte ? "mitte" : "boden", dir);
+    const g = neu({x: dir > 0 ? -40 : d.W + 40, y: b.y, r: 0, f: b.f});
+    const n = Math.round(rnd(3, 7)), schritt = (d.W + 80) / n;
+    for(let i = 1; i <= n; i++){
+      const ty = mitte ? Math.max(d.hb + 60, Math.min(d.H - 60, g.s.y + rnd(-45, 45))) : b.y;
+      await bogen(g, dir > 0 ? -40 + schritt * i : d.W + 40 - schritt * i, ty, rnd(40, 90), rnd(520, 760));
+      if(R() < .2) await stehen(g, 400);
+    }
+  }
+  /* Salto: volle Drehung waehrend eines Sprungs an Ort und Stelle */
+  async function salto(g){
+    const s0 = g.s, rr = s0.r * Math.PI / 180, ux = Math.sin(rr), uy = -Math.cos(rr), kf = [];
+    for(let i = 0; i <= 16; i++){ const u = i / 16, k = 4 * 46 * u * (1 - u); kf.push({transform: T({x: s0.x + ux * k, y: s0.y + uy * k, r: s0.r + 360 * s0.f * u, f: s0.f})}); }
+    await anim(g, kf, 720, s0);
+  }
+  /* Hinfallen und liegen bleiben (nur am Boden), dann wieder aufstehen */
+  async function liegen(g, ms, text){
+    const s0 = g.s, w = Object.assign({}, s0, {r: s0.r + 80 * s0.f, y: s0.y + 5}), tot = 250 + ms + 350;
+    sag(g, text, ms + 400, text === ZZZ); g.el.classList.add("stand");
+    try{ await anim(g, [{transform: T(s0), offset: 0}, {transform: T(w), offset: 250 / tot}, {transform: T(w), offset: (250 + ms) / tot}, {transform: T(s0), offset: 1}], tot, s0); }
+    finally{ g.el.classList.remove("stand"); }
+  }
+  async function tanzen(g){
+    sag(g, TANZ, 2400);
+    for(let i = 0; i < 4; i++){ drehen(g); await sprung(g, 16); }
+  }
+  async function rueckwaerts(g, x, v){
+    const s0 = g.s, e = {x, y: s0.y, r: s0.r, z: s0.z}; e.f = -blick(g, e.x - s0.x, 0); setze(g, {f: e.f});
+    await anim(g, [{transform: T(g.s)}, {transform: T(e)}], Math.max(250, Math.abs(e.x - s0.x) / (v || rnd(.13, .25))), e);
+  }
+  const rein = (dir, d) => dir > 0 ? -40 : d.W + 40, raus = (dir, d) => dir > 0 ? d.W + 40 : -40, anteil = (dir, d, u) => dir > 0 ? u * d.W : d.W - u * d.W;
+  /* Auftritt 7: stolpert und faellt hin (ein- oder zweimal) */
+  async function stolpern(d){
+    const dir = rd(), b = bahn(d, pick(["boden","boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f}), n = pick([1, 1, 2]);
+    for(let i = 0; i < n; i++){
+      await gehe(g, anteil(dir, d, (i + 1 + rnd(-.25, .25)) / (n + 1)));
+      await liegen(g, rnd(900, 1600), AUA); await stehen(g, 300); spruch(g, pick([SAG[0], SAG[5], SAG[8]])); await stehen(g, 600);
+    }
+    await gehe(g, raus(dir, d));
+  }
+  /* Auftritt 8: legt sich hin und schlaeft, wacht erschrocken auf und rennt davon */
+  async function schlafen(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    await gehe(g, anteil(dir, d, rnd(.3, .7)));
+    await liegen(g, 2800, ZZZ);
+    sag(g, WACH, 1400); await sprung(g, 54); await stehen(g, 500);
+    await gehe(g, raus(dir, d), undefined, rnd(.4, .6));
+  }
+  /* Auftritt 9: Moonwalk, also rueckwaerts laufen */
+  async function moonwalk(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte","decke"]), dir), g = neu({x: rein(dir, d), y: b.y, r: b.r, f: -b.f});
+    await rueckwaerts(g, anteil(dir, d, rnd(.4, .6)));
+    sag(g, MOON, 1500); await stehen(g, 1200);
+    await rueckwaerts(g, raus(dir, d));
+  }
+  /* Auftritt 10: wird immer schneller */
+  async function turbo(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    await gehe(g, anteil(dir, d, .3), undefined, .1); sag(g, TURBO[0], 1300);
+    await gehe(g, anteil(dir, d, .55), undefined, .28); sag(g, TURBO[1], 1300);
+    await gehe(g, raus(dir, d), undefined, .8);
+  }
+  /* Auftritt 11: schleicht auf Zehenspitzen, schaut sich um und rennt dann los */
+  async function schleichen(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte","decke"]), dir), g = neu({x: rein(dir, d), y: b.y, r: b.r, f: b.f}), n = pick([3, 4, 5]);
+    for(let i = 0; i < n; i++){
+      await gehe(g, anteil(dir, d, (i + 1) / (n + 1)), undefined, .06);
+      if(i === 0){ sag(g, PSST, 1900); await stehen(g, 1900); } else await stehen(g, rnd(400, 900));
+      if(R() < .5){ drehen(g); await stehen(g, 500); drehen(g); }
+    }
+    await gehe(g, raus(dir, d), undefined, .6);
+  }
+  /* Verbeugen (nur am Boden): nach vorn kippen, kurz halten, aufrichten */
+  async function verbeugen(g, n, text){
+    const s0 = g.s, w = Object.assign({}, s0, {r: s0.r + 38 * s0.f}), kf = [{transform: T(s0), offset: 0}];
+    for(let i = 0; i < n; i++){ kf.push({transform: T(w), offset: (i + .35) / n}, {transform: T(w), offset: (i + .65) / n}, {transform: T(s0), offset: (i + 1) / n}); }
+    if(text) sag(g, text, n * 1100 + 400);
+    await anim(g, kf, n * 1100, s0);
+  }
+  /* Kopfstand mit Rolle zurueck */
+  async function kopfstand(g){
+    const s0 = g.s, h = Object.assign({}, s0, {r: s0.r + 180}), e = Object.assign({}, s0, {r: s0.r + 360});
+    sag(g, KOPF, 3000);
+    await anim(g, [{transform: T(s0), offset: 0}, {transform: T(h), offset: .15}, {transform: T(h), offset: .8}, {transform: T(e), offset: 1}], 3000, s0);
+  }
+  async function niesen(g){
+    await stehen(g, 400); sag(g, HATSCHI, 1200); await stehen(g, 700);
+    await rueckwaerts(g, g.s.x - g.s.f * 70, .6); await stehen(g, 400);
+  }
+  /* Auftritt 12: Fanblock-Solo: eine einzige Figur spielt beide Rollen und dreht sich dabei um */
+  async function stammtisch(d){
+    const dir = rd(), b = bahn(d, "boden", dir), sz = pick(SZENEN), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    await gehe(g, anteil(dir, d, rnd(.35, .65)), undefined, .25);
+    sag(g, sz[0], 2300, true); await stehen(g, 2300);
+    drehen(g); await stehen(g, 300); sag(g, sz[1], 2300, true); await sprung(g, 22); await stehen(g, 1900);
+    drehen(g); await stehen(g, 300); sag(g, sz[2], 2300, true); await stehen(g, 2300);
+    drehen(g); await stehen(g, 300); sag(g, sz[3], 2500, true);
+    await Promise.all([sprung(g, 36), stehen(g, 700)]);
+    await liegen(g, 900, AUA); await stehen(g, 400);
+    await gehe(g, raus(dir, d), undefined, .3);
+  }
+  /* Auftritt 13: isst ein Fischbrötchen, wird gross, rennt, schrumpft wieder (befristet) */
+  async function brezn(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    await gehe(g, anteil(dir, d, .3));
+    const px = g.s.x + dir * 54, m = document.createElement("div"); m.className = "runcoin"; m.textContent = "🥪"; m.setAttribute("aria-hidden", "true");
+    m.style.left = (px - 13) + "px"; m.style.top = (b.y - 14) + "px"; document.body.appendChild(m); aktiv.push(m);
+    await gehe(g, px, undefined, .15); m.remove();
+    const boden = g.s.y + 24, gross = Object.assign({}, g.s, {z: 1.9, y: boden - 24 * 1.9});
+    sag(g, LEVEL[0], 2000);
+    await anim(g, [{transform: T(g.s)}, {transform: T(gross)}], 900, gross);
+    await gehe(g, anteil(dir, d, .7), undefined, .3);
+    sag(g, LEVEL[1], 1500); await stehen(g, 900);
+    const klein = Object.assign({}, g.s, {z: 1, y: boden - 24});
+    await anim(g, [{transform: T(g.s)}, {transform: T(klein)}], 600, klein);
+    await gehe(g, raus(dir, d), undefined, .3);
+  }
+  /* Auftritt 14: jagt einen Pokal, der immer schneller davonrennt */
+  async function pokaljagd(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    const p = document.createElement("span"); p.className = "runprop"; p.textContent = "🏆"; p.setAttribute("aria-hidden", "true"); g.el.appendChild(p);
+    await gehe(g, anteil(dir, d, .3), undefined, .28);
+    sag(g, JAGD[0], 1500); await stehen(g, 500);
+    p.animate([{left: "48px"}, {left: "170px"}], {duration: 1800, fill: "forwards", easing: "ease-in"});
+    await gehe(g, anteil(dir, d, .65), undefined, .45);
+    p.animate([{opacity: 1}, {opacity: 0}], {duration: 600, fill: "forwards"});
+    await stehen(g, 500); sag(g, JAGD[1], 2000); await stehen(g, 2000);
+    await gehe(g, raus(dir, d), undefined, .15);
+  }
+  /* Auftritt 15: Hutzieh-Wanderung, ganz hoeflich (Dankschee) */
+  async function hutziehen(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f}), n = pick([2, 3]);
+    for(let i = 0; i < n; i++){ await gehe(g, anteil(dir, d, (i + 1) / (n + 1)), undefined, .2); await verbeugen(g, i === 0 ? 3 : 2, BOW[i % BOW.length]); }
+    sag(g, BOWEND, 2500); await verbeugen(g, 2); await stehen(g, 600);
+    await gehe(g, raus(dir, d), undefined, .3);
+  }
+  /* Auftritt 16: Tore schiessen, jeweils mit Kopfstoss im Sprung */
+  async function tor(d){
+    const dir = rd(), b = bahn(d, "boden", dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f}), n = pick([2, 3]);
+    for(let i = 0; i < n; i++){
+      const x = anteil(dir, d, (i + 1) / (n + 1)), c = document.createElement("div"); c.className = "runcoin"; c.textContent = "⚽"; c.setAttribute("aria-hidden", "true");
+      c.style.left = (x - 13) + "px"; c.style.top = (b.y - 100) + "px"; document.body.appendChild(c); aktiv.push(c);
+      await gehe(g, x - dir * 4, undefined, rnd(.2, .35));
+      const j = sprung(g, 66); setTimeout(() => { c.remove(); sag(g, MUENZE[i === n - 1 ? 2 : (i === 0 ? 0 : 1)], 1700); }, 230); await j;
+      await stehen(g, 500);
+    }
+    await gehe(g, raus(dir, d), undefined, .3);
+  }
+  /* Auftritt 17: begruesst die Person mit Namen und sagt etwas Kurzes */
+  async function hallo(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    await gehe(g, anteil(dir, d, rnd(.35, .65)), undefined, .28);
+    await stehen(g, 300); sag(g, pick(NAMEN), 2600, true); await sprung(g, 30); await stehen(g, 300); await sprung(g, 30); await stehen(g, 1500);
+    await gehe(g, raus(dir, d), undefined, .3);
+  }
+  /* Weitere Gags im Stil von Fischbrötchen: Groesse, Requisiten, Verwandlungen */
+  const TITEL = ["Bankdrücker","Stammspeler","Kaptein","Ehrenpräsident"];
+  const URLAUB = "Verlööv an de Ostsee!", STERN = "Nich to slaan! Wenigstens bit to'n Slusspiff.", BALLON = ["Wheee! Allens goot!","Tschüss, ji Lüüd!"], FASS = ["Glieks wedder dor!","Överraschung! Prost!"], GROESSE = ["Mini-Dino!","Riesen-Dino! Roar!"];
+  /* Groesse aendern, die Fuesse bleiben am Boden */
+  async function skaliere(g, z, ms){
+    const z0 = g.s.z || 1, boden = g.s.y + 24 * z0, e = Object.assign({}, g.s, {z, y: boden - 24 * z});
+    await anim(g, [{transform: T(g.s)}, {transform: T(e)}], ms || 700, e);
+  }
+  /* Etwas Essbares neben der Figur ablegen und hinlaufen */
+  async function esse(g, dir, emoji){
+    const px = g.s.x + dir * 54, boden = g.s.y + 24 * (g.s.z || 1), m = document.createElement("div");
+    m.className = "runcoin"; m.textContent = emoji || "🥪"; m.setAttribute("aria-hidden", "true");
+    m.style.left = (px - 13) + "px"; m.style.top = (boden - 28) + "px"; document.body.appendChild(m); aktiv.push(m);
+    await gehe(g, px, undefined, .15); m.remove();
+  }
+  /* Auftritt 18: Karriere in vier Fischbrötchen vom Bankdrücker zum Ehrenpraesidenten, dann Urlaub */
+  async function karriere(d){
+    const dir = rd(), b = bahn(d, "boden", dir), zs = [.55, .9, 1.4, 2.1];
+    const g = neu({x: rein(dir, d), y: b.y + 24 - 24 * zs[0], r: 0, f: b.f, z: zs[0]});
+    await gehe(g, anteil(dir, d, .12), undefined, .25); sag(g, TITEL[0], 1600, true); await stehen(g, 1200);
+    for(let i = 0; i < 3; i++){
+      await gehe(g, anteil(dir, d, .2 + i * .18), undefined, .22);
+      await esse(g, dir); sag(g, TITEL[i + 1], 1600, true); await skaliere(g, zs[i + 1], 700); await stehen(g, 900);
+    }
+    sag(g, URLAUB, 1600, true); await sprung(g, 40);
+    await gehe(g, raus(dir, d), undefined, .5);
+  }
+  /* Auftritt 19: Stern, bunt blinkend und unbesiegbar, rennt sehr schnell */
+  async function stern(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    await gehe(g, anteil(dir, d, .3)); await esse(g, dir, "⭐");
+    g.el.classList.add("stern"); sag(g, STERN, 2000); await sprung(g, 30);
+    await gehe(g, raus(dir, d), undefined, .9);
+  }
+  /* Auftritt 20: haelt sich an einem Luftballon fest und schwebt davon */
+  async function ballon(d){
+    const dir = rd(), b = bahn(d, "boden", dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    await gehe(g, anteil(dir, d, rnd(.3, .6)));
+    const p = document.createElement("span"); p.className = "runprop ballon"; p.textContent = "🎈"; p.setAttribute("aria-hidden", "true"); g.el.appendChild(p);
+    await sprung(g, 24); sag(g, BALLON[0], 1500); await stehen(g, 500);
+    await gehe(g, g.s.x + dir * rnd(60, 140), -70, .08);
+  }
+  /* Auftritt 21: verschwindet in einem Bierfass und taucht aus einem anderen wieder auf */
+  function fassBauen(x){ const el = document.createElement("div"); el.className = "runfass"; el.setAttribute("aria-hidden", "true"); el.style.left = (x - 32) + "px"; document.body.appendChild(el); aktiv.push(el); return el; }
+  async function fass(d){
+    const dir = rd(), b = bahn(d, "boden", dir), H = d.H, x1 = anteil(dir, d, rnd(.25, .4)), x2 = anteil(dir, d, rnd(.6, .8));
+    const g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    fassBauen(x1);
+    await gehe(g, x1 - dir * 62); await bogen(g, x1, H - 86, 40, 600);
+    sag(g, FASS[0], 1500); await stehen(g, 700);
+    await gehe(g, x1, H - 30, .1);
+    fassBauen(x2); setze(g, {x: x2, y: H - 30}); await stehen(g, 1000);
+    await gehe(g, x2, H - 86, .1);
+    sag(g, FASS[1], 1500); await bogen(g, x2 + dir * 60, H - 30, 36, 500);
+    await gehe(g, raus(dir, d), undefined, .3);
+  }
+  /* Auftritt 22: Mini-Modus, dann Mega-Modus */
+  async function groesse(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f});
+    await gehe(g, anteil(dir, d, .25)); sag(g, GROESSE[0], 1400); await skaliere(g, .4, 500);
+    await gehe(g, anteil(dir, d, .5), undefined, .35);
+    sag(g, GROESSE[1], 1600); await skaliere(g, 2.4, 900);
+    await gehe(g, anteil(dir, d, .8), undefined, .25);
+    await skaliere(g, 1, 500); await gehe(g, raus(dir, d), undefined, .3);
+  }
+  /* Auftritt 23: schleicht sich an, klaut die Meisterschale und rennt damit davon */
+  const DIEB = ["Psst … nich henkieken.","Ik leen mi de Schal blots ut!"];
+  async function dieb(d){
+    const dir = rd(), b = bahn(d, "boden", dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f}), x = anteil(dir, d, rnd(.4, .65)), boden = b.y + 24;
+    const tr = document.createElement("div"); tr.className = "runcoin"; tr.textContent = "🏆"; tr.setAttribute("aria-hidden", "true");
+    tr.style.left = (x - 13) + "px"; tr.style.top = (boden - 28) + "px"; document.body.appendChild(tr); aktiv.push(tr);
+    await gehe(g, x - dir * 130, undefined, .2);
+    sag(g, DIEB[0], 1800);
+    for(let i = 0; i < 2; i++){ await gehe(g, g.s.x + dir * 40, undefined, .05); await stehen(g, 300); drehen(g); await stehen(g, 450); drehen(g); }
+    await gehe(g, x - dir * 40, undefined, .06);
+    await sprung(g, 26); tr.remove();
+    const p = document.createElement("span"); p.className = "runprop traeger"; p.textContent = "🏆"; p.setAttribute("aria-hidden", "true"); g.el.appendChild(p);
+    sag(g, DIEB[1], 1800);
+    await gehe(g, raus(dir, d), undefined, .75);
+  }
+  /* Auftritt 24: erzählt einen Witz über einen anderen Verein (Frage, Pause, Pointe) und freut sich selbst darüber */
+  async function witz(d){
+    const dir = rd(), b = bahn(d, pick(["boden","boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f}), w = pick(WITZE);
+    await gehe(g, anteil(dir, d, rnd(.35, .65)), undefined, .25);
+    await stehen(g, 300); sag(g, w[0], 3400, true); await stehen(g, 3400);
+    sag(g, w[1], 3600, true); await sprung(g, 30); await stehen(g, 700); drehen(g); await sprung(g, 22); await stehen(g, 2600);
+    await gehe(g, raus(dir, d), undefined, .3);
+  }
+  /* Auftritt 25: fragt nach dem Namen und zeigt auf das Eingabefeld (nur auf der Startseite, höchstens dreimal insgesamt) */
+  function nameNudge(){
+    const el = document.querySelector(".nameq") || document.querySelector(".herobar .namebtn"); if(!el) return;
+    const rm = matchMedia("(prefers-reduced-motion: reduce)").matches, r = el.getBoundingClientRect();
+    if(r.top < 70 || r.bottom > innerHeight - 20) el.scrollIntoView({behavior: rm ? "auto" : "smooth", block: "center"});
+    el.classList.remove("nudge"); void el.offsetWidth; el.classList.add("nudge"); setTimeout(() => el.classList.remove("nudge"), 4200);
+  }
+  /* Zielpunkt der Figur: oberer Rand des Namensfelds (oder des Knopfs "Name eintragen"); holt das Feld dafür sofort in den sichtbaren Bereich */
+  const zielVon = el => { const d = dim(), r = el.getBoundingClientRect(); return {el, x: Math.min(d.W - 26, Math.max(26, r.right - 34)), y: Math.max(d.hb + 28, Math.min(d.H - 40, r.top - 20))}; };
+  async function namensZiel(){
+    const el = document.querySelector(".nameq") || document.querySelector(".herobar .namebtn"); if(!el) return null;
+    const r0 = el.getBoundingClientRect(), d = dim(); if(r0.top < d.hb + 60 || r0.bottom > d.H - 30){ el.scrollIntoView({behavior: "instant", block: "center"}); await wait(180); }   // "instant", denn die Seite scrollt sonst weich; kurze Pause, bis sich die Leiste oben angepasst hat
+    return zielVon(el);
+  }
+  /* Steht das Feld nach Layout-Änderungen woanders, geht die Figur zur neuen Stelle */
+  async function anZiel(g, z){ if(!z) return; const n = zielVon(z.el); if(Math.abs(n.y - g.s.y) > 3 || Math.abs(n.x - g.s.x) > 3) await gehe(g, n.x, n.y, .35); }
+  async function namensfrage(d){
+    if(typeof hasName === "function" && hasName()) return;
+    ach.nq = (ach.nq || 0) + 1; save(); stopBeiName = true;
+    const q = NAMEQ[Math.min(ach.nq - 1, NAMEQ.length - 1)], z = await namensZiel();
+    /* Die Figur läuft direkt an das Namensfeld und steht auf dessen oberer Kante (fehlt das Feld, geht sie ein Stück in den Bildschirm) */
+    const dir = z ? (z.x > d.W / 2 ? -1 : 1) : rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: z ? z.y : b.y, r: 0, f: z ? dir : b.f});
+    await gehe(g, z ? z.x : anteil(dir, d, rnd(.3, .55)), z ? z.y : undefined, .4);
+    if(z) setze(g, {f: z.x > d.W / 2 ? -1 : 1});
+    const geht = () => { if(hatName()) throw new Error("stop"); };   // Name ist da: sofort aufhören, gleich kommt das Lob
+    await anZiel(g, z); geht(); await vorstellen(g); geht(); await anZiel(g, z); geht(); await stehen(g, 200); geht(); sag(g, q[0], 3600, true); await sprung(g, 28); await stehen(g, 3600); geht();
+    await anZiel(g, z); geht(); nameNudge(); sag(g, q[1], 4000, true); await sprung(g, 24); await stehen(g, 2000); geht(); drehen(g); await stehen(g, 600); drehen(g); await sprung(g, 20); await stehen(g, 1800);
+    await gehe(g, raus(dir, d), undefined, .3);
+  }
+  /* Auftritt 27: kommt sofort wieder, wenn gerade ein Name eingetragen wurde, und lobt auf lustige Art (mit Konfetti) */
+  const LOB = [
+    ["%N! Dor hett een en Naam, de klingt na Meistertitel!","Nur der HSV, un af hüüt ok du, %N. Moin im Team!","Nu lehr en beten, denn warrst du Vereenslegende!"],
+    ["Wunnerbar, %N! Nu kenn ik di endlich. Dat fiert wi mit en Pilsener!","För dien Naam kriegst du den Ehrenplatz in'n Fanblock.","Dat Quiz töövt al op di, %N!"],
+    ["%N, du büst nu al de wertvullste Speler in disse App!","Nee Rekord: Naam indragen in unner een Minüt. Respekt!","Wieder so, %N, de Pokal töövt!"],
+    ["Grandios, %N! En Naam as en Elfmeter: seker un drin!","De Torwart harr keen Chance.","Un nu schetten wi dien eerst Quiz, %N!"],
+    ["Moin %N! Af nu büst du offiziell Stammgast!","Dien Ehrenkaart liggt al op'n Disch. Fischbrötchen gifft dat gratis!","Prööv glieks en Speeldag, %N!"],
+    ["%N, ik trock mien Kapp vör di!","Un dat will wat heten, bi en Dino ahn Kapp.","Op geiht dat, %N, in dat eerste Quiz!"]];
+  async function lob(d){
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f}), l = pick(LOB);
+    await gehe(g, anteil(dir, d, rnd(.3, .55)), undefined, .5);
+    await stehen(g, 150); try{ if(typeof confetti === "function") confetti(); }catch(e){}
+    sag(g, l[0], 3200, true); await sprung(g, 34); await stehen(g, 3200);
+    sag(g, l[1], 3400, true); await salto(g); await stehen(g, 2800);
+    sag(g, l[2], 3000, true); await sprung(g, 26); await stehen(g, 2800);
+    await gehe(g, raus(dir, d), undefined, .4);
+  }
+  /* Auftritt 26: begrüßt eine Person mit eingetragenem Namen gleich nach dem Start: kurzer Witz, dann "I komm wieda, <Name>!" (einmal je Sitzung) */
+  async function begruessung(d){
+    try{ sessionStorage.setItem("hsv-gruss", "1"); }catch(e){}
+    const dir = rd(), b = bahn(d, pick(["boden","mitte"]), dir), g = neu({x: rein(dir, d), y: b.y, r: 0, f: b.f}), w = pick(KURZWITZE);
+    await gehe(g, anteil(dir, d, rnd(.3, .55)), undefined, .4);
+    await vorstellen(g); await stehen(g, 200); sag(g, pick(GRUSS), 2400, true); await sprung(g, 26); await stehen(g, 2400);
+    sag(g, w, 4400, true); await stehen(g, 4400); await sprung(g, 22); await stehen(g, 300);
+    sag(g, pick(TSCHUESS), 2800, true); await sprung(g, 30); await stehen(g, 1200); drehen(g); await stehen(g, 300); drehen(g); await stehen(g, 1000);
+    await gehe(g, raus(dir, d), undefined, .35);
+  }  const MUSTER = {quer: [quer, 4], umkehr: [umkehr, 4], wand: [wand, 3], rundherum: [rundherum, 2], gucken: [gucken, 4], huepfer: [huepfer, 3], stolpern: [stolpern, 3], schlafen: [schlafen, 2], moonwalk: [moonwalk, 2], turbo: [turbo, 2], schleichen: [schleichen, 2], stammtisch: [stammtisch, 2], brezn: [brezn, 2], pokaljagd: [pokaljagd, 2], hutziehen: [hutziehen, 2], tor: [tor, 2], hallo: [hallo, 1], karriere: [karriere, 2], stern: [stern, 2], ballon: [ballon, 2], fass: [fass, 2], groesse: [groesse, 2], dieb: [dieb, 2], witz: [witz, 5]};
+  const SPEZIAL = {name: namensfrage, gruss: begruessung, lob: lob};
+  function waehle(name){
+    if(name && SPEZIAL[name]) return SPEZIAL[name];
+    if(name && MUSTER[name]) return MUSTER[name][0];
+    return MUSTER[naechstes()][0];
+  }
+  let laeuft = false, lobOffen = false;
+  async function auftritt(name){
+    if(abbruch() || laeuft) return; laeuft = true;
+    redet = !!name || (!(view && view.v === "quiz") && redetDiesmal());
+    try{ await waehle(name)(dim()); } catch(e){ if(!e || e.message !== "stop") console.error("Figur:", e); }
+    aktiv.splice(0).forEach(e => e.remove()); document.querySelectorAll(".runbub").forEach(b => b.remove());
+    laeuft = false; stopBeiName = false;
+  }
+  /* Warten, aber sofort wach werden, wenn gerade ein Name eingetragen wurde (dann folgt das Lob) */
+  const warte = async ms => { const t0 = Date.now(); while(Date.now() - t0 < ms && !lobOffen) await wait(250); };
+  const test = (location.search.match(/[?&]lauf=([a-z]*)/) || [])[1];
+  /* Wer noch keinen Namen eingetragen hat, wird gleich zu Beginn freundlich gefragt (auf der Startseite, höchstens dreimal) */
+  const brauchtName = () => view && view.v === "home" && typeof hasName === "function" && !hasName() && (ach.nq || 0) < 6;
+  const hatName = () => typeof hasName === "function" && hasName();
+  const grussFaellig = () => { try{ return !sessionStorage.getItem("hsv-gruss"); }catch(e){ return true; } };
+  (async function(){
+    /* Wird zum ersten Mal ein Name eingetragen (auf Startseite oder in einer Lektion), kommt der kleine Bayer gleich zum Loben */
+    let hatteName = hatName();
+    setInterval(() => { const jetzt = hatName(); if(jetzt && !hatteName && view && (view.v === "home" || view.v === "lesson")) lobOffen = true; hatteName = jetzt; }, 300);
+    await warte(test !== undefined ? 1200 : (brauchtName() ? 1200 : (hatName() ? 2000 : rnd(8000, 20000))));
+    let erster = test === undefined; for(;;){
+      let n = test || undefined;
+      if(lobOffen){ lobOffen = false; n = "lob"; await wait(700); }
+      else if(!n && brauchtName() && (erster || R() < .7)) n = "name"; else if(!n && erster && hatName() && grussFaellig()) n = "gruss"; else if(!n && erster && R() < .5) n = "hallo";
+      await auftritt(n); erster = false; await warte(test !== undefined ? 1500 : (brauchtName() ? rnd(15000, 30000) : (R() < .15 ? rnd(4000, 9000) : rnd(25000, 80000))));
+    }
+  })();
+})();
+/* Feste Orientierungsleiste: Hoehen messen, Schatten nur wenn festgeheftet */
+function syncHH(){
+  const r = document.documentElement.style, e = document.querySelector(".top"), n = document.querySelector(".stickynav");
+  if(e) r.setProperty("--hh", e.getBoundingClientRect().height + "px");
+  r.setProperty("--nh", n ? n.getBoundingClientRect().height + "px" : "0px");
+  stuckPruefen();
+}
+function stuckPruefen(){
+  const n = document.querySelector(".stickynav"); if(!n) return;
+  const top = parseFloat(getComputedStyle(n).top) || 0;
+  n.classList.toggle("stuck", scrollY > 2 && n.getBoundingClientRect().top <= top + 1);
+}
+addEventListener("resize", syncHH);
+let stuckBusy = false;
+addEventListener("scroll", () => { if(stuckBusy) return; stuckBusy = true; requestAnimationFrame(() => { stuckBusy = false; stuckPruefen(); }); }, {passive:true});
+{ const _render = render; render = function(...a){ const r = _render.apply(this, a); syncHH(); return r; }; }
+syncHH();
+</script>
+</body>
+</html>
