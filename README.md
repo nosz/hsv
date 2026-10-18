@@ -4,7 +4,7 @@
 
 **Von den HSV-Fans Nathalie und Norbert** (inoffizielles Fan-Projekt)
 
-**Datei:** `index.html` (eine Datei, offline lauffähig, Version 1.0.0, Stand 18.10.2026). Einfach im Browser öffnen oder auf einem Webserver ablegen.
+**Datei:** `index.html` (eine Datei, offline lauffähig, Version 1.1.0, Stand 18.10.2026). Einfach im Browser öffnen oder auf einem Webserver ablegen.
 
 > **Veröffentlichung:** GitHub-Repository `hsv` (Benutzer `nosz`), Adresse `https://nosz.github.io/hsv/`. Alle Dateien der Liste unten ins Hauptverzeichnis des Repositories legen (ohne Unterordner), GitHub Pages auf den Hauptzweig stellen. Bei anderer Adresse in `index.html` (canonical, og:url, og:image, twitter:image, `SHARE_URL`) und in dieser README anpassen.
 
@@ -25,6 +25,7 @@ Fan-Quiz mit 7 Spieltagen, Humor, Zertifikaten und Personalisierung, in **Deutsc
 - **Fanblock-Spruch & Fakt:** Karte auf der Startseite mit 16 Sprüchen und Fakten (Gags von Nathalie und Norbert plus belegte Fakten von hsv.de), Knopf "Noch einer!" zeigt den nächsten.
 - **Spielmechanik:** 10 Tore je richtiger Antwort, 1 bis 3 Sterne je Spieltag, 5 Ränge von "Bankdrücker" bis "Bundesliga-Dino", Konfetti, Hell- und Dunkelmodus.
 - **Zertifikate:** je Spieltag ein "Fanblock-Zertifikat", zum Abschluss das "Dino-Meister-Zertifikat" (PNG speichern oder drucken). Unterschrieben "Nathalie & Norbert (inoffiziell)".
+- **Dino abschalten:** Dino-Symbol 🦖 oben in der Kopfzeile, ein Klick blendet ihn dauerhaft aus, ein zweiter holt ihn zurück.
 - **Dino:** Ab und zu läuft ein kleiner grüner Pixel-Dino mit blau-weißem Schal über den Bildschirm (rein dekorativ, nicht klickbar, aus bei „Bewegung reduzieren“). Der Name passt zum Spitznamen „Bundesliga-Dino“. Er spricht immer Plattdeutsch (egal welche Sprache eingestellt ist), stellt sich beim allerersten Auftritt lustig vor, macht Witze über andere Vereine (immer respektvoll) und fragt nach dem Namen: ohne Namen immer drängender (höchstens sechsmal), mit Namen kommt ein kurzer Witz und „Ik kaam wedder, <Name>!“. Test mit Adresse `?lauf=witz` (weitere: `name`, `gruss`, `stammtisch`, `brezn`, `tor`, `fass`, `karriere` u. a.; die Auftrittsnamen stammen aus dem Vorgängerprojekt).
 - **Installieren-Knopf, PWA:** installierbar, läuft offline, Update-Hinweis. Dateien (alle ins Hauptverzeichnis): `index.html`, `manifest.webmanifest`, `sw.js`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, `favicon.png`, `favicon.svg`, `apple-touch-icon.png`, `hsv_vorschau.jpg`. Bei jeder neuen Version `VERSION` in `index.html` **und** `sw.js` gemeinsam erhöhen.
 
@@ -51,4 +52,5 @@ Alle Fakten in Lektionen, Fragen und Sprüchen stammen von diesen Seiten. Die Wi
 Die Testsuite (`tests/index.html`, über einen lokalen Webserver öffnen) stammt aus dem FCBAYERN-Projekt und ist auf HSV angepasst (Texte, Sprachen, Schlüssel). Stand und Ergebnis siehe Changelog.
 
 ## Changelog
+- 1.1.0 (18.10.2026): Dino lässt sich abschalten: Dino-Symbol 🦖 in der Kopfzeile (neben Teilen und Hell/Dunkel). Ein Klick blendet Dino sofort und dauerhaft aus (im Browser gespeichert, auch nach Neuladen), ein Hinweis erklärt, wie er wiederkommt; erneuter Klick holt ihn zurück. Das Symbol ist durchgestrichen, solange Dino aus ist, und hat Beschriftung und Zustand (aria-pressed) für Screenreader.
 - 1.0.0 (18.10.2026): Neues Projekt auf Basis des FCBAYERN-Fan-Quiz (Version 1.10.0): HSV-Inhalte ausschließlich von hsv.de, Farben nach den hsv.de-Screenshots (Blau/Weiß), kleiner Dino namens Dino statt des kleinen Bayern (stellt sich zu Beginn lustig vor, spricht Plattdeutsch), Plattdeutsch statt Bairisch, neue Autorenzeile „von den HSV-Fans Nathalie und Norbert“, neue Icons und Vorschau.

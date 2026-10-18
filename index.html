@@ -82,6 +82,7 @@ button{font:inherit;cursor:pointer}
 .lang{display:flex;gap:6px}
 .lang button,.theme{min-height:44px;min-width:44px;padding:6px 12px;border-radius:999px;border:2px solid rgba(255,255,255,.7);background:transparent;color:#fff;font-weight:700}
 .lang button[aria-pressed="true"]{background:#fff;color:var(--pri-d)}
+.theme.off{position:relative;opacity:.75}.theme.off::after{content:"";position:absolute;left:9px;right:9px;top:50%;height:3px;border-radius:2px;background:#fff;box-shadow:0 0 0 1.5px var(--pri);transform:rotate(-45deg)}
 .theme{font-size:1.1rem;padding:0;display:inline-flex;align-items:center;justify-content:center;line-height:1}.theme svg{display:block;flex:none}
 /* Layout */
 main{max-width:1060px;margin:0 auto;padding:20px 16px 24px;outline:none}
@@ -350,6 +351,7 @@ h2.secrow .cnt{font-size:.9rem;color:var(--mute);font-weight:700}
   <span class="pill" id="coins" aria-live="polite"></span>
   <div class="lang" role="group" id="langs"></div>
   <button type="button" class="theme" id="share" aria-label="Teilen"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"/></svg></button>
+  <button type="button" class="theme" id="dinoBtn" aria-pressed="true">🦖</button>
   <button type="button" class="theme" id="theme" aria-label="Hell/Dunkel">◐</button>
 </div></header>
 <main id="main" tabindex="-1"></main>
@@ -357,7 +359,7 @@ h2.secrow .cnt{font-size:.9rem;color:var(--mute);font-weight:700}
 <div id="live" class="sr" aria-live="polite"></div>
 <script>
 "use strict";
-const VERSION = "1.0.0", STAND = "18.10.2026";
+const VERSION = "1.1.0", STAND = "18.10.2026";
 const LANGS = [["de","DE","Deutsch"],["en","EN","English"],["nds","PLATT","Plattdüütsch"]];
 const KEY = "hsv_fanquiz_v1";
 let li = 0, prog = {}, nm = "", ach = {}, view = {v:"home"};
@@ -471,6 +473,10 @@ const S = {
  skip:["Zum Inhalt","Skip to content","To'n Inhalt"],
  ver:["Version","Version","Version"],
  themeL:["Farbschema wechseln","Switch colour scheme","Farvschema wesseln"],
+ dinoHide:["Dino ausblenden","Hide Dino","Dino utblennen"],
+ dinoShow:["Dino einblenden","Show Dino","Dino inblennen"],
+ dinoGone:["Dino bleibt jetzt weg. Du kannst ihn oben mit dem Dino-Symbol wieder einblenden.","Dino will stay away now. You can bring him back with the dino icon at the top.","Dino blifft nu weg. Du kannst em baven mit dat Dino-Symbol wedder inblennen."],
+ dinoBack:["Dino ist wieder da!","Dino is back!","Dino is wedder dor!"],
  certBtn:["Zertifikat holen","Get your certificate","Zertifikat halen"],
  certs:["Deine Zertifikate","Your certificates","Dien Zertifikaten"],
  certBtnPre:["Meine ","My ","Mien "],
@@ -1099,7 +1105,7 @@ function chrome(){
   document.documentElement.lang = LANGS[li][0];
   document.title = t("title");
   $(".brand .dot").innerHTML = logoSvg(); $("#bt").textContent = t("title"); $("#bs").textContent = t("by"); $("#brand").setAttribute("aria-label", t("title") + " – " + t("over"));
-  $("#skip").textContent = t("skip"); $("#theme").setAttribute("aria-label", t("themeL")); $("#theme").setAttribute("title", t("themeL")); $("#share").setAttribute("aria-label", t("shT")); $("#share").setAttribute("title", t("shT"));
+  $("#skip").textContent = t("skip"); $("#theme").setAttribute("aria-label", t("themeL")); $("#theme").setAttribute("title", t("themeL")); dinoBtnUpdate(); $("#share").setAttribute("aria-label", t("shT")); $("#share").setAttribute("title", t("shT"));
   const T = totals(); $("#coins").textContent = "⚽ " + T.co;
   const lg = $("#langs"); lg.replaceChildren(); LANGS.forEach((x, i) => lg.append(h("button", {type:"button", lang:x[0], "aria-pressed": String(i === li), "aria-label":x[2], onclick:() => { li = i; save(); render(true); }}, x[1])));
   const sl = view.id ? LESSONS[idxOf(view.id)] : null;
@@ -1115,6 +1121,8 @@ $("#brand").onclick = () => {
   if(view.v === "home"){ const rm = matchMedia("(prefers-reduced-motion: reduce)").matches; window.scrollTo({top:0, behavior: rm ? "auto" : "smooth"}); $("#main").focus({preventScroll:true}); }
   else go("home");
 };
+function dinoBtnUpdate(){ const b = $("#dinoBtn"), an = !ach.noDino, l = t(an ? "dinoHide" : "dinoShow"); b.classList.toggle("off", !an); b.setAttribute("aria-pressed", String(an)); b.setAttribute("aria-label", l); b.setAttribute("title", l); }
+$("#dinoBtn").onclick = () => { ach.noDino = !ach.noDino; save(); dinoBtnUpdate(); snack(t(ach.noDino ? "dinoGone" : "dinoBack"), null, null, ach.noDino ? 5000 : 2500); };
 $("#share").onclick = openShare;
 $("#theme").onclick = () => { const r = document.documentElement; const dark = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; r.dataset.theme = dark ? "light" : "dark"; };
 window.addEventListener("hashchange", () => { fromHash(); render(); });
@@ -1278,7 +1286,7 @@ fromHash(); render();
   /* Zustand der Figur: Mittelpunkt x/y, Drehung r (0 Boden, 180 Decke, 90 linke Wand, -90 rechte Wand), Blickrichtung f (1 rechts, -1 links) */
   function T(s){ return "translate(" + (s.x - 19.5) + "px," + (s.y - 24) + "px) rotate(" + s.r + "deg) scale(" + (s.f * (s.z || 1)) + "," + (s.z || 1) + ")"; }
   let stopBeiName = false;   // während der Namensfrage: sobald ein Name da ist, sofort aufhören
-  function abbruch(){ return document.hidden || (stopBeiName && typeof hasName === "function" && hasName()); }
+  function abbruch(){ return document.hidden || !!ach.noDino || (stopBeiName && typeof hasName === "function" && hasName()); }
   function neu(s){
     const el = document.createElement("div"); el.className = "runner"; el.setAttribute("aria-hidden", "true"); el.appendChild(figur());
     el.style.transform = T(s); document.body.appendChild(el); aktiv.push(el);
@@ -1744,8 +1752,10 @@ fromHash(); render();
     let hatteName = hatName();
     setInterval(() => { const jetzt = hatName(); if(jetzt && !hatteName && view && (view.v === "home" || view.v === "lesson")) lobOffen = true; hatteName = jetzt; }, 300);
     await warte(test !== undefined ? 1200 : (brauchtName() ? 1200 : (hatName() ? 2000 : rnd(8000, 20000))));
-    let erster = test === undefined; for(;;){
+    let erster = test === undefined, zurueck = false; for(;;){
+      if(ach.noDino){ lobOffen = false; zurueck = true; await wait(1000); continue; }
       let n = test || undefined;
+      if(zurueck){ zurueck = false; await wait(800); n = "hallo"; }
       if(lobOffen){ lobOffen = false; n = "lob"; await wait(700); }
       else if(!n && brauchtName() && (erster || R() < .7)) n = "name"; else if(!n && erster && hatName() && grussFaellig()) n = "gruss"; else if(!n && erster && R() < .5) n = "hallo";
       await auftritt(n); erster = false; await warte(test !== undefined ? 1500 : (brauchtName() ? rnd(15000, 30000) : (R() < .15 ? rnd(4000, 9000) : rnd(25000, 80000))));
