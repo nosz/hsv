@@ -4,7 +4,7 @@
 
 **Von den HSV-Fans Nathalie und Norbert** (inoffizielles Fan-Projekt)
 
-**Datei:** `index.html` (eine Datei, offline lauffähig, Version 1.3.2, Stand 23.10.2026). Einfach im Browser öffnen oder auf einem Webserver ablegen.
+**Datei:** `index.html` (eine Datei, offline lauffähig, Version 1.3.3, Stand 23.10.2026). Einfach im Browser öffnen oder auf einem Webserver ablegen.
 
 > **Veröffentlichung:** GitHub-Repository `hsv` (Benutzer `nosz`), Adresse `https://nosz.github.io/hsv/`. Alle Dateien der Liste unten ins Hauptverzeichnis des Repositories legen (ohne Unterordner), GitHub Pages auf den Hauptzweig stellen. Bei anderer Adresse in `index.html` (canonical, og:url, og:image, twitter:image, `SHARE_URL`) und in dieser README anpassen.
 
@@ -53,6 +53,7 @@ Alle Fakten in Lektionen, Fragen und Sprüchen stammen von diesen Seiten. Die Wi
 Die Testsuite (`tests/index.html`, über einen lokalen Webserver öffnen) stammt aus dem FCBAYERN-Projekt und ist auf HSV angepasst (Texte, Sprachen, Schlüssel). Stand und Ergebnis siehe Changelog.
 
 ## Changelog
+- 1.3.3 (23.10.2026): Autoren-Hinweis im Fuß als auffälliger Knopf überarbeitet (ganzer Text ist der Link auf https://nosz.github.io/norbert-szpak/); Version angehoben, alle Tests und die Link-Pflicht-Prüfung erneut.
 - 1.3.2 (23.10.2026): Im Fuß steht jetzt „Website Design by Norbert“ statt „Created by Norbert“ (auffälliger Knopf unter der Version, der ganze Text ist der Link auf https://nosz.github.io/norbert-szpak/).
 - 1.3.1 (20.10.2026): Im Fuß der Startseite steht neben der Version statt des Datums der Link „Created by Norbert“ (gleiches Design, öffnet https://nosz.github.io/norbert-szpak in einem neuen Tab).
 - 1.3.0 (18.10.2026): **Dino spricht in der eingestellten Sprache** (Deutsch, Englisch oder Plattdeutsch, alle Texte in jeder Sprache; bei Sprachwechsel meldet er sich gleich neu). **Teilen-Knopf überall und am auffälligsten:** auf der Ergebnisseite, auf jeder Zertifikat-Seite (auch Meister), in der Übersicht der Zertifikate bei jedem Eintrag und auf den Lektionskarten. Groß, gefüllt, ganz oben, mit dem Teilen-Symbol aus der Kopfzeile; „Nächster Spieltag“ darunter, „Als Bild speichern“ und „Drucken“ klein. Beschriftung: „Zertifikat den Freunden zeigen (Angeben erlaubt)“. **Urkunde:** Sprache immer wie im Menü, Kasten mit Fragen und Antworten (zu lange Texte werden kleiner und umbrochen, nie einfach abgeschnitten), Fußzeile mit dem Hinweis steht im Rahmen und ist gut lesbar.
